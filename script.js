@@ -3339,7 +3339,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Picker Function
     function applyTheme(themeName) {
-        document.body.classList.remove('theme-light', 'theme-night');
+        document.body.classList.remove('theme-light', 'theme-night', 'dark');
         themeButtons.forEach(btn => {
             if (btn.getAttribute('data-theme') === themeName) {
                 btn.classList.add('active');
@@ -3354,6 +3354,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.add('theme-light');
         } else if (themeName === 'night') {
             document.body.classList.add('theme-night');
+            document.body.classList.add('dark');
+        } else if (themeName === 'dark') {
+            document.body.classList.add('dark');
         }
         localStorage.setItem('greenmeans-tab-theme', themeName);
     }
