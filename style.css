@@ -983,7 +983,8 @@ body.theme-night {
 /* Support clean high contrast outline of controls when focused */
 button:focus-visible, 
 input:focus-visible, 
-select:focus-visible {
+select:focus-visible,
+a:focus-visible {
     outline: 2px solid var(--color-sage);
     outline-offset: 2px;
 }
@@ -1008,7 +1009,8 @@ select:focus-visible {
     position: relative;
 }
 
-.settings-trigger-btn {
+.settings-trigger-btn,
+.home-link-btn {
     background: transparent;
     border: 1px solid var(--color-border);
     color: var(--color-forest);
@@ -1019,17 +1021,21 @@ select:focus-visible {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.2s ease;
 }
 
 .settings-trigger-btn:hover,
-.settings-trigger-btn:focus {
+.settings-trigger-btn:focus,
+.home-link-btn:hover,
+.home-link-btn:focus {
     background: var(--color-sage-light);
     border-color: var(--color-sage);
     outline: none;
 }
 
-.settings-trigger-btn i {
+.settings-trigger-btn i,
+.home-link-btn i {
     width: 18px;
     height: 18px;
 }
@@ -1269,6 +1275,7 @@ body.reduced-motion .accordion-header,
 body.reduced-motion .accordion-content,
 body.reduced-motion .acc-icon,
 body.reduced-motion .settings-trigger-btn,
+body.reduced-motion .home-link-btn,
 body.reduced-motion .theme-btn,
 body.reduced-motion .toggle-slider,
 body.reduced-motion .toggle-slider:before {
