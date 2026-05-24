@@ -880,13 +880,54 @@ body {
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 400px;
+    max-height: 1000px; /* Increased to accommodate long toxicology reports */
 }
 
 .accordion-content .drawer-text {
     padding: 12px 14px;
     margin: 0;
 }
+
+/* Utility Classes (Tailwind-inspired for toxicology badges and layout) */
+.flex { display: flex; }
+.inline-block { display: inline-block; }
+.items-center { align-items: center; }
+.gap-1 { gap: 0.25rem; }
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+.py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+.rounded-full { border-radius: 9999px; }
+.font-semibold { font-weight: 600; }
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.leading-relaxed { line-height: 1.625; }
+
+/* Toxicology Badge Colors - Light Mode / Default */
+.bg-emerald-100 { background-color: #d1fae5; }
+.text-emerald-800 { color: #065f46; }
+.border-emerald-300 { border: 1px solid #6ee7b7; }
+
+.bg-amber-100 { background-color: #fef3c7; }
+.text-amber-800 { color: #92400e; }
+.border-amber-300 { border: 1px solid #fcd34d; }
+
+.bg-red-100 { background-color: #fee2e2; }
+.text-red-800 { color: #991b1b; }
+.border-red-300 { border: 1px solid #fca5a5; }
+.border-red-400 { border: 1px solid #f87171; }
+
+/* Toxicology Badge Colors - Dark Mode */
+.dark .dark\:bg-emerald-950\/40 { background-color: rgba(6, 78, 59, 0.4); }
+.dark .dark\:text-emerald-300 { color: #6ee7b7; }
+.dark .dark\:border-emerald-800 { border-color: #065f46; }
+
+.dark .dark\:bg-amber-950\/40 { background-color: rgba(69, 26, 3, 0.4); }
+.dark .dark\:text-amber-300 { color: #fcd34d; }
+.dark .dark\:border-amber-800 { border-color: #92400e; }
+
+.dark .dark\:bg-red-950\/40 { background-color: rgba(69, 10, 10, 0.4); }
+.dark .dark\:text-red-300 { color: #fca5a5; }
+.dark .dark\:border-red-800 { border-color: #991b1b; }
 
 /* Footer styling */
 .app-footer {
@@ -1028,6 +1069,11 @@ a:focus-visible {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.2s ease;
+}
+
+.home-link-btn:link,
+.home-link-btn:visited {
+    color: var(--color-forest);
 }
 
 .settings-trigger-btn:hover,
