@@ -347,6 +347,19 @@
                         </div>
 
                         <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-toxic">
+                                <span class="flex items-center gap-1"><i data-feather="alert-triangle" class="inline-block" style="width: 14px; height: 14px; stroke: #ca8a04; margin-right: 3px;"></i> Toxicology & Safety</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-toxic">
+                                <div class="drawer-text" style="padding: 12px 14px;">
+                                    <div id="drawerToxicStatus" class="inline-block px-2.5 py-0.5 rounded-full font-semibold text-xs mb-3"></div>
+                                    <p id="drawerToxicity" class="text-sm leading-relaxed"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
                             <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-5">
                                 <span class="flex items-center gap-1">💡 Botanist Planting Tip</span>
                                 <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
