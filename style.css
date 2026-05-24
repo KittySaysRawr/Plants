@@ -902,32 +902,63 @@ body {
 .mb-3 { margin-bottom: 0.75rem; }
 .leading-relaxed { line-height: 1.625; }
 
-/* Toxicology Badge Colors - Light Mode / Default */
-.bg-emerald-100 { background-color: #d1fae5; }
-.text-emerald-800 { color: #065f46; }
-.border-emerald-300 { border: 1px solid #6ee7b7; }
+/* Toxicology Badge Styles - Semantic and Self-Contained */
+.tox-badge {
+    display: inline-block;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid transparent;
+}
 
-.bg-amber-100 { background-color: #fef3c7; }
-.text-amber-800 { color: #92400e; }
-.border-amber-300 { border: 1px solid #fcd34d; }
+.tox-badge-safe {
+    background-color: #d1fae5;
+    color: #065f46;
+    border-color: #6ee7b7;
+}
 
-.bg-red-100 { background-color: #fee2e2; }
-.text-red-800 { color: #991b1b; }
-.border-red-300 { border: 1px solid #fca5a5; }
-.border-red-400 { border: 1px solid #f87171; }
+.tox-badge-warning {
+    background-color: #fef3c7;
+    color: #92400e;
+    border-color: #fcd34d;
+}
 
-/* Toxicology Badge Colors - Dark Mode */
-.dark .dark\:bg-emerald-950\/40 { background-color: rgba(6, 78, 59, 0.4); }
-.dark .dark\:text-emerald-300 { color: #6ee7b7; }
-.dark .dark\:border-emerald-800 { border-color: #065f46; }
+.tox-badge-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border-color: #f87171;
+}
 
-.dark .dark\:bg-amber-950\/40 { background-color: rgba(69, 26, 3, 0.4); }
-.dark .dark\:text-amber-300 { color: #fcd34d; }
-.dark .dark\:border-amber-800 { border-color: #92400e; }
+/* Dark Mode Overrides for Toxicology Badges */
+.dark .tox-badge-safe {
+    background-color: rgba(6, 78, 59, 0.4);
+    color: #6ee7b7;
+    border-color: #065f46;
+}
 
-.dark .dark\:bg-red-950\/40 { background-color: rgba(69, 10, 10, 0.4); }
-.dark .dark\:text-red-300 { color: #fca5a5; }
-.dark .dark\:border-red-800 { border-color: #991b1b; }
+.dark .tox-badge-warning {
+    background-color: rgba(69, 26, 3, 0.4);
+    color: #fcd34d;
+    border-color: #92400e;
+}
+
+.dark .tox-badge-danger {
+    background-color: rgba(69, 10, 10, 0.4);
+    color: #fca5a5;
+    border-color: #991b1b;
+}
+
+/* Accordion Specific spacing for toxicology */
+#acc-toxic .drawer-text {
+    padding: 16px;
+}
+
+#drawerToxicity {
+    line-height: 1.6;
+    font-size: 0.875rem;
+}
 
 /* Footer styling */
 .app-footer {
