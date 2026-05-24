@@ -1,5 +1,5 @@
 /**
- * floraflora Native Plant Suggester - Core Standalone Script
+ * GreenMeans: Native Plant Suggester - Core Standalone Script
  * Focused entirely on UK Native Species to support British Pollinators and Wildlife
  */
 
@@ -495,23 +495,6 @@ const PLANTS_DATASET = {
     ],
     "south_full_shade": [
         {
-            "name": "Viper's Bugloss",
-            "scientificName": "Echium vulgare",
-            "category": "Wildflower",
-            "height": "30 - 90 cm",
-            "pollinators": [
-                "Red Mason Bees",
-                "Garden Bumblebees",
-                "Painted Lady Butterflies"
-            ],
-            "benefits": "A magnet for long-tongued insects. Bright blue funnel flower spikes. Uniquely high daily nectar production rate.",
-            "plantingTip": "Enjoys dry, sandy, gravelly, or chalky soils. Self-seeding; press seed gently into the surface of the soil during autumn.",
-            "colorClass": "bg-wildflower",
-            "description": "A spectacular biennial wildflower forming impressive tall spikes laden with vivid blue, funnel-shaped blossoms from June to September. Its bristly, lance-shaped leaves provide a textured backdrop.",
-            "usages": "Ideal for unstructured meadow plantings, dry gravel beds, or rocky coastal margins. Often used to create dynamic vertical elements in dry situations.",
-            "plantingTime": "Sow seeds directly in late summer or early autumn for germination the following spring."
-        },
-        {
             "name": "Red Campion",
             "scientificName": "Silene dioica",
             "category": "Wildflower",
@@ -526,6 +509,54 @@ const PLANTS_DATASET = {
             "description": "An enduring, loosely branching perennial with slightly hairy, rounded leaves. Generates masses of striking rich pink, deeply notched blooms across the spring and summer.",
             "usages": "Flourishes wonderfully along hedge bottoms, dappled woodland walks, and informal herbaceous situations.",
             "plantingTime": "Sow outdoors in autumn or spring. Self-seeds very reliably in suitable soils."
+        },
+        {
+            "name": "Primrose",
+            "scientificName": "Primula vulgaris",
+            "category": "Perennial",
+            "height": "10 - 20 cm",
+            "pollinators": [
+                "Brimstone Butterflies",
+                "Early Bees"
+            ],
+            "benefits": "Classic pale yellow spring flowers. Important early nectar source.",
+            "plantingTip": "Needs moist, shady spots. Great under deciduous trees.",
+            "colorClass": "bg-wildflower",
+            "description": "A charming, low-lying perennial that carpets the early spring ground with pale, buttery yellow rosettes with a remarkably subtle, sweet fragrance.",
+            "usages": "A staple for early nectar. Excels planted under deciduous trees, in lightly shaded borders, or tucked neatly into shady orchard grasses.",
+            "plantingTime": "Buy 'in the green' directly after flowering in spring, or divide mature clumps in early autumn."
+        },
+        {
+            "name": "Bluebell",
+            "scientificName": "Hyacinthoides non-scripta",
+            "category": "Bulb",
+            "height": "20 - 40 cm",
+            "pollinators": [
+                "Brimstone",
+                "Bees"
+            ],
+            "benefits": "Carpets ancient woodland in deep violet-blue. Scented.",
+            "plantingTip": "Must ensure native stock (non-scripta), plant in autumn.",
+            "colorClass": "bg-wildflower",
+            "description": "A highly celebrated woodland bulb setting forth strap-like leaves and gently drooping, one-sided flower spikes filled with strongly scented, deep violet-blue bells.",
+            "usages": "Creates magical woodland carpets under deciduous canopies and mature hedges. Essential to ensure pure native non-scripta forms are used.",
+            "plantingTime": "Plant dormant bulbs deeply in the autumn, or lift and divide congested clumps 'in the green' late spring."
+        },
+        {
+            "name": "Foxglove",
+            "scientificName": "Digitalis purpurea",
+            "category": "Biennial",
+            "height": "1 - 2 m",
+            "pollinators": [
+                "Bumblebees",
+                "Moths"
+            ],
+            "benefits": "Tall spires of purple-pink bells. Excellent for deep-throated bees.",
+            "plantingTip": "Poisonous. Thrives in woodland edges and disturbed soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A classic woodland biennial producing a magnificent, very tall vertical spire of nodding, tubular pink-purple flowers, heavily speckled on their interior lip.",
+            "usages": "Brings architectural presence to the back of shaded borders, woodland edges, and dappled clearings. Do not plant near edible crops or ingest.",
+            "plantingTime": "Sow seeds directly outdoors in late spring/early summer. Will produce rosettes year one, flowers year two."
         },
         {
             "name": "Snowdrop",
@@ -560,22 +591,6 @@ const PLANTS_DATASET = {
             "plantingTime": "Plant bulbs 'in the green' in spring or dry bulbs in late autumn into damp, leafy soil."
         },
         {
-            "name": "Cowslip",
-            "scientificName": "Primula veris",
-            "category": "Perennial",
-            "height": "15 - 30 cm",
-            "pollinators": [
-                "Early bees",
-                "Butterflies"
-            ],
-            "benefits": "Nodding yellow bells. Classic meadow plant.",
-            "plantingTip": "Does well in clay or chalky fields. Let seed before mowing.",
-            "colorClass": "bg-wildflower",
-            "description": "An iconic, much-loved native primula producing elegant, nodding clusters of deep yellow, bell-shaped, sweet-scented flowers on tall sturdy stems above rosette foliage.",
-            "usages": "Classic component of historical meadow mixtures. Excels in grassy pastures, verges, or lightly managed wildlife lawns.",
-            "plantingTime": "Plant plugs directly into grass in autumn for early spring establishment, or sow fresh seed over winter."
-        },
-        {
             "name": "Bugle",
             "scientificName": "Ajuga reptans",
             "category": "Perennial",
@@ -591,70 +606,51 @@ const PLANTS_DATASET = {
             "plantingTime": "Plant plugs or divisions in spring or early autumn to establish rapid root cover."
         },
         {
-            "name": "Yarrow",
-            "scientificName": "Achillea millefolium",
+            "name": "Lesser Celandine",
+            "scientificName": "Ficaria verna",
             "category": "Perennial",
-            "height": "30 - 50 cm",
+            "height": "5 - 15 cm",
             "pollinators": [
-                "Small insects",
-                "Hoverflies"
+                "Early queen bumblebees"
             ],
-            "benefits": "Flat-topped white or pink flowerheads.",
-            "plantingTip": "Drought resistant, spreads easily.",
+            "benefits": "Bright yellow stars in earliest spring.",
+            "plantingTip": "Dies back in summer. Beware of spreading in small borders.",
             "colorClass": "bg-wildflower",
-            "description": "A resilient, spreading perennial bearing feathery, aromatic, highly divided dark green leaves and wide, completely flat-topped clusters of minute white to pale pink flowers.",
-            "usages": "A wonderful landing pad for beetles and hoverflies. Drought resistant and excellent for the front of dry, sandy borders.",
-            "plantingTime": "Can be sown outdoors almost any time from spring to late summer on a finely raked surface."
+            "description": "A ground-hugging perennial bearing very shiny, heart-shaped leaves and highly reflective bright yellow star-flowers that herald the end of winter.",
+            "usages": "Useful as rapid early spring ground cover under heavily shaded hedges or deciduous trees.",
+            "plantingTime": "Plant the small tuberous roots 'in the green' in late spring or as dormant bulbils in autumn."
         },
         {
-            "name": "Wild Marjoram",
-            "scientificName": "Origanum vulgare",
-            "category": "Wildflower / Herb",
-            "height": "20 - 50 cm",
-            "pollinators": [
-                "Common Blue Butterflies",
-                "Gatekeeper Butterflies",
-                "Honeybees",
-                "Hoverflies"
-            ],
-            "benefits": "Aromatic pink flower heads. Supports a vast variety of butterflies and provides highly nutritious medicinal oils for visiting insects.",
-            "plantingTip": "Thrives in dry, well-draining soils with alkaline pH. Trim back in late autumn after flowering to encourage fresh bushiness.",
-            "colorClass": "bg-wildflower",
-            "description": "A robust, bushy perennial herb with soft rounded leaves and clustered domed heads of tubular pinkish-purple flowers that act as a veritable feast for summer pollinators.",
-            "usages": "Perfect for herb gardens, sunny borders, and gravel courtyards. The leaves can be used dried or fresh to season Mediterranean-style dishes.",
-            "plantingTime": "Plant out small plugs in spring or sow seeds in well-draining soil from April to May."
-        },
-        {
-            "name": "Sea Campion",
-            "scientificName": "Silene uniflora",
+            "name": "Wood Anemone",
+            "scientificName": "Anemone nemorosa",
             "category": "Perennial",
             "height": "10 - 20 cm",
             "pollinators": [
-                "Moths",
-                "Bees"
+                "Hoverflies"
             ],
-            "benefits": "Mat-forming with white balloon-like flowers.",
-            "plantingTip": "Extremely tough, shingle/cliff specialist. Great in dry pots.",
+            "benefits": "White star-like flowers. Indicates ancient woodland.",
+            "plantingTip": "Plant slowly spreading rhizomes in autumn in leaf mould.",
             "colorClass": "bg-wildflower",
-            "description": "Similar to Bladder Campion but forms a much lower, dense cascading mat of grey-green foliage studded with large white flowers containing deeply inflated, distinct sepals.",
-            "usages": "Perfect for cascading over low walls, hanging from dry stone crevices, or framing paths in coastal gardens.",
-            "plantingTime": "Sow seeds in spring or take soft cuttings from non-flowering shoots in early summer."
+            "description": "A low, carpeting herbaceous perennial that spreads slowly using rhizomes. It throws up solitary, starry white flowers often delicately flushed with pink on their undersides.",
+            "usages": "Perfect for naturalising under deciduous trees and shrubs where it catches early spring light before full canopy cover.",
+            "plantingTime": "Best planted as dormant rhizomes in late summer or autumn, burying them gently in rich leaf mould."
         },
         {
-            "name": "Foxglove",
-            "scientificName": "Digitalis purpurea",
-            "category": "Biennial",
-            "height": "1 - 2 m",
+            "name": "Ivy",
+            "scientificName": "Hedera helix",
+            "category": "Climber",
+            "height": "Up to 20m",
             "pollinators": [
-                "Bumblebees",
-                "Moths"
+                "Late season bees",
+                "Wasps",
+                "Hoverflies"
             ],
-            "benefits": "Tall spires of purple-pink bells. Excellent for deep-throated bees.",
-            "plantingTip": "Poisonous. Thrives in woodland edges and disturbed soils.",
-            "colorClass": "bg-wildflower",
-            "description": "A classic woodland biennial producing a magnificent, very tall vertical spire of nodding, tubular pink-purple flowers, heavily speckled on their interior lip.",
-            "usages": "Brings architectural presence to the back of shaded borders, woodland edges, and dappled clearings. Do not plant near edible crops or ingest.",
-            "plantingTime": "Sow seeds directly outdoors in late spring/early summer. Will produce rosettes year one, flowers year two."
+            "benefits": "Crucial late autumn nectar source. Berries feed birds in late winter.",
+            "plantingTip": "Can be invasive if unchecked. Mature climbing forms produce flowers.",
+            "colorClass": "bg-shrub",
+            "description": "An evergreen, woody climber clinging via aerial roots. Mature forms morph into bushy, non-climbing branches that produce spherical umbels of vital late-season yellowish green flowers.",
+            "usages": "Critical late nectar resource for wasps and bees before winter. Provides irreplaceable dense, warm nesting shelter for birds.",
+            "plantingTime": "Plant year-round, ideally in autumn or spring, checking vigorously if grown near structural brickwork."
         }
     ],
     "south_dappled": [
@@ -1303,150 +1299,130 @@ const PLANTS_DATASET = {
     ],
     "north_scot_full_shade": [
         {
-            "name": "Viper's Bugloss",
-            "scientificName": "Echium vulgare",
+            "name": "Red Campion",
+            "scientificName": "Silene dioica",
             "category": "Wildflower",
             "height": "30 - 90 cm",
             "pollinators": [
-                "Red Mason Bees",
-                "Garden Bumblebees",
-                "Painted Lady Butterflies"
-            ],
-            "benefits": "A magnet for long-tongued insects. Bright blue funnel flower spikes. Uniquely high daily nectar production rate.",
-            "plantingTip": "Enjoys dry, sandy, gravelly, or chalky soils. Self-seeding; press seed gently into the surface of the soil during autumn.",
-            "colorClass": "bg-wildflower",
-            "description": "A spectacular biennial wildflower forming impressive tall spikes laden with vivid blue, funnel-shaped blossoms from June to September. Its bristly, lance-shaped leaves provide a textured backdrop.",
-            "usages": "Ideal for unstructured meadow plantings, dry gravel beds, or rocky coastal margins. Often used to create dynamic vertical elements in dry situations.",
-            "plantingTime": "Sow seeds directly in late summer or early autumn for germination the following spring."
-        },
-        {
-            "name": "Hawthorn",
-            "scientificName": "Crataegus monogyna",
-            "category": "Tree/Shrub",
-            "height": "Up to 8m",
-            "pollinators": [
-                "Bees",
-                "Moths",
-                "Birds"
-            ],
-            "benefits": "Masses of white May blossom. Deep red autumn berries.",
-            "plantingTip": "Excellent hedging plant. Prune in winter.",
-            "colorClass": "bg-tree",
-            "description": "A robust, thorny native shrub or small tree. Famed for its dense, explosive clusters of heavily scented white blossom in May.",
-            "usages": "The supreme backbone of British hedgerows. Makes exceptional windbreaks and boundary hedges while hosting hundreds of insect species.",
-            "plantingTime": "Plant bare-root hedging whips between November and early March during the dormant period."
-        },
-        {
-            "name": "Rosebay Willowherb",
-            "scientificName": "Chamaenerion angustifolium",
-            "category": "Perennial",
-            "height": "1 - 1.5 m",
-            "pollinators": [
-                "Elephant Hawkmoth",
-                "Bees"
-            ],
-            "benefits": "Spikes of magenta flowers. Known as 'fireweed' for rapid colonization.",
-            "plantingTip": "Highly vigorous. Better for wilder areas than small gardens.",
-            "colorClass": "bg-wildflower",
-            "description": "A towering, robust perennial establishing large colonies rapidly. It carries long, willow-like serrated leaves and huge, dramatic spires composed of glowing pink-magenta flowers.",
-            "usages": "A formidable pioneer specifically used for stabilising severely disturbed ground, large open glades, or recovering burned terrain. Very aggressive spreader.",
-            "plantingTime": "Sow the fluffy parachute seeds immediately as they ripen in mid-summer on to bare exposed earth."
-        },
-        {
-            "name": "Yarrow",
-            "scientificName": "Achillea millefolium",
-            "category": "Perennial",
-            "height": "30 - 50 cm",
-            "pollinators": [
-                "Small insects",
+                "Long-tongued Bumblebees",
                 "Hoverflies"
             ],
-            "benefits": "Flat-topped white or pink flowerheads.",
-            "plantingTip": "Drought resistant, spreads easily.",
+            "benefits": "Bright pink flowers. Vital spring nectar.",
+            "plantingTip": "Adaptable, enjoys somewhat damp, fertile soils.",
             "colorClass": "bg-wildflower",
-            "description": "A resilient, spreading perennial bearing feathery, aromatic, highly divided dark green leaves and wide, completely flat-topped clusters of minute white to pale pink flowers.",
-            "usages": "A wonderful landing pad for beetles and hoverflies. Drought resistant and excellent for the front of dry, sandy borders.",
-            "plantingTime": "Can be sown outdoors almost any time from spring to late summer on a finely raked surface."
+            "description": "An enduring, loosely branching perennial with slightly hairy, rounded leaves. Generates masses of striking rich pink, deeply notched blooms across the spring and summer.",
+            "usages": "Flourishes wonderfully along hedge bottoms, dappled woodland walks, and informal herbaceous situations.",
+            "plantingTime": "Sow outdoors in autumn or spring. Self-seeds very reliably in suitable soils."
         },
         {
-            "name": "Toadflax",
-            "scientificName": "Linaria vulgaris",
+            "name": "Primrose",
+            "scientificName": "Primula vulgaris",
             "category": "Perennial",
-            "height": "30 - 60 cm",
+            "height": "10 - 20 cm",
             "pollinators": [
-                "Bumblebees"
+                "Brimstone Butterflies",
+                "Early Bees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centres.",
-            "plantingTip": "Spreads easily, good for waste ground or stony areas.",
+            "benefits": "Classic pale yellow spring flowers. Important early nectar source.",
+            "plantingTip": "Needs moist, shady spots. Great under deciduous trees.",
             "colorClass": "bg-wildflower",
-            "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
-            "usages": "Highly beneficial for difficult areas facing steep dry conditions, like rough banks, gravel, or railway borders.",
-            "plantingTime": "Sow direct thinly in spring once soils warm up fully."
+            "description": "A charming, low-lying perennial that carpets the early spring ground with pale, buttery yellow rosettes with a remarkably subtle, sweet fragrance.",
+            "usages": "A staple for early nectar. Excels planted under deciduous trees, in lightly shaded borders, or tucked neatly into shady orchard grasses.",
+            "plantingTime": "Buy 'in the green' directly after flowering in spring, or divide mature clumps in early autumn."
         },
         {
-            "name": "Lady's Bedstraw",
-            "scientificName": "Galium verum",
-            "category": "Perennial",
-            "height": "20 - 60 cm",
+            "name": "Bluebell",
+            "scientificName": "Hyacinthoides non-scripta",
+            "category": "Bulb",
+            "height": "20 - 40 cm",
             "pollinators": [
+                "Brimstone",
+                "Bees"
+            ],
+            "benefits": "Carpets ancient woodland in deep violet-blue. Scented.",
+            "plantingTip": "Must ensure native stock (non-scripta), plant in autumn.",
+            "colorClass": "bg-wildflower",
+            "description": "A highly celebrated woodland bulb setting forth strap-like leaves and gently drooping, one-sided flower spikes filled with strongly scented, deep violet-blue bells.",
+            "usages": "Creates magical woodland carpets under deciduous canopies and mature hedges. Essential to ensure pure native non-scripta forms are used.",
+            "plantingTime": "Plant dormant bulbs deeply in the autumn, or lift and divide congested clumps 'in the green' late spring."
+        },
+        {
+            "name": "Foxglove",
+            "scientificName": "Digitalis purpurea",
+            "category": "Biennial",
+            "height": "1 - 2 m",
+            "pollinators": [
+                "Bumblebees",
                 "Moths"
             ],
-            "benefits": "Frothy yellow flowers. Smells beautifully of new mown hay.",
-            "plantingTip": "Does well in poor, dry soils. Often found near the coast.",
+            "benefits": "Tall spires of purple-pink bells. Excellent for deep-throated bees.",
+            "plantingTip": "Poisonous. Thrives in woodland edges and disturbed soils.",
             "colorClass": "bg-wildflower",
-            "description": "An scrambling, lax perennial carrying whorls of exceptionally fine needle-like foliage on wiry square stems, frosted heavily with tiny, brilliant yellow frothy blooms smelling of cut hay.",
-            "usages": "Wonderful rambling structure amongst taller, stiffer meadow plants preventing grass collapse with its dense weaving.",
-            "plantingTime": "Sow directly thinly over prepared ground from autumn right through to the end of spring."
+            "description": "A classic woodland biennial producing a magnificent, very tall vertical spire of nodding, tubular pink-purple flowers, heavily speckled on their interior lip.",
+            "usages": "Brings architectural presence to the back of shaded borders, woodland edges, and dappled clearings. Do not plant near edible crops or ingest.",
+            "plantingTime": "Sow seeds directly outdoors in late spring/early summer. Will produce rosettes year one, flowers year two."
         },
         {
-            "name": "Marsh Marigold",
-            "scientificName": "Caltha palustris",
-            "category": "Perennial",
-            "height": "30 - 50 cm",
+            "name": "Snowdrop",
+            "scientificName": "Galanthus nivalis",
+            "category": "Bulb",
+            "height": "10 - 15 cm",
             "pollinators": [
-                "Early hoverflies",
-                "Bees"
+                "Earliest emerging bees"
             ],
-            "benefits": "Large waxy golden cup flowers. Brilliant early pollen.",
-            "plantingTip": "Plant closely to water edge or in shallow pond margins.",
+            "benefits": "First flowers of the year. Essential lifeline for early wakers.",
+            "plantingTip": "Plant 'in the green' just after flowering for best results.",
             "colorClass": "bg-wildflower",
-            "description": "A robust perennial forming low, lush mounds of large kidney-shaped glossy leaves, studded with brilliant golden, waxy, buttercup-like early flowers.",
-            "usages": "Ideal for the shallow margins of garden wildlife ponds, bog gardens, or damp woodland ditches.",
-            "plantingTime": "Plant firmly into wet margins during late spring or divide massive mature clamps just after flowering."
+            "description": "The ultimate harbinger of spring. These familiar tiny bulbs hoist perfect, intricate, inverted white drops, subtly marked with green on the inner segments.",
+            "usages": "The cornerstone of any woodland garden, drifting under deciduous trees, hedges, and bare winter shrubs.",
+            "plantingTime": "Must be planted 'in the green' (immediately after finishing flowering with leaves intact) for the highest success rate."
         },
         {
-            "name": "Wild Marjoram",
-            "scientificName": "Origanum vulgare",
-            "category": "Wildflower / Herb",
-            "height": "20 - 50 cm",
+            "name": "Wild Garlic",
+            "scientificName": "Allium ursinum",
+            "category": "Bulb",
+            "height": "20 - 45 cm",
             "pollinators": [
-                "Common Blue Butterflies",
-                "Gatekeeper Butterflies",
-                "Honeybees",
-                "Hoverflies"
-            ],
-            "benefits": "Aromatic pink flower heads. Supports a vast variety of butterflies and provides highly nutritious medicinal oils for visiting insects.",
-            "plantingTip": "Thrives in dry, well-draining soils with alkaline pH. Trim back in late autumn after flowering to encourage fresh bushiness.",
-            "colorClass": "bg-wildflower",
-            "description": "A robust, bushy perennial herb with soft rounded leaves and clustered domed heads of tubular pinkish-purple flowers that act as a veritable feast for summer pollinators.",
-            "usages": "Perfect for herb gardens, sunny borders, and gravel courtyards. The leaves can be used dried or fresh to season Mediterranean-style dishes.",
-            "plantingTime": "Plant out small plugs in spring or sow seeds in well-draining soil from April to May."
-        },
-        {
-            "name": "Mallow",
-            "scientificName": "Malva sylvestris",
-            "category": "Perennial/Biennial",
-            "height": "40 - 100 cm",
-            "pollinators": [
+                "Hoverflies",
                 "Bees",
-                "Butterflies"
+                "Beetles"
             ],
-            "benefits": "Stunning purple-veined pink flowers. Long blooming season.",
-            "plantingTip": "Extremely tough, grows well natively on coastal paths and waste ground.",
+            "benefits": "White starry flowers with strong garlic scent. Edible.",
+            "plantingTip": "Spreads vigorously in damp shade woodland conditions.",
             "colorClass": "bg-wildflower",
-            "description": "A bushy, deeply-rooted spreading biennial to short perennial casting large ivy-esque lobed leaves beneath spectacularly showy, saucer-like mauve pink flowers strongly striped with dark purple veins.",
-            "usages": "Fills large spaces energetically. Wonderful focal plant for arid gravel gardens, rough neglected banks, or sandy seaside edges.",
-            "plantingTime": "Sow directly where it will grow in early spring; they strongly resent transplanting due to their long taproot."
+            "description": "An energetic bulbous perennial. Known for lush, wide green lance-like leaves emitting a potent garlic aroma, topped with spectacular, starry white flower umbels.",
+            "usages": "Creates enchanting drifts in damp, shaded woodland margins. A highly renowned forager's favourite for spring pestos.",
+            "plantingTime": "Plant bulbs 'in the green' in spring or dry bulbs in late autumn into damp, leafy soil."
+        },
+        {
+            "name": "Bugle",
+            "scientificName": "Ajuga reptans",
+            "category": "Perennial",
+            "height": "10 - 20 cm",
+            "pollinators": [
+                "White-tailed Bumblebees"
+            ],
+            "benefits": "Spikes of blue flowers over dark semi-evergreen creeping foliage.",
+            "plantingTip": "Excellent groundcover for damp or shaded soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A mat-forming, creeping perennial throwing up short vertical spikes tightly packed with dark blue, two-lipped flowers above metallic or bronze trailing leaves.",
+            "usages": "A hard-working ground cover for challenging damp, shaded spots, acting as a low, weed-suppressing carpet.",
+            "plantingTime": "Plant plugs or divisions in spring or early autumn to establish rapid root cover."
+        },
+        {
+            "name": "Lesser Celandine",
+            "scientificName": "Ficaria verna",
+            "category": "Perennial",
+            "height": "5 - 15 cm",
+            "pollinators": [
+                "Early queen bumblebees"
+            ],
+            "benefits": "Bright yellow stars in earliest spring.",
+            "plantingTip": "Dies back in summer. Beware of spreading in small borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A ground-hugging perennial bearing very shiny, heart-shaped leaves and highly reflective bright yellow star-flowers that herald the end of winter.",
+            "usages": "Useful as rapid early spring ground cover under heavily shaded hedges or deciduous trees.",
+            "plantingTime": "Plant the small tuberous roots 'in the green' in late spring or as dormant bulbils in autumn."
         },
         {
             "name": "Wood Anemone",
@@ -1462,6 +1438,23 @@ const PLANTS_DATASET = {
             "description": "A low, carpeting herbaceous perennial that spreads slowly using rhizomes. It throws up solitary, starry white flowers often delicately flushed with pink on their undersides.",
             "usages": "Perfect for naturalising under deciduous trees and shrubs where it catches early spring light before full canopy cover.",
             "plantingTime": "Best planted as dormant rhizomes in late summer or autumn, burying them gently in rich leaf mould."
+        },
+        {
+            "name": "Ivy",
+            "scientificName": "Hedera helix",
+            "category": "Climber",
+            "height": "Up to 20m",
+            "pollinators": [
+                "Late season bees",
+                "Wasps",
+                "Hoverflies"
+            ],
+            "benefits": "Crucial late autumn nectar source. Berries feed birds in late winter.",
+            "plantingTip": "Can be invasive if unchecked. Mature climbing forms produce flowers.",
+            "colorClass": "bg-shrub",
+            "description": "An evergreen, woody climber clinging via aerial roots. Mature forms morph into bushy, non-climbing branches that produce spherical umbels of vital late-season yellowish green flowers.",
+            "usages": "Critical late nectar resource for wasps and bees before winter. Provides irreplaceable dense, warm nesting shelter for birds.",
+            "plantingTime": "Plant year-round, ideally in autumn or spring, checking vigorously if grown near structural brickwork."
         }
     ],
     "north_scot_dappled": [
@@ -2119,101 +2112,100 @@ const PLANTS_DATASET = {
     ],
     "midlands_wales_full_shade": [
         {
-            "name": "Viper's Bugloss",
-            "scientificName": "Echium vulgare",
+            "name": "Red Campion",
+            "scientificName": "Silene dioica",
             "category": "Wildflower",
             "height": "30 - 90 cm",
             "pollinators": [
-                "Red Mason Bees",
-                "Garden Bumblebees",
-                "Painted Lady Butterflies"
-            ],
-            "benefits": "A magnet for long-tongued insects. Bright blue funnel flower spikes. Uniquely high daily nectar production rate.",
-            "plantingTip": "Enjoys dry, sandy, gravelly, or chalky soils. Self-seeding; press seed gently into the surface of the soil during autumn.",
-            "colorClass": "bg-wildflower",
-            "description": "A spectacular biennial wildflower forming impressive tall spikes laden with vivid blue, funnel-shaped blossoms from June to September. Its bristly, lance-shaped leaves provide a textured backdrop.",
-            "usages": "Ideal for unstructured meadow plantings, dry gravel beds, or rocky coastal margins. Often used to create dynamic vertical elements in dry situations.",
-            "plantingTime": "Sow seeds directly in late summer or early autumn for germination the following spring."
-        },
-        {
-            "name": "Chicory",
-            "scientificName": "Cichorium intybus",
-            "category": "Perennial",
-            "height": "1 - 1.5m",
-            "pollinators": [
-                "Bees",
+                "Long-tongued Bumblebees",
                 "Hoverflies"
             ],
-            "benefits": "Stunning pure sky-blue daisy-like blooms.",
-            "plantingTip": "Deep taproot prefers chalk and limestone margins.",
+            "benefits": "Bright pink flowers. Vital spring nectar.",
+            "plantingTip": "Adaptable, enjoys somewhat damp, fertile soils.",
             "colorClass": "bg-wildflower",
-            "description": "A stiff, erect, remarkably tall perennial. It bears rigid branching stems and striking, clear sky-blue daisy flowers that open in the morning and close by mid-afternoon.",
-            "usages": "A beautiful structural plant for the rear of sunny, well-draining borders or wildflower meadows. Deep taproots tolerate severe drought.",
-            "plantingTime": "Sow seeds in spring directly where they are to flower, as it heavily resents transplantation."
+            "description": "An enduring, loosely branching perennial with slightly hairy, rounded leaves. Generates masses of striking rich pink, deeply notched blooms across the spring and summer.",
+            "usages": "Flourishes wonderfully along hedge bottoms, dappled woodland walks, and informal herbaceous situations.",
+            "plantingTime": "Sow outdoors in autumn or spring. Self-seeds very reliably in suitable soils."
         },
         {
-            "name": "Marsh Marigold",
-            "scientificName": "Caltha palustris",
-            "category": "Perennial",
-            "height": "30 - 50 cm",
-            "pollinators": [
-                "Early hoverflies",
-                "Bees"
-            ],
-            "benefits": "Large waxy golden cup flowers. Brilliant early pollen.",
-            "plantingTip": "Plant closely to water edge or in shallow pond margins.",
-            "colorClass": "bg-wildflower",
-            "description": "A robust perennial forming low, lush mounds of large kidney-shaped glossy leaves, studded with brilliant golden, waxy, buttercup-like early flowers.",
-            "usages": "Ideal for the shallow margins of garden wildlife ponds, bog gardens, or damp woodland ditches.",
-            "plantingTime": "Plant firmly into wet margins during late spring or divide massive mature clamps just after flowering."
-        },
-        {
-            "name": "Dog Rose",
-            "scientificName": "Rosa canina",
-            "category": "Shrub",
-            "height": "Up to 3m",
-            "pollinators": [
-                "Bees",
-                "Birds (hips)"
-            ],
-            "benefits": "Large pale pink/white flowers followed by red hips.",
-            "plantingTip": "Thorny scrambling shrub. Best for larger hedgerows.",
-            "colorClass": "bg-shrub",
-            "description": "A vigorous, scrambling deciduous shrub bearing thorny stems and scattered with wonderfully delicate, large single pink or white rose blooms, transforming into bright red hips.",
-            "usages": "Essential for mixed native hedgerows. Provides nesting thickets for small birds and food sources extending late into winter.",
-            "plantingTime": "Plant bare-root whips between November and March while fully dormant."
-        },
-        {
-            "name": "Birds-foot Trefoil",
-            "scientificName": "Lotus corniculatus",
+            "name": "Primrose",
+            "scientificName": "Primula vulgaris",
             "category": "Perennial",
             "height": "10 - 20 cm",
             "pollinators": [
-                "Common Blue Butterfly",
-                "Bees"
+                "Brimstone Butterflies",
+                "Early Bees"
             ],
-            "benefits": "Yellow and orange pea-like flowers. Great ground cover.",
-            "plantingTip": "Drought tolerant. Perfect for sunny banks and rockeries.",
+            "benefits": "Classic pale yellow spring flowers. Important early nectar source.",
+            "plantingTip": "Needs moist, shady spots. Great under deciduous trees.",
             "colorClass": "bg-wildflower",
-            "description": "A trailing, spreading perennial bearing small trefoil leaves and incredibly vibrant, small clusters of rich golden yellow and burnt orange pea-like flowers.",
-            "usages": "Pioneer species for brownfield or urban rewilding. Brilliant for sunny rock gardens or trailing over hot edges.",
-            "plantingTime": "Sow seeds directly onto well-drained impoverished soils in spring or late summer."
+            "description": "A charming, low-lying perennial that carpets the early spring ground with pale, buttery yellow rosettes with a remarkably subtle, sweet fragrance.",
+            "usages": "A staple for early nectar. Excels planted under deciduous trees, in lightly shaded borders, or tucked neatly into shady orchard grasses.",
+            "plantingTime": "Buy 'in the green' directly after flowering in spring, or divide mature clumps in early autumn."
         },
         {
-            "name": "Rowan",
-            "scientificName": "Sorbus aucuparia",
-            "category": "Tree",
-            "height": "Up to 15m",
+            "name": "Bluebell",
+            "scientificName": "Hyacinthoides non-scripta",
+            "category": "Bulb",
+            "height": "20 - 40 cm",
             "pollinators": [
-                "Bees",
-                "Birds"
+                "Brimstone",
+                "Bees"
             ],
-            "benefits": "White flowers then abundant bright red autumn berries.",
-            "plantingTip": "Very hardy. Thrives even in upland, cold lochsides.",
-            "colorClass": "bg-tree",
-            "description": "An elegant, small-to-medium graceful deciduous tree bearing serrated, pinnate leaves, flat clusters of creamy white spring flowers, and spectacular hanging bunches of bright red berries.",
-            "usages": "An excellent ornamental tree for smaller gardens, high altitude exposures, and streets, feeding thrushes and waxwings.",
-            "plantingTime": "Plant as bare-root stock or potted trees during the winter months."
+            "benefits": "Carpets ancient woodland in deep violet-blue. Scented.",
+            "plantingTip": "Must ensure native stock (non-scripta), plant in autumn.",
+            "colorClass": "bg-wildflower",
+            "description": "A highly celebrated woodland bulb setting forth strap-like leaves and gently drooping, one-sided flower spikes filled with strongly scented, deep violet-blue bells.",
+            "usages": "Creates magical woodland carpets under deciduous canopies and mature hedges. Essential to ensure pure native non-scripta forms are used.",
+            "plantingTime": "Plant dormant bulbs deeply in the autumn, or lift and divide congested clumps 'in the green' late spring."
+        },
+        {
+            "name": "Foxglove",
+            "scientificName": "Digitalis purpurea",
+            "category": "Biennial",
+            "height": "1 - 2 m",
+            "pollinators": [
+                "Bumblebees",
+                "Moths"
+            ],
+            "benefits": "Tall spires of purple-pink bells. Excellent for deep-throated bees.",
+            "plantingTip": "Poisonous. Thrives in woodland edges and disturbed soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A classic woodland biennial producing a magnificent, very tall vertical spire of nodding, tubular pink-purple flowers, heavily speckled on their interior lip.",
+            "usages": "Brings architectural presence to the back of shaded borders, woodland edges, and dappled clearings. Do not plant near edible crops or ingest.",
+            "plantingTime": "Sow seeds directly outdoors in late spring/early summer. Will produce rosettes year one, flowers year two."
+        },
+        {
+            "name": "Snowdrop",
+            "scientificName": "Galanthus nivalis",
+            "category": "Bulb",
+            "height": "10 - 15 cm",
+            "pollinators": [
+                "Earliest emerging bees"
+            ],
+            "benefits": "First flowers of the year. Essential lifeline for early wakers.",
+            "plantingTip": "Plant 'in the green' just after flowering for best results.",
+            "colorClass": "bg-wildflower",
+            "description": "The ultimate harbinger of spring. These familiar tiny bulbs hoist perfect, intricate, inverted white drops, subtly marked with green on the inner segments.",
+            "usages": "The cornerstone of any woodland garden, drifting under deciduous trees, hedges, and bare winter shrubs.",
+            "plantingTime": "Must be planted 'in the green' (immediately after finishing flowering with leaves intact) for the highest success rate."
+        },
+        {
+            "name": "Wild Garlic",
+            "scientificName": "Allium ursinum",
+            "category": "Bulb",
+            "height": "20 - 45 cm",
+            "pollinators": [
+                "Hoverflies",
+                "Bees",
+                "Beetles"
+            ],
+            "benefits": "White starry flowers with strong garlic scent. Edible.",
+            "plantingTip": "Spreads vigorously in damp shade woodland conditions.",
+            "colorClass": "bg-wildflower",
+            "description": "An energetic bulbous perennial. Known for lush, wide green lance-like leaves emitting a potent garlic aroma, topped with spectacular, starry white flower umbels.",
+            "usages": "Creates enchanting drifts in damp, shaded woodland margins. A highly renowned forager's favourite for spring pestos.",
+            "plantingTime": "Plant bulbs 'in the green' in spring or dry bulbs in late autumn into damp, leafy soil."
         },
         {
             "name": "Bugle",
@@ -2231,51 +2223,51 @@ const PLANTS_DATASET = {
             "plantingTime": "Plant plugs or divisions in spring or early autumn to establish rapid root cover."
         },
         {
-            "name": "Common Sorrel",
-            "scientificName": "Rumex acetosa",
+            "name": "Lesser Celandine",
+            "scientificName": "Ficaria verna",
             "category": "Perennial",
-            "height": "30 - 60 cm",
+            "height": "5 - 15 cm",
             "pollinators": [
-                "Small Copper Butterfly (Host)"
+                "Early queen bumblebees"
             ],
-            "benefits": "Reddish flower spikes. Leaves are food for caterpillars.",
-            "plantingTip": "Very easy to grow in meadow situations.",
+            "benefits": "Bright yellow stars in earliest spring.",
+            "plantingTip": "Dies back in summer. Beware of spreading in small borders.",
             "colorClass": "bg-wildflower",
-            "description": "A hardy, deep meadow perennial bearing arrow-shaped fleshy leaves extending into slender spikes of delicate, rusty-red flowering panicles reaching above the grass canopy.",
-            "usages": "Edible, sharp-tasting foliage. In the wild garden setting, it specifically feeds specific metallic copper butterflies.",
-            "plantingTime": "Sow freely into meadows, borders, or kitchen garden plots from early spring to late summer."
+            "description": "A ground-hugging perennial bearing very shiny, heart-shaped leaves and highly reflective bright yellow star-flowers that herald the end of winter.",
+            "usages": "Useful as rapid early spring ground cover under heavily shaded hedges or deciduous trees.",
+            "plantingTime": "Plant the small tuberous roots 'in the green' in late spring or as dormant bulbils in autumn."
         },
         {
-            "name": "Cornflower",
-            "scientificName": "Centaurea cyanus",
-            "category": "Annual",
-            "height": "30 - 80 cm",
+            "name": "Wood Anemone",
+            "scientificName": "Anemone nemorosa",
+            "category": "Perennial",
+            "height": "10 - 20 cm",
             "pollinators": [
-                "Bees",
-                "Butterflies"
+                "Hoverflies"
             ],
-            "benefits": "Vivid blue flowers. Superb for summer meadows.",
-            "plantingTip": "Sow in autumn or spring for quick colour.",
+            "benefits": "White star-like flowers. Indicates ancient woodland.",
+            "plantingTip": "Plant slowly spreading rhizomes in autumn in leaf mould.",
             "colorClass": "bg-wildflower",
-            "description": "A slender, fast-growing hardy annual boasting vivid, incredibly pure azure-blue ruffled flower heads set atop fine, cottony, heavily branched stems.",
-            "usages": "An iconic cornfield weed, excellent for gap-filling in new garden beds and absolutely stellar for cutting gardens.",
-            "plantingTime": "Sow directly outside in either late summer (for larger, earlier plants next year) or early spring."
+            "description": "A low, carpeting herbaceous perennial that spreads slowly using rhizomes. It throws up solitary, starry white flowers often delicately flushed with pink on their undersides.",
+            "usages": "Perfect for naturalising under deciduous trees and shrubs where it catches early spring light before full canopy cover.",
+            "plantingTime": "Best planted as dormant rhizomes in late summer or autumn, burying them gently in rich leaf mould."
         },
         {
-            "name": "Ragged Robin",
-            "scientificName": "Lychnis flos-cuculi",
-            "category": "Perennial",
-            "height": "30 - 60 cm",
+            "name": "Ivy",
+            "scientificName": "Hedera helix",
+            "category": "Climber",
+            "height": "Up to 20m",
             "pollinators": [
-                "Butterflies",
-                "Bees"
+                "Late season bees",
+                "Wasps",
+                "Hoverflies"
             ],
-            "benefits": "Deeply divided pink petals. Provides long flowering season.",
-            "plantingTip": "Needs moist soil, excellent for bog gardens or damp meadows.",
-            "colorClass": "bg-wildflower",
-            "description": "A slender, graceful perennial sporting reddish stems and unique intense pink flowers characterised by petals that are so deeply divided they appear tattered or ragged.",
-            "usages": "Superb for damp wildflower meadows alongside native grasses, edges of ponds, and soggy bog garden plots.",
-            "plantingTime": "Plant in early spring directly into permanently moist ground, or sow fresh seed in late summer."
+            "benefits": "Crucial late autumn nectar source. Berries feed birds in late winter.",
+            "plantingTip": "Can be invasive if unchecked. Mature climbing forms produce flowers.",
+            "colorClass": "bg-shrub",
+            "description": "An evergreen, woody climber clinging via aerial roots. Mature forms morph into bushy, non-climbing branches that produce spherical umbels of vital late-season yellowish green flowers.",
+            "usages": "Critical late nectar resource for wasps and bees before winter. Provides irreplaceable dense, warm nesting shelter for birds.",
+            "plantingTime": "Plant year-round, ideally in autumn or spring, checking vigorously if grown near structural brickwork."
         }
     ],
     "midlands_wales_dappled": [
@@ -2753,7 +2745,7 @@ const PLANTS_DATASET = {
             "description": "The ultimate harbinger of spring. These familiar tiny bulbs hoist perfect, intricate, inverted white drops, subtly marked with green on the inner segments.",
             "usages": "The cornerstone of any woodland garden, drifting under deciduous trees, hedges, and bare winter shrubs.",
             "plantingTime": "Must be planted 'in the green' (immediately after finishing flowering with leaves intact) for the highest success rate."
-        },
+        }
         {
             "name": "Sea Campion",
             "scientificName": "Silene uniflora",
@@ -2935,164 +2927,162 @@ const PLANTS_DATASET = {
     ],
     "coastal_full_shade": [
         {
-            "name": "Viper's Bugloss",
-            "scientificName": "Echium vulgare",
+            "name": "Red Campion",
+            "scientificName": "Silene dioica",
             "category": "Wildflower",
             "height": "30 - 90 cm",
             "pollinators": [
-                "Red Mason Bees",
-                "Garden Bumblebees",
-                "Painted Lady Butterflies"
-            ],
-            "benefits": "A magnet for long-tongued insects. Bright blue funnel flower spikes. Uniquely high daily nectar production rate.",
-            "plantingTip": "Enjoys dry, sandy, gravelly, or chalky soils. Self-seeding; press seed gently into the surface of the soil during autumn.",
-            "colorClass": "bg-wildflower",
-            "description": "A spectacular biennial wildflower forming impressive tall spikes laden with vivid blue, funnel-shaped blossoms from June to September. Its bristly, lance-shaped leaves provide a textured backdrop.",
-            "usages": "Ideal for unstructured meadow plantings, dry gravel beds, or rocky coastal margins. Often used to create dynamic vertical elements in dry situations.",
-            "plantingTime": "Sow seeds directly in late summer or early autumn for germination the following spring."
-        },
-        {
-            "name": "Common Knapweed",
-            "scientificName": "Centaurea nigra",
-            "category": "Perennial",
-            "height": "30 - 60 cm",
-            "pollinators": [
-                "Butterflies",
-                "Finches (seeds)"
-            ],
-            "benefits": "Thistle-like purple flower heads without the spines.",
-            "plantingTip": "Easily grown in any meadow or border setting.",
-            "colorClass": "bg-wildflower",
-            "description": "A tough, heavily branched meadow perennial featuring deeply lobed basal leaves and hard 'black' scaly buds that burst open into stunning, ragged, neon purple fireworks.",
-            "usages": "An absolute powerhouse for pollinator strips. Retains structural silhouettes securely throughout deep winter, feeding finches.",
-            "plantingTime": "Sow directly in late summer or autumn. Performs excellently in clay or loam meadows."
-        },
-        {
-            "name": "Toadflax",
-            "scientificName": "Linaria vulgaris",
-            "category": "Perennial",
-            "height": "30 - 60 cm",
-            "pollinators": [
-                "Bumblebees"
-            ],
-            "benefits": "Yellow snapdragon-like flowers with orange centres.",
-            "plantingTip": "Spreads easily, good for waste ground or stony areas.",
-            "colorClass": "bg-wildflower",
-            "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
-            "usages": "Highly beneficial for difficult areas facing steep dry conditions, like rough banks, gravel, or railway borders.",
-            "plantingTime": "Sow direct thinly in spring once soils warm up fully."
-        },
-        {
-            "name": "Yarrow",
-            "scientificName": "Achillea millefolium",
-            "category": "Perennial",
-            "height": "30 - 50 cm",
-            "pollinators": [
-                "Small insects",
+                "Long-tongued Bumblebees",
                 "Hoverflies"
             ],
-            "benefits": "Flat-topped white or pink flowerheads.",
-            "plantingTip": "Drought resistant, spreads easily.",
+            "benefits": "Bright pink flowers. Vital spring nectar.",
+            "plantingTip": "Adaptable, enjoys somewhat damp, fertile soils.",
             "colorClass": "bg-wildflower",
-            "description": "A resilient, spreading perennial bearing feathery, aromatic, highly divided dark green leaves and wide, completely flat-topped clusters of minute white to pale pink flowers.",
-            "usages": "A wonderful landing pad for beetles and hoverflies. Drought resistant and excellent for the front of dry, sandy borders.",
-            "plantingTime": "Can be sown outdoors almost any time from spring to late summer on a finely raked surface."
+            "description": "An enduring, loosely branching perennial with slightly hairy, rounded leaves. Generates masses of striking rich pink, deeply notched blooms across the spring and summer.",
+            "usages": "Flourishes wonderfully along hedge bottoms, dappled woodland walks, and informal herbaceous situations.",
+            "plantingTime": "Sow outdoors in autumn or spring. Self-seeds very reliably in suitable soils."
         },
         {
-            "name": "Devil's-bit Scabious",
-            "scientificName": "Succisa pratensis",
+            "name": "Primrose",
+            "scientificName": "Primula vulgaris",
             "category": "Perennial",
-            "height": "30 - 80 cm",
+            "height": "10 - 20 cm",
             "pollinators": [
-                "Marsh Fritillary",
+                "Brimstone Butterflies",
+                "Early Bees"
+            ],
+            "benefits": "Classic pale yellow spring flowers. Important early nectar source.",
+            "plantingTip": "Needs moist, shady spots. Great under deciduous trees.",
+            "colorClass": "bg-wildflower",
+            "description": "A charming, low-lying perennial that carpets the early spring ground with pale, buttery yellow rosettes with a remarkably subtle, sweet fragrance.",
+            "usages": "A staple for early nectar. Excels planted under deciduous trees, in lightly shaded borders, or tucked neatly into shady orchard grasses.",
+            "plantingTime": "Buy 'in the green' directly after flowering in spring, or divide mature clumps in early autumn."
+        },
+        {
+            "name": "Bluebell",
+            "scientificName": "Hyacinthoides non-scripta",
+            "category": "Bulb",
+            "height": "20 - 40 cm",
+            "pollinators": [
+                "Brimstone",
                 "Bees"
             ],
-            "benefits": "Blue-purple spheres. Essential late summer nectar source.",
-            "plantingTip": "Prefers damp, acidic soils and marshy areas.",
+            "benefits": "Carpets ancient woodland in deep violet-blue. Scented.",
+            "plantingTip": "Must ensure native stock (non-scripta), plant in autumn.",
             "colorClass": "bg-wildflower",
-            "description": "A late-flowering perennial bearing quite un-notched, hairy basal leaves and holding deeply violet-blue, perfectly hemispherical pincushion flowerheads on delicate tall branching stems.",
-            "usages": "Provides absolutely crucial high-impact nectar just before autumn closes in, particularly in damp conditions or marshy sites.",
-            "plantingTime": "Sow fresh un-dried seed in autumn for frost cracking, or divide large clumps post-flowering in late autumn."
+            "description": "A highly celebrated woodland bulb setting forth strap-like leaves and gently drooping, one-sided flower spikes filled with strongly scented, deep violet-blue bells.",
+            "usages": "Creates magical woodland carpets under deciduous canopies and mature hedges. Essential to ensure pure native non-scripta forms are used.",
+            "plantingTime": "Plant dormant bulbs deeply in the autumn, or lift and divide congested clumps 'in the green' late spring."
         },
         {
-            "name": "Water Avens",
-            "scientificName": "Geum rivale",
-            "category": "Perennial",
-            "height": "20 - 45 cm",
+            "name": "Foxglove",
+            "scientificName": "Digitalis purpurea",
+            "category": "Biennial",
+            "height": "1 - 2 m",
             "pollinators": [
-                "Bumblebees"
-            ],
-            "benefits": "Nodding pink/orange bell flowers. Great for damp areas.",
-            "plantingTip": "Needs moist or wet soil. Perfect for bog gardens.",
-            "colorClass": "bg-wildflower",
-            "description": "An elegantly drooping perennial that presents nodding bell-like flowers exhibiting muted, coppery-pink petals emerging from deep reddish-purple sepals.",
-            "usages": "Flourishes in damp meadows, stream margins, and bog gardens. Combines beautifully with marsh marigolds and rushes.",
-            "plantingTime": "Sow fresh seeds directly in late summer, or divide mature clustered rhizomes in spring."
-        },
-        {
-            "name": "Oxeye Daisy",
-            "scientificName": "Leucanthemum vulgare",
-            "category": "Perennial",
-            "height": "30 - 60 cm",
-            "pollinators": [
-                "Hoverflies",
-                "Beetles"
-            ],
-            "benefits": "Classic white daisy with yellow centre. Excellent for beetles.",
-            "plantingTip": "Very tough, thrives in open grassland and poor soils.",
-            "colorClass": "bg-wildflower",
-            "description": "A rugged, classic meadow perennial throwing up a rosette of dark green spoon-shaped foliage and tall sturdy stems holding remarkably large, shining white daisy flowers with bright yellow discs.",
-            "usages": "The defining white splash in any summer meadow schema. Readily establishes in poorer soils and provides structural integrity to soft grasses.",
-            "plantingTime": "Sow selectively in autumn for best results, or insert plugs during the moist spring period."
-        },
-        {
-            "name": "Blackthorn",
-            "scientificName": "Prunus spinosa",
-            "category": "Tree/Shrub",
-            "height": "Up to 4m",
-            "pollinators": [
-                "Early Bees",
+                "Bumblebees",
                 "Moths"
             ],
-            "benefits": "Clouds of early white blossom. Produces sloes for winter birds.",
-            "plantingTip": "Suckers strongly. Forms dense impenetrable thorny thicket.",
-            "colorClass": "bg-tree",
-            "description": "A densely branching, fiercely thorny shrub that precedes hawthorn by flowering on bare wood with pure white blossoms, later bearing astringent purple sloes.",
-            "usages": "Fantastic mixed into hedgerows to create stock-proof, animal-friendly security thickets.",
-            "plantingTime": "Plant bare-rooted in deep winter (Nov-Feb). Beware its tendency to sucker vigorously."
-        },
-        {
-            "name": "Marsh Marigold",
-            "scientificName": "Caltha palustris",
-            "category": "Perennial",
-            "height": "30 - 50 cm",
-            "pollinators": [
-                "Early hoverflies",
-                "Bees"
-            ],
-            "benefits": "Large waxy golden cup flowers. Brilliant early pollen.",
-            "plantingTip": "Plant closely to water edge or in shallow pond margins.",
+            "benefits": "Tall spires of purple-pink bells. Excellent for deep-throated bees.",
+            "plantingTip": "Poisonous. Thrives in woodland edges and disturbed soils.",
             "colorClass": "bg-wildflower",
-            "description": "A robust perennial forming low, lush mounds of large kidney-shaped glossy leaves, studded with brilliant golden, waxy, buttercup-like early flowers.",
-            "usages": "Ideal for the shallow margins of garden wildlife ponds, bog gardens, or damp woodland ditches.",
-            "plantingTime": "Plant firmly into wet margins during late spring or divide massive mature clamps just after flowering."
+            "description": "A classic woodland biennial producing a magnificent, very tall vertical spire of nodding, tubular pink-purple flowers, heavily speckled on their interior lip.",
+            "usages": "Brings architectural presence to the back of shaded borders, woodland edges, and dappled clearings. Do not plant near edible crops or ingest.",
+            "plantingTime": "Sow seeds directly outdoors in late spring/early summer. Will produce rosettes year one, flowers year two."
         },
         {
-            "name": "Hawthorn",
-            "scientificName": "Crataegus monogyna",
-            "category": "Tree/Shrub",
-            "height": "Up to 8m",
+            "name": "Snowdrop",
+            "scientificName": "Galanthus nivalis",
+            "category": "Bulb",
+            "height": "10 - 15 cm",
             "pollinators": [
-                "Bees",
-                "Moths",
-                "Birds"
+                "Earliest emerging bees"
             ],
-            "benefits": "Masses of white May blossom. Deep red autumn berries.",
-            "plantingTip": "Excellent hedging plant. Prune in winter.",
-            "colorClass": "bg-tree",
-            "description": "A robust, thorny native shrub or small tree. Famed for its dense, explosive clusters of heavily scented white blossom in May.",
-            "usages": "The supreme backbone of British hedgerows. Makes exceptional windbreaks and boundary hedges while hosting hundreds of insect species.",
-            "plantingTime": "Plant bare-root hedging whips between November and early March during the dormant period."
+            "benefits": "First flowers of the year. Essential lifeline for early wakers.",
+            "plantingTip": "Plant 'in the green' just after flowering for best results.",
+            "colorClass": "bg-wildflower",
+            "description": "The ultimate harbinger of spring. These familiar tiny bulbs hoist perfect, intricate, inverted white drops, subtly marked with green on the inner segments.",
+            "usages": "The cornerstone of any woodland garden, drifting under deciduous trees, hedges, and bare winter shrubs.",
+            "plantingTime": "Must be planted 'in the green' (immediately after finishing flowering with leaves intact) for the highest success rate."
+        },
+        {
+            "name": "Wild Garlic",
+            "scientificName": "Allium ursinum",
+            "category": "Bulb",
+            "height": "20 - 45 cm",
+            "pollinators": [
+                "Hoverflies",
+                "Bees",
+                "Beetles"
+            ],
+            "benefits": "White starry flowers with strong garlic scent. Edible.",
+            "plantingTip": "Spreads vigorously in damp shade woodland conditions.",
+            "colorClass": "bg-wildflower",
+            "description": "An energetic bulbous perennial. Known for lush, wide green lance-like leaves emitting a potent garlic aroma, topped with spectacular, starry white flower umbels.",
+            "usages": "Creates enchanting drifts in damp, shaded woodland margins. A highly renowned forager's favourite for spring pestos.",
+            "plantingTime": "Plant bulbs 'in the green' in spring or dry bulbs in late autumn into damp, leafy soil."
+        },
+        {
+            "name": "Bugle",
+            "scientificName": "Ajuga reptans",
+            "category": "Perennial",
+            "height": "10 - 20 cm",
+            "pollinators": [
+                "White-tailed Bumblebees"
+            ],
+            "benefits": "Spikes of blue flowers over dark semi-evergreen creeping foliage.",
+            "plantingTip": "Excellent groundcover for damp or shaded soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A mat-forming, creeping perennial throwing up short vertical spikes tightly packed with dark blue, two-lipped flowers above metallic or bronze trailing leaves.",
+            "usages": "A hard-working ground cover for challenging damp, shaded spots, acting as a low, weed-suppressing carpet.",
+            "plantingTime": "Plant plugs or divisions in spring or early autumn to establish rapid root cover."
+        },
+        {
+            "name": "Lesser Celandine",
+            "scientificName": "Ficaria verna",
+            "category": "Perennial",
+            "height": "5 - 15 cm",
+            "pollinators": [
+                "Early queen bumblebees"
+            ],
+            "benefits": "Bright yellow stars in earliest spring.",
+            "plantingTip": "Dies back in summer. Beware of spreading in small borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A ground-hugging perennial bearing very shiny, heart-shaped leaves and highly reflective bright yellow star-flowers that herald the end of winter.",
+            "usages": "Useful as rapid early spring ground cover under heavily shaded hedges or deciduous trees.",
+            "plantingTime": "Plant the small tuberous roots 'in the green' in late spring or as dormant bulbils in autumn."
+        },
+        {
+            "name": "Wood Anemone",
+            "scientificName": "Anemone nemorosa",
+            "category": "Perennial",
+            "height": "10 - 20 cm",
+            "pollinators": [
+                "Hoverflies"
+            ],
+            "benefits": "White star-like flowers. Indicates ancient woodland.",
+            "plantingTip": "Plant slowly spreading rhizomes in autumn in leaf mould.",
+            "colorClass": "bg-wildflower",
+            "description": "A low, carpeting herbaceous perennial that spreads slowly using rhizomes. It throws up solitary, starry white flowers often delicately flushed with pink on their undersides.",
+            "usages": "Perfect for naturalising under deciduous trees and shrubs where it catches early spring light before full canopy cover.",
+            "plantingTime": "Best planted as dormant rhizomes in late summer or autumn, burying them gently in rich leaf mould."
+        },
+        {
+            "name": "Ivy",
+            "scientificName": "Hedera helix",
+            "category": "Climber",
+            "height": "Up to 20m",
+            "pollinators": [
+                "Late season bees",
+                "Wasps",
+                "Hoverflies"
+            ],
+            "benefits": "Crucial late autumn nectar source. Berries feed birds in late winter.",
+            "plantingTip": "Can be invasive if unchecked. Mature climbing forms produce flowers.",
+            "colorClass": "bg-shrub",
+            "description": "An evergreen, woody climber clinging via aerial roots. Mature forms morph into bushy, non-climbing branches that produce spherical umbels of vital late-season yellowish green flowers.",
+            "usages": "Critical late nectar resource for wasps and bees before winter. Provides irreplaceable dense, warm nesting shelter for birds.",
+            "plantingTime": "Plant year-round, ideally in autumn or spring, checking vigorously if grown near structural brickwork."
         }
     ],
     "coastal_dappled": [
