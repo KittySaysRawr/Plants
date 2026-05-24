@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMeans: Plant Suggester</title>
+    <!-- SEO and Discovery -->
+    <meta name="description" content="Discover UK native plants tailored to your garden to support British pollinators.">
+    <meta name="keywords" content="UK native plants, pollinators, gardening, bees, butterflies, plant suggester, GreenMeans">
+    <meta name="author" content="GreenMeans">
+    <link rel="canonical" href="https://plants.greenmeans.ovh/">
+    
+    <!-- Security Headers via Meta -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plants.greenmeans.ovh/">
+    <meta property="og:title" content="GreenMeans: UK Native Plant Suggester">
+    <meta property="og:description" content="Discover UK native plants tailored to your garden to support British pollinators.">
+    <meta property="og:image" content="https://plants.greenmeans.ovh/favicon-round.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://plants.greenmeans.ovh/">
+    <meta name="twitter:title" content="GreenMeans: UK Native Plant Suggester">
+    <meta name="twitter:description" content="Discover UK native plants tailored to your garden to support British pollinators.">
+    <meta name="twitter:image" content="https://plants.greenmeans.ovh/favicon-round.svg">
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GreenMeans: Plant Suggester",
+      "description": "Discover UK native plants tailored to your region and sunlight to support British pollinator ecology.",
+      "url": "https://plants.greenmeans.ovh",
+      "applicationCategory": "EducationalApplication",
+      "genre": "Environment, Gardening",
+      "inLanguage": "en-GB",
+      "author": {
+        "@type": "Organization",
+        "name": "GreenMeans"
+      }
+    }
+    </script>
+
+    <link rel="icon" href="favicon-round.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Botanical Elegant Design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Feather Icons for high-fidelity vector icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Floating Header -->
+        <header class="main-header">
+            <div class="logo">
+                <span class="icon-wrapper">
+                    <img src="favicon-square.svg" alt="GreenMeans Plant Suggester Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                </span>
+                <div class="logo-text">
+                    <h1>GreenMeans: Plants</h1>
+                    <span class="subtitle">UK Native Plant Suggester</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-badges">
+                    <span class="badge badge-outline"><span class="indicator-dot active"></span> 100% Native Species Guide</span>
+                </div>
+                <div class="settings-container">
+                    <button id="settingsBtn" class="settings-trigger-btn" aria-label="Open settings menu" aria-expanded="false" aria-haspopup="true">
+                        <i data-feather="settings"></i>
+                    </button>
+                    <!-- Settings Dropdown/Menu -->
+                    <div id="settingsMenu" class="settings-menu hidden" role="menu" aria-label="Settings">
+                        <div class="settings-header">
+                            <h4>Preferences</h4>
+                        </div>
+                        <div class="settings-body">
+                            <!-- Theme Selection -->
+                            <div class="settings-group">
+                                <span class="group-label" id="theme-group-label">Theme Mode</span>
+                                <div class="theme-options" role="radiogroup" aria-labelledby="theme-group-label">
+                                    <button class="theme-btn active" data-theme="dark" role="radio" aria-checked="true" aria-label="Pure Black AMOLED Theme">Dark</button>
+                                    <button class="theme-btn" data-theme="night" role="radio" aria-checked="false" aria-label="Midnight Blue Night Theme">Night</button>
+                                    <button class="theme-btn" data-theme="light" role="radio" aria-checked="false" aria-label="Page White Light theme">Light</button>
+                                </div>
+                            </div>
+                            <!-- Accessibility Toggles -->
+                            <div class="settings-group">
+                                <span class="group-label">Accessibility</span>
+                                <div class="toggle-control-wrapper">
+                                    <label class="toggle-control">
+                                        <div class="toggle-label-wrap">
+                                            <span class="toggle-title">Dyslexia Font</span>
+                                            <span class="toggle-desc">Uses Lexend readable font</span>
+                                        </div>
+                                        <div class="toggle-switch-container">
+                                            <input type="checkbox" id="dyslexiaToggle" class="toggle-checkbox" aria-label="Dyslexia Friendly Font">
+                                            <span class="toggle-slider"></span>
+                                        </div>
+                                    </label>
+                                    <label class="toggle-control">
+                                        <div class="toggle-label-wrap">
+                                            <span class="toggle-title">Reduced Motion</span>
+                                            <span class="toggle-desc">Disables visual animations</span>
+                                        </div>
+                                        <div class="toggle-switch-container">
+                                            <input type="checkbox" id="motionToggle" class="toggle-checkbox" aria-label="Reduced Motion">
+                                            <span class="toggle-slider"></span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Card -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="meta-tag">British Pollinator Initiative 🐝</div>
+                <h2>Bring Bees & Butterflies <br>To your Garden</h2>
+                <p>Support British ecological health. Discover gorgeous, resilient plants native to the UK that provide essential pollen and nectar sanctuaries for our precious wild entomology populations.</p>
+            </div>
+        </section>
+
+        <!-- Main Workspace Grid -->
+        <main class="workspace-grid">
+            <!-- Sidebar / Control Panel -->
+            <aside class="control-panel">
+                <div class="panel-header">
+                    <i data-feather="sliders" class="panel-icon" aria-hidden="true"></i>
+                    <h3>Refine Your Garden</h3>
+                </div>
+                
+                <form id="filterForm" class="filter-form">
+                    <!-- Step 1: Region Select -->
+                    <div class="form-group">
+                        <label for="region"><i data-feather="map-pin" class="field-icon" aria-hidden="true"></i> 1. Choose Your Situation</label>
+                        <select id="region" class="custom-select">
+                            <option value="south">Southern England & East Anglia</option>
+                            <option value="north_scot">Northern England & Scotland</option>
+                            <option value="midlands_wales">Midlands & Mid Wales</option>
+                            <option value="coastal">Coastal & Sandy Regions (UK)</option>
+                        </select>
+                        <p class="field-desc">Ensures recommendations are authentic and perfectly adapted to your local British soil and climate.</p>
+                    </div>
+
+                    <!-- Step 2: Sunlight Selector -->
+                    <div class="form-group" role="group" aria-labelledby="sunlightLabel">
+                        <div id="sunlightLabel" class="label-heading" style="font-weight: 500; margin-bottom: 8px; display: block;"><i data-feather="sun" class="field-icon" aria-hidden="true"></i> 2. Sunlight Aspect</div>
+                        <div class="sunlight-options" role="radiogroup" aria-labelledby="sunlightLabel">
+                            <label class="sun-option-label" id="sun-full-label" for="sun_full">
+                                <input type="radio" name="sunlight" id="sun_full" value="full_sun" checked>
+                                <span class="custom-radio">
+                                    <i data-feather="sun" class="option-icon" aria-hidden="true"></i>
+                                    <div class="option-content">
+                                        <span class="option-title">Full Sun</span>
+                                        <span class="option-desc">6+ hours of direct sun</span>
+                                    </div>
+                                </span>
+                            </label>
+
+                            <label class="sun-option-label" id="sun-part-sun-label" for="part_sun">
+                                <input type="radio" name="sunlight" id="part_sun" value="part_sun">
+                                <span class="custom-radio">
+                                    <svg aria-hidden="true" class="option-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2v2"></path>
+                                        <path d="m4.93 4.93 1.41 1.41"></path>
+                                        <path d="M2 12h2"></path>
+                                        <path d="m19.07 4.93-1.41 1.41"></path>
+                                        <path d="M20 12h2"></path>
+                                        <path d="M12 22v-2"></path>
+                                        <path d="m4.93 19.07 1.41-1.41"></path>
+                                        <path d="m19.07 19.07-1.41-1.41"></path>
+                                        <path d="M12 8a4 4 0 0 0 0 8z" fill="currentColor"></path>
+                                        <path d="M12 8a4 4 0 0 1 0 8"></path>
+                                    </svg>
+                                    <div class="option-content">
+                                        <span class="option-title">Part Sun</span>
+                                        <span class="option-desc">3 to 6 hours of direct sun</span>
+                                    </div>
+                                </span>
+                            </label>
+
+                            <label class="sun-option-label" id="sun-part-shade-label" for="part_shade">
+                                <input type="radio" name="sunlight" id="part_shade" value="part_shade">
+                                <span class="custom-radio">
+                                    <svg aria-hidden="true" class="option-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2v2"></path>
+                                        <path d="m4.93 4.93 1.41 1.41"></path>
+                                        <path d="M20 12h2"></path>
+                                        <path d="m19.07 4.93-1.41 1.41"></path>
+                                        <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"></path>
+                                        <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"></path>
+                                    </svg>
+                                    <div class="option-content">
+                                        <span class="option-title">Part Shade</span>
+                                        <span class="option-desc">3 to 6 hours of soft, indirect shading</span>
+                                    </div>
+                                </span>
+                            </label>
+
+                            <label class="sun-option-label" id="sun-full-shade-label" for="full_shade">
+                                <input type="radio" name="sunlight" id="full_shade" value="full_shade">
+                                <span class="custom-radio">
+                                    <i data-feather="moon" class="option-icon" aria-hidden="true"></i>
+                                    <div class="option-content">
+                                        <span class="option-title">Full Shade</span>
+                                        <span class="option-desc">Under 3 hours or deep dark cover</span>
+                                    </div>
+                                </span>
+                            </label>
+
+                            <label class="sun-option-label" id="sun-dappled-label" for="dappled">
+                                <input type="radio" name="sunlight" id="dappled" value="dappled">
+                                <span class="custom-radio">
+                                    <i data-feather="layers" class="option-icon" aria-hidden="true"></i>
+                                    <div class="option-content">
+                                        <span class="option-title">Filtered Sun / Dappled</span>
+                                        <span class="option-desc">Woodland light dangles through canopy</span>
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Quick Search Input -->
+                    <div class="form-group bg-accent-light">
+                        <label for="searchQuery"><i data-feather="search" class="field-icon" aria-hidden="true"></i> Filter Species</label>
+                        <input type="text" id="searchQuery" class="custom-input" placeholder="e.g. Foxglove, Bumblebee, Red...">
+                    </div>
+                </form>
+            </aside>
+
+            <!-- Results Section -->
+            <section class="results-container">
+                <div class="results-header">
+                    <div class="results-count">
+                        <span id="plantCount" class="count-badge">5</span>
+                        <h4>Vibrant Native Suggestions</h4>
+                    </div>
+                    <div class="legend-badges">
+                        <span class="legend"><span class="badge bg-bee">🐝 Bees</span></span>
+                        <span class="legend"><span class="badge bg-butterfly">🦋 Butterflies</span></span>
+                    </div>
+                </div>
+
+                <!-- Bento style Plant Suggestions Grid -->
+                <div id="plantsGrid" class="plants-grid">
+                    <!-- Cards are rendered dynamically in script.js -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="empty-state hidden">
+                    <i data-feather="frown" class="empty-icon" aria-hidden="true"></i>
+                    <h5>No native plants found</h5>
+                    <p>Try clearing your filter query or selecting a different sunlight/region profile.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Detailed Insight Drawer/Modal -->
+        <div id="plantDrawer" class="drawer-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="drawerName">
+            <div class="drawer-content">
+                <button id="closeDrawer" class="close-btn" aria-label="Close panel">
+                    <i data-feather="x" aria-hidden="true"></i>
+                </button>
+                <div class="drawer-body">
+                    <span id="drawerCategory" class="plant-category">WILDFLOWER</span>
+                    <h3 id="drawerName" class="plant-title">Common Foxglove</h3>
+                    <div id="drawerScientificName" class="plant-sci">Digitalis purpurea</div>
+                    
+                    <div class="drawer-specs">
+                        <div class="spec-item">
+                            <span class="spec-lbl">Average Height</span>
+                            <span id="drawerHeight" class="spec-val">1 - 1.5m</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-lbl">Sunlight Needs</span>
+                            <span id="drawerSunlight" class="spec-val">Shade / Part Shade</span>
+                        </div>
+                    </div>
+
+                    <div class="drawer-section">
+                        <h4>Pollinator Value</h4>
+                        <div id="drawerPollinators" class="pollinator-caps">
+                            <!-- Injected badges -->
+                        </div>
+                    </div>
+
+                    <div class="drawer-accordion mt-4">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-1">
+                                <span>Botanical Description</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-1">
+                                <p id="drawerDesc" class="drawer-text"></p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-2">
+                                <span>Usage & Application</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-2">
+                                <p id="drawerUses" class="drawer-text"></p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-3">
+                                <span>Best Time to Plant</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-3">
+                                <p id="drawerPlantTime" class="drawer-text"></p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-4">
+                                <span>Benefits & Eco-Role</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-4">
+                                <p id="drawerBenefits" class="drawer-text"></p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-5">
+                                <span class="flex items-center gap-1">💡 Botanist Planting Tip</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-5">
+                                <p id="drawerTip" class="drawer-text card-tip bg-green-light font-medium" style="margin-top: 10px; margin-bottom: 0px;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>GreenMeans: Plants is dedicated to conservation and localised urban re-wilding. 🌱</p>
+        </footer>
+    </div>
+
+    <!-- Inject standalone script -->
+    <script src="script.js"></script>
+</body>
+</html>
