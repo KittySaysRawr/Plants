@@ -936,7 +936,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -952,7 +952,7 @@ const PLANTS_DATASET = {
                 "Many insects"
             ],
             "benefits": "Striking metallic blue thistle-like foliage.",
-            "plantingTip": "Requires light, sandy, well-draining soil. Coastal favorite.",
+            "plantingTip": "Requires light, sandy, well-draining soil. Coastal favourite.",
             "colorClass": "bg-wildflower",
             "description": "A striking coastal native that almost resembles a metallic sculpture. It sports stiff, waxy, grey-blue glaucous foliage armed with spines and beautiful blue thistle-like structures.",
             "usages": "Outstanding architectural plant for dry, sunny gravel gardens and arid, sandy coastal borders.",
@@ -1097,7 +1097,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -1113,7 +1113,7 @@ const PLANTS_DATASET = {
                 "Many insects"
             ],
             "benefits": "Striking metallic blue thistle-like foliage.",
-            "plantingTip": "Requires light, sandy, well-draining soil. Coastal favorite.",
+            "plantingTip": "Requires light, sandy, well-draining soil. Coastal favourite.",
             "colorClass": "bg-wildflower",
             "description": "A striking coastal native that almost resembles a metallic sculpture. It sports stiff, waxy, grey-blue glaucous foliage armed with spines and beautiful blue thistle-like structures.",
             "usages": "Outstanding architectural plant for dry, sunny gravel gardens and arid, sandy coastal borders.",
@@ -1213,7 +1213,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -1376,7 +1376,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -1506,7 +1506,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -2774,7 +2774,7 @@ const PLANTS_DATASET = {
     "coastal_part_shade": [
         {
             "name": "Viper's Bugloss",
-            "scientificName": "Echium vulgare",
+            "scientificName": "Echium verna",
             "category": "Wildflower",
             "height": "30 - 90 cm",
             "pollinators": [
@@ -2813,7 +2813,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -2975,7 +2975,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
@@ -3121,7 +3121,7 @@ const PLANTS_DATASET = {
             "pollinators": [
                 "Bumblebees"
             ],
-            "benefits": "Yellow snapdragon-like flowers with orange centers.",
+            "benefits": "Yellow snapdragon-like flowers with orange centres.",
             "plantingTip": "Spreads easily, good for waste ground or stony areas.",
             "colorClass": "bg-wildflower",
             "description": "An upright, branching perennial mimicking miniature yellow and orange snapdragons. It throws vertical spikes carrying these incredibly vibrant, small-scaled blooms densely.",
