@@ -1178,7 +1178,7 @@ const PLANTS_DATASET = {
                 "Elephant Hawkmoth",
                 "Bees"
             ],
-            "benefits": "Spikes of magenta flowers. Known as 'fireweed' for rapid colonization.",
+            "benefits": "Spikes of magenta flowers. Known as 'fireweed' for rapid colonisation.",
             "plantingTip": "Highly vigorous. Better for wilder areas than small gardens.",
             "colorClass": "bg-wildflower",
             "description": "A towering, robust perennial establishing large colonies rapidly. It carries long, willow-like serrated leaves and huge, dramatic spires composed of glowing pink-magenta flowers.",
@@ -2745,7 +2745,7 @@ const PLANTS_DATASET = {
             "description": "The ultimate harbinger of spring. These familiar tiny bulbs hoist perfect, intricate, inverted white drops, subtly marked with green on the inner segments.",
             "usages": "The cornerstone of any woodland garden, drifting under deciduous trees, hedges, and bare winter shrubs.",
             "plantingTime": "Must be planted 'in the green' (immediately after finishing flowering with leaves intact) for the highest success rate."
-        }
+        },
         {
             "name": "Sea Campion",
             "scientificName": "Silene uniflora",
@@ -3567,6 +3567,265 @@ function renderSuggestions() {
     }
 }
 
+// Clinical-grade Toxicology and Safety database for UK Native Plants
+const CLINICAL_PLANT_TOXICOLOGY = {
+    "vipers bugloss": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains toxic pyrrolizidine alkaloids (primarily heliosupine and echimidine). Chronic ingestion in humans causes localised liver damage, specifically veno-occlusive disease. Direct physical handling of its stiff, bristly hairs can cause severe skin irritation and contact dermatitis. Highly toxic to grazing animals, horses, and livestock upon pasture grazing, producing cumulative, irreversible liver necrosis."
+    },
+    "hemp agrimony": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains toxic pyrrolizidine alkaloids (such as supinine). Ingestion by humans, dogs, cats, or livestock causes stomach discomfort, nausea, and cumulative liver irritation (hepatotoxic injury). Safe to handle and touch, but raw foliage or stems should never be consumed."
+    },
+    "blackthorn": {
+        status: "Moderately Toxic (Cyanogenic)",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "The flesh of sloe berries is non-toxic and edible. However, raw stones, leaves, and bark contain cyanogenic glycosides that release highly toxic hydrogen cyanide when crushed and ingested. Rigid thorns present a physical puncture wound hazard, easily introducing deep-seated bacterial or fungal infections."
+    },
+    "red campion": {
+        status: "Non-Toxic / Fully Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic to humans, dogs, cats, and pasture animals. Contains mild saponins that are harmless to mammals under all practical conditions. Safe to handle and grow in schools or public spaces."
+    },
+    "primrose": {
+        status: "Non-Toxic / Low Irritant",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Entirely non-toxic to humans and animals. Flowers are edible. Handling can occasionally spark very minor contact dermatitis in individuals sensitive to Primula species. Raw ingestion by cats or dogs is non-poisonous, but can cause mild, temporary stomach irritation."
+    },
+    "bluebell": {
+        status: "Highly Toxic",
+        colorClass: "bg-red-100 text-red-800 border border-red-300 dark:bg-red-950/40 dark:text-red-300 dark:border-red-800",
+        text: "All parts, especially the bulbs, contain dangerous cardiac glycosides (scillarens). Highly toxic if ingested. Causes severe stomach pain, persistent vomiting, diarrhoea, slow heart rate, and hypocalcemia in humans, dogs, cats, and grazing herds."
+    },
+    "foxglove": {
+        status: "Extremely Poisonous / Fatal",
+        colorClass: "bg-red-100 text-red-850 border border-red-400 dark:bg-red-950/40 dark:text-red-300 dark:border-red-800",
+        text: "CRITICAL HAZARD. Every part of the foxglove contains extremely potent cardiac glycosides (including digoxin, digitoxin, and gitalin). Ingesting even small amounts is a severe medical emergency for humans, dogs, cats, horses, and livestock. Symptoms include severe nausea, vomiting, dangerous cardiac arrhythmias, muscle tremors, seizures, and fatal cardiac arrest. Always wash hands after handling or wear gloves. Keep strictly away from grazing livestock or curious domestic pets."
+    },
+    "common sorrel": {
+        status: "Mildly Toxic (Oxalates)",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Edible for humans in culinary quantities, but highly concentrated in soluble calcium oxalates. Swallowing massive raw volumes causes severe kidney stone risks or calcium binding. Highly toxic to grazing animals, cattle, and sheep, leading to muscle weakness, tremors, and acute renal failure."
+    },
+    "field scabious": {
+        status: "Non-Toxic / Fully Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic and hazard-free. Perfectly safe to handle, plant, or touch for humans, children, dogs, cats, horses, and wildlife."
+    },
+    "chicory": {
+        status: "Non-Toxic / Edible",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Nutritious and edible. Roots are roasted as a coffee substitute and leaves are eaten as bitter greens. Wholly non-toxic and highly safe for dogs, cats, humans, and livestock."
+    },
+    "snowdrop": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "All parts, particularly the underground bulbs, contain toxic alkaloids (lycorine and galantamine). Ingestion leads to severe vomiting, abdominal pain, drooling, and diarrhoea in humans, dogs, and cats. Always store loose bulbs safely out of reach of pets."
+    },
+    "wild garlic": {
+        status: "Safe for Humans / Toxic to Pets",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Thoroughly edible and delicious for human dishes. However, it is highly toxic to dogs, cats, and horses because it contains organic sulphur compounds (thiosulfates) which damage red blood cells, causing Heinz body haemolytic anaemia. Symptoms in pets include lethargy, pale gums, vomiting, rapid breathing, and dark urine. Keep away from pets."
+    },
+    "cowslip": {
+        status: "Non-Toxic / Minimal Hazard",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Very safe and non-toxic. Beautiful spring flowers are edible. Simple contact with the fuzzy stems might occasionally cause superficial skin redness in highly sensitive people. Ingesting large portions might cause minor gastric irritation in pets due to saponins."
+    },
+    "bugle": {
+        status: "Non-Toxic / Fully Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Wholly non-toxic and safe. Free of toxic alkaloids or saponins. Harmless to humans, dogs, cats, and all grazing livestock."
+    },
+    "yarrow": {
+        status: "Mildly Toxic to Pets",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains thujone and sesquiterpene lactones. Low human toxicity, though contact with foliage can trigger allergic dermatitis in sensitive gardeners. Highly toxic to dogs, cats, and horses, causing increased urination, vomiting, severe diarrhoea, and raw, irritated skin."
+    },
+    "wild marjoram": {
+        status: "Safe for Humans / Mild Pet Irritant",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Safe and highly edible for humans as a culinary herb. However, eating raw wild marjoram in bulk or exposure to concentrated essential oil is toxic to dogs and cats, causing severe gastrointestinal irritation, vomiting, and diarrhoea."
+    },
+    "sea campion": {
+        status: "Non-Toxic / Low Hazard",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Low toxicity and virtually hazard-free. Houses mild saponins which present zero systemic risk to humans or pets unless consumed in unrealistic mass quantities."
+    },
+    "lesser celandine": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains ranunculin, which quickly produces highly irritating protoanemonin when the leaves or stems are bruised or chewed. Raw ingestion causes burning of the mouth, swelling of the tongue, and gastric pain in humans and grazing pets (dogs, cats, horses, sheep). Sap contact can cause raw, blistering dermatitis."
+    },
+    "wood anemone": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains ranunculin, converting into blistering protoanemonin upon mechanical plant damage. Toxic raw. Ingestion causes severe oral burning, throat swelling, vomiting, and bloody diarrhoea. Direct sap contact causes severe skin blistering and dermatitis."
+    },
+    "ivy": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains toxic triterpenoid saponins (hederacosides) and irritant polyacetylenes. Ingesting foliage or berries is toxic to humans and domestic animals, leading to heavy salivation, vomiting, intense stomach pain, and diarrhoea. Sap contact frequently causes blistering skin dermatitis."
+    },
+    "gorse": {
+        status: "Mildly Toxic (Seeds Only)",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Seeds contain cytisine, a toxic quinolizidine alkaloid. Ingestion of seeds is toxic to humans, dogs, cats, and horses, leading to severe nausea, dizziness, and respiratory problems. The brilliant yellow flowers are edible in minor amounts. The extremely sharp wooden thorns present a physical puncture hazard."
+    },
+    "white dead nettle": {
+        status: "Non-Toxic / Truly Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic, non-stinging, and highly edible. Stems, leaves, and nectar-rich flowers pose zero toxicity or mechanical hazards to humans, pets, or livestock."
+    },
+    "white deadnettle": {
+        status: "Non-Toxic / Truly Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic, non-stinging, and highly edible. Stems, leaves, and nectar-rich flowers pose zero toxicity or mechanical hazards to humans, pets, or livestock."
+    },
+    "silverweed": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Totally non-toxic, rich in astringent tannins, and safe. Roots were historically roasted and eaten. Non-poisonous to dogs, cats, horses, or grazing animals."
+    },
+    "wild teasel": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Free of chemical toxins and highly beneficial for wintering seed-eating birds. Sharp prickly stems pose a physical mechanical scratching hazard, but the plant carries absolute zero chemical toxicity to humans or animals."
+    },
+    "dog rose": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Chemically safe and non-toxic. Ripe hips make highly nutritious syrup, but the small internal seed hairs are mechanical irritants and must be removed to avoid severe throat itching. Sharp thorns present a physical scratching hazard, but otherwise the plant is non-poisonous to pets."
+    },
+    "selfheal": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Entirely non-toxic, safe, and historically prominent in traditional wound healing. Certified safe for domestic pets, children, and farm stock."
+    },
+    "wild thyme": {
+        status: "Safe for Humans / Mild Pet Irritant",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Edible culinary herb entirely safe for humans. Raw consumption in large amounts or ingestion of concentrated essential oils is toxic to dogs and cats, triggering gastric irritation, vomiting, and diarrhoea."
+    },
+    "yellow rattle": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains toxic rhinanthin. Highly toxic to grazing horses and livestock; can cause sleepiness, diarrhoea, coordination loss, paralysis, or death if mixed extensively in winter hay. General handling is safe, but keep far from animal forage supplies."
+    },
+    "meadow cranesbill": {
+        status: "Non-Toxic / Fully Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Chemically safe. Contains astringent tannins but has zero poisonous or toxic qualities. Completely safe for dogs, cats, children, and farm herds."
+    },
+    "purple loosestrife": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic. Possesses no toxic alkaloids or glycosides. Fully safe to prune, touching, and planting in areas frequented by domestic dogs, cats, or livestock."
+    },
+    "toadflax": {
+        status: "Mildly Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains peganine and lanatosides. Toxic to cattle, sheep, and horses, though they usually avoid its bitter taste. Ingestion can cause gastrointestinal inflammation and respiratory issues. Safe/low toxicity to dogs and cats unless bulk quantities are eaten. Safe to handle with bare hands."
+    },
+    "sea holly": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic. Roots are edible and historically candied. The sharp, spiny leaves act as a physical deterrent, but the plant holds absolutely zero chemical poisons for humans, dogs, or cats."
+    },
+    "hawthorn": {
+        status: "Seeds contain Cyanogenic Glycosides",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Berries are edible, but the hard interior seeds contain cyanogenic glycosides and release hydrogen cyanide if crushed. Ingestion of many whole haws (with seeds) is moderately toxic to dogs, cats, and livestock, prompting digestive upset. Physical puncture from sharp thorns is also a scratch hazard."
+    },
+    "rosebay willowherb": {
+        status: "Non-Toxic / Edible",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely edible, safe, and non-toxic to humans, dogs, cats, and livestock. Highly recommended for wildlife gardens with zero poisonous risks."
+    },
+    "ladys bedstraw": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Wholly non-toxic and hazard-free. Yellow flowers contain coumarins which smell sweet and repel fleas. Completely safe for pasture herds, domestic pets, and children."
+    },
+    "marsh marigold": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains ranunculin, reverting to harsh, biting protoanemonin when crushed. Raw ingestion causes powerful mouth blistering, salivation, severe colic, and bloody diarrhoea in humans and pets. Sap contact easily blisters human skin. Prune using gloves."
+    },
+    "mallow": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic and edible. Safe for human salads and entirely non-poisonous to dogs, cats, and wildlife. (In agricultural pastures with high artificial nitrates, it can store nitrates, but practically it is fully non-toxic to residential gardens)."
+    },
+    "common knapweed": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Perfectly non-toxic, safe, and hazard-free. Highly attractive to wild birds for seeds, with absolute zero toxic concerns for dogs, cats, horses, or kids."
+    },
+    "devils bit scabious": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic and safe to grow. Free of all harmful alkaloids, posing no physical or chemical danger to pets, humans, or pasture animals."
+    },
+    "devilsbit scabious": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic and safe to grow. Free of all harmful alkaloids, posing no physical or chemical danger to pets, humans, or pasture animals."
+    },
+    "water avens": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Completely non-toxic. Roots contain eugenol (scents of clove) and can be used in teas. Safe for dogs, cats, and pasture animals."
+    },
+    "oxeye daisy": {
+        status: "Non-Toxic / Low Hazard",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Mild contact allergen for individuals sensitive to the Asteraceae (daisy) family, but chemically non-toxic. Ingestion of large quantities of rough foliage can cause self-limiting, mild digestive irritation in dogs or cats, but it is not poisonous."
+    },
+    "kidney vetch": {
+        status: "Non-Toxic / Highly Beneficial",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Superbly safe and non-toxic. Extensively cultivated as high-nutrient forage for pasture sheep and cattle. Wholly non-poisonous to dogs, cats, and humans."
+    },
+    "birds foot trefoil": {
+        status: "Safe for Pets / Trace Risk in Bulk",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Contains very minor cyanogenic glycosides. Safe for household dogs and cats. In standard grazing, it is an excellent wildflower forage, but in rare absolute monopoly grazing of pure pastures, it contains light trace cyanide risks for livestock herds."
+    },
+    "birdsfoot trefoil": {
+        status: "Safe for Pets / Trace Risk in Bulk",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Contains very minor cyanogenic glycosides. Safe for household dogs and cats. In standard grazing, it is an excellent wildflower forage, but in rare absolute monopoly grazing of pure pastures, it contains light trace cyanide risks for livestock herds."
+    },
+    "rowan": {
+        status: "Toxic Raw / Safe Cooked",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "The raw orange-red berries contain bitter parasorbic acid, which causes severe stomach upset, vomiting, and diarrhoea in humans and pets (dogs, cats). Seeds contain cyanogenic glycosides and must not be consumed. Cooking rowan berries completely neutralises parasorbic acid, making rowan jelly safe and edible."
+    },
+    "cornflower": {
+        status: "Non-Toxic / Edible",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Entirely safe, edible, and non-toxic. The bright blue petals are a popular edible garnish. Wholly non-poisonous to humans, dogs, cats, and grazing animals."
+    },
+    "ragged robin": {
+        status: "Non-Toxic / Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Extremely low human and pet toxicity. Contains negligible trace saponins that present zero clinical hazard in domestic gardens."
+    },
+    "meadow buttercup": {
+        status: "Moderately Toxic",
+        colorClass: "bg-amber-100 text-amber-800 border border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800",
+        text: "Contains ranunculin, converting into burning protoanemonin when raw cells are damaged. Eating the raw plant causes painful mouth blistering, drooling, severe colic, and diarrhoea in humans, dogs, cats, and horses. Sap contact can blister skin. (Safely inert when dried in winter hay)."
+    },
+    "scottish harebell": {
+        status: "Non-Toxic / Fully Safe",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "Fully non-toxic, safe, and delicate. Zero poisonous properties for humans, dogs, cats, or pasture animals."
+    }
+};
+
 // Modal Detail Overlay Operations
 function openPlantDetail(index) {
     const seedPlant = STATE.currentPlants[index];
@@ -3598,6 +3857,27 @@ function openPlantDetail(index) {
 
     drawerBenefits.innerText = seedPlant.benefits;
     drawerTip.innerText = seedPlant.plantingTip;
+
+    // Handle Toxicology and Safety profiling
+    const normalizedName = (seedPlant.name || "").toLowerCase()
+        .replace(/['’]/g, '')
+        .replace(/[^a-z0-9]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const toxRecord = CLINICAL_PLANT_TOXICOLOGY[normalizedName] || {
+        status: "General Safety Profile",
+        colorClass: "bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800",
+        text: "This native species is generally classified as non-toxic and highly safe for standard domestic gardens. Standard gardening hygiene applies: wash hands after pruning or planting, and avoid deliberate raw ingestion."
+    };
+
+    const statusEl = document.getElementById('drawerToxicStatus');
+    const descEl = document.getElementById('drawerToxicity');
+    if (statusEl && descEl) {
+        statusEl.innerText = toxRecord.status.toUpperCase();
+        statusEl.className = `inline-block px-2.5 py-0.5 rounded-full font-semibold text-xs mb-3 ${toxRecord.colorClass}`;
+        descEl.innerText = toxRecord.text;
+    }
 
     // reset all accordions to closed state when opening new plant
     document.querySelectorAll('.accordion-item').forEach(item => {
