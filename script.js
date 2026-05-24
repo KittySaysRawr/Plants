@@ -3863,6 +3863,7 @@ function openPlantDetail(index) {
 
     // Handle Toxicology and Safety profiling
     const normalizedName = (seedPlant.name || "").toLowerCase()
+        .replace(/\([^)]*\)/g, '') // Remove parentheses and their content
         .replace(/['’]/g, '')
         .replace(/-/g, ' ') // Handle hyphenated names
         .replace(/[^a-z0-9 ]/g, '') // Remove punctuation but keep spaces
@@ -3894,11 +3895,9 @@ function openPlantDetail(index) {
     // reset all accordions to closed state when opening new plant
     document.querySelectorAll('.accordion-item').forEach(item => {
         item.classList.remove('active');
+        const btn = item.querySelector('.accordion-header');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
     });
-
-    // Optionally default open the first accordion
-    const firstAccordion = document.querySelector('.drawer-accordion .accordion-item');
-    if (firstAccordion) firstAccordion.classList.add('active');
 
     // Map pollinator badges inside Drawer
     const pillHTML = seedPlant.pollinators.map(p => {
