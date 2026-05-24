@@ -3604,7 +3604,7 @@ const CLINICAL_PLANT_TOXICOLOGY = {
     },
     "foxglove": {
         status: "Extremely Poisonous / Fatal",
-        colorClass: "bg-red-100 text-red-850 border border-red-400 dark:bg-red-950/40 dark:text-red-300 dark:border-red-800",
+        colorClass: "bg-red-100 text-red-800 border border-red-400 dark:bg-red-950/40 dark:text-red-300 dark:border-red-800",
         text: "CRITICAL HAZARD. Every part of the foxglove contains extremely potent cardiac glycosides (including digoxin, digitoxin, and gitalin). Ingesting even small amounts is a severe medical emergency for humans, dogs, cats, horses, and livestock. Symptoms include severe nausea, vomiting, dangerous cardiac arrhythmias, muscle tremors, seizures, and fatal cardiac arrest. Always wash hands after handling or wear gloves. Keep strictly away from grazing livestock or curious domestic pets."
     },
     "common sorrel": {
@@ -3880,6 +3880,8 @@ function openPlantDetail(index) {
         statusEl.innerText = toxRecord.status.toUpperCase();
         statusEl.className = `inline-block px-2.5 py-0.5 rounded-full font-semibold text-xs mb-3 ${toxRecord.colorClass}`;
         descEl.innerText = toxRecord.text;
+    } else {
+        console.error("Toxicology elements not found in drawer:", { statusEl: !!statusEl, descEl: !!descEl });
     }
 
     // reset all accordions to closed state when opening new plant
