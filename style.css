@@ -678,8 +678,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100vw;
     height: 100vh;
+    height: 100dvh;
     background: rgba(11, 31, 19, 0.45);
     backdrop-filter: blur(4px);
     z-index: 1000;
@@ -744,10 +747,19 @@ body {
     flex-direction: column;
     gap: 20px;
     margin-top: 16px;
-    flex: 1;
+    flex: 1 1 auto;
     overflow-y: auto;
     padding-right: 8px;
     padding-bottom: 32px;
+    overscroll-behavior: contain;
+}
+
+/* Ensure padding-bottom works in all browsers by adding an invisible pseudo element */
+.drawer-body::after {
+    content: "";
+    display: block;
+    height: 32px;
+    flex-shrink: 0;
 }
 
 .plant-category {
@@ -891,7 +903,7 @@ body {
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 1000px; /* Increased to accommodate long toxicology reports */
+    max-height: 2500px; /* Increased to accommodate long toxicology and care reports */
 }
 
 .accordion-content .drawer-text {
