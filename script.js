@@ -7,6 +7,232 @@
 const PLANTS_DATASET = {
     "south_full_sun": [
         {
+            "name": "Field Forget-me-not",
+            "scientificName": "Myosotis arvensis",
+            "category": "Wildflower",
+            "height": "10 - 40 cm",
+            "pollinators": ["Bees", "Hoverflies", "Butterflies"],
+            "benefits": "Produces tiny, beautiful sky-blue flowers.",
+            "plantingTip": "Easily self-seeds. Can be used in meadows or borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A delicate, hairy annual or short-lived perennial with tiny, typically azure-blue flowers featuring yellow centres. It forms low, expanding mounds of foliage.",
+            "usages": "Ideal for softening edges, underplanting, and creating naturalised drifts.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Corn Marigold",
+            "scientificName": "Glebionis segetum",
+            "category": "Wildflower",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Vibrant golden-yellow daisy-like flowers that bloom for a long period.",
+            "plantingTip": "Needs disturbed soil to germinate. Often sown as part of a cornfield annual mix.",
+            "colorClass": "bg-wildflower",
+            "description": "A striking native annual sporting brilliant golden-yellow flower heads and distinctive blue-green, slightly fleshy, deeply lobed leaves.",
+            "usages": "Excellent for annual meadow mixes and vibrant summer colour.",
+            "plantingTime": "Sow directly into bare soil in spring or autumn."
+        },
+        {
+            "name": "Wild Carrot",
+            "scientificName": "Daucus carota",
+            "category": "Wildflower",
+            "height": "30 - 90 cm",
+            "pollinators": ["Hoverflies", "Bees", "Beetles"],
+            "benefits": "Intricate, flat-topped clusters of tiny white flowers, sometimes with a single red flower in the centre.",
+            "plantingTip": "Thrives in well-drained, nutrient-poor soils.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright biennial bearing feathery foliage and stunning umbels of delicate white flowers. The flower heads curl inward as they go to seed, forming a characteristic 'bird's nest' shape.",
+            "usages": "Valuable in wildflower meadows and for attracting predatory insects.",
+            "plantingTime": "Sow seeds in late summer or autumn."
+        },
+        {
+            "name": "Red Clover",
+            "scientificName": "Trifolium pratense",
+            "category": "Wildflower",
+            "height": "15 - 40 cm",
+            "pollinators": ["Bumblebees", "Butterflies", "Moths"],
+            "benefits": "A highly valuable nectar source and excellent nitrogen fixer for the soil.",
+            "plantingTip": "Tolerates most soils. Great for meadow lawns.",
+            "colorClass": "bg-wildflower",
+            "description": "A familiar meadow perennial with distinctive trefoil leaves (often bearing a white crescent marking) and pinkish-red, globe-shaped flower heads.",
+            "usages": "Important component of wildlife lawns, meadows, and agricultural leys.",
+            "plantingTime": "Sow in spring or autumn."
+        },
+        {
+            "name": "White Campion",
+            "scientificName": "Silene latifolia",
+            "category": "Wildflower",
+            "height": "30 - 100 cm",
+            "pollinators": ["Moths"],
+            "benefits": "Flowers emit a sweet clove-like scent in the evening to attract night-flying moths.",
+            "plantingTip": "Well-drained soil in full sun or part shade.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright, slightly hairy perennial with opposite leaves and pure white, deeply notched petals on flowers that open fully in the late afternoon.",
+            "usages": "Perfect for night gardens and supporting nocturnal pollinator populations.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Betony",
+            "scientificName": "Betonica officinalis",
+            "category": "Perennial",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Butterflies", "Hoverflies"],
+            "benefits": "Striking magenta-purple flower spikes above neat rosettes of scalloped leaves.",
+            "plantingTip": "Grows well in heavy clay or moderately fertile soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A very attractive native perennial of grasslands and open woods, producing dense, short spikes of vivid purplish-red hooded flowers on square stems.",
+            "usages": "Ideal for herbaceous borders, meadow planting, and traditional herb gardens.",
+            "plantingTime": "Plant out from spring to autumn."
+        },
+        {
+            "name": "Common Mallow",
+            "scientificName": "Malva sylvestris",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Showy deep pink-purple flowers with dark veins, blooming profusely through summer.",
+            "plantingTip": "Very easily grown in most soils. Can self-seed vigorously.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, bushy perennial with deeply lobed leaves and highly attractive, large, pink-purple flowers streaked with darker veins.",
+            "usages": "Excellent for sunny banks, borders, and cottage garden styles.",
+            "plantingTime": "Sow seeds or plant out in spring."
+        },
+        {
+            "name": "Yellow Horned Poppy",
+            "scientificName": "Glaucium flavum",
+            "category": "Perennial",
+            "height": "30 - 90 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Striking silvery-blue foliage and large, bright yellow flowers.",
+            "plantingTip": "Needs extremely well-drained, sandy or shingly soil. Found naturally on coasts.",
+            "colorClass": "bg-wildflower",
+            "description": "A spectacular coastal perennial known for its beautiful glaucous wavy leaves, large brilliant yellow poppy flowers, and extremely long curved seed pods.",
+            "usages": "Perfect for gravel gardens, coastal exposures, and dry sandy beds.",
+            "plantingTime": "Sow seeds in autumn or spring."
+        },
+        {
+            "name": "Wild Strawberry",
+            "scientificName": "Fragaria vesca",
+            "category": "Perennial",
+            "height": "10 - 30 cm",
+            "pollinators": ["Small Bees", "Hoverflies"],
+            "benefits": "Provides ground cover and small, intensely sweet, edible fruits.",
+            "plantingTip": "Great for dappled woodland shade or edging borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A creeping perennial that spreads by stolons, featuring small white flowers followed by distinctive, tiny, highly aromatic red strawberries.",
+            "usages": "Excellent edible ground cover for woodland gardens or underplanting.",
+            "plantingTime": "Plant runners or sow seeds in spring or autumn."
+        },
+        {
+            "name": "Greater Knapweed",
+            "scientificName": "Centaurea scabiosa",
+            "category": "Perennial",
+            "height": "50 - 90 cm",
+            "pollinators": ["Butterflies", "Bumblebees", "Finches"],
+            "benefits": "Large, showy, thistle-like magenta flower heads without the spines.",
+            "plantingTip": "Thrives on chalky or limestone soils in full sun.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, deep-rooted perennial with deeply pinnate leaves and large, prominent magenta-purple flower heads surrounded by a dark fringed involucre.",
+            "usages": "Fantastic for chalk downland meadows and a magnet for butterflies.",
+            "plantingTime": "Plant bare-root or potted specimens in spring or autumn."
+        },
+        {
+            "name": "Guelder Rose",
+            "scientificName": "Viburnum opulus",
+            "category": "Shrub",
+            "height": "2 - 4 m",
+            "pollinators": [
+                "Hoverflies",
+                "Moths",
+                "Bees"
+            ],
+            "benefits": "Spectacular lacecap white flowers in spring, followed by translucent red berries.",
+            "plantingTip": "Prefers damp, reasonably fertile soils. Beautiful when mixed into native hedgerows.",
+            "colorClass": "bg-tree",
+            "description": "A glorious native deciduous shrub that features maple-like lobed leaves. In late spring it produces flat heads of creamy-white flowers, turning to ruby-red berries in autumn.",
+            "usages": "Essential for wildlife-friendly hedging or damp woodland edges.",
+            "plantingTime": "Plant bare-root between November and March."
+        },
+        {
+            "name": "Meadowsweet",
+            "scientificName": "Filipendula ulmaria",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": [
+                "Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Produces large, fluffy, sweetly scented clouds of cream flowers.",
+            "plantingTip": "Requires moist soil; thrives alongside ponds or wet ditches.",
+            "colorClass": "bg-wildflower",
+            "description": "A tall, majestic damp-meadow perennial with distinctively veined, dark green leaflets and dense, frothy clusters of almond-scented creamy-white flowers.",
+            "usages": "Unbeatable for bog gardens and damp meadow plantings.",
+            "plantingTime": "Plant out in spring or autumn into reliably moist soil."
+        },
+        {
+            "name": "Common Comfrey",
+            "scientificName": "Symphytum officinale",
+            "category": "Perennial",
+            "height": "80 - 120 cm",
+            "pollinators": [
+                "Bumblebees",
+                "Mason Bees"
+            ],
+            "benefits": "One of the most powerful nectar producers. Tubular bell flowers recharge nectar rapidly.",
+            "plantingTip": "Has a deep taproot. Do not plant where you might want to remove it later.",
+            "colorClass": "bg-wildflower",
+            "description": "A vigorous, bristly perennial that forms large clumps. Through summer it unfurls characteristic drooping clusters of tubular flowers.",
+            "usages": "Incredible for bumblebees. Leaves can be harvested to make exceptionally rich liquid organic fertilizer.",
+            "plantingTime": "Sow seeds or plant root cuttings in spring."
+        },
+        {
+            "name": "Yellow Flag Iris",
+            "scientificName": "Iris pseudacorus",
+            "category": "Perennial",
+            "height": "1 - 1.5 m",
+            "pollinators": [
+                "Hoverflies",
+                "Long-tongued Bees"
+            ],
+            "benefits": "Striking architectural foliage and massive bright yellow summer blooms.",
+            "plantingTip": "Can be incredibly vigorous in shallow water. Submerge in aquatic baskets to restrict spread.",
+            "colorClass": "bg-wildflower",
+            "description": "A bold, robust aquatic and marginal perennial featuring tall, sword-like leaves and vivid yellow flowers.",
+            "usages": "Perfect for large wildlife ponds. Provides vital emergence supports for aquatic dragonfly nymphs.",
+            "plantingTime": "Plant rhizomes just below the soil surface in spring."
+        },
+        {
+            "name": "Cuckooflower",
+            "scientificName": "Cardamine pratensis",
+            "category": "Perennial",
+            "height": "30 - 50 cm",
+            "pollinators": [
+                "Orange-tip Butterfly (Host)"
+            ],
+            "benefits": "The primary larval food plant for the iconic Orange-tip butterfly.",
+            "plantingTip": "Prefers consistently damp grass or meadow conditions. Do not mow until mid-summer.",
+            "colorClass": "bg-wildflower",
+            "description": "Also known as Lady's Smock, this delicate, moisture-loving perennial puts up slender stems holding pale lilac flowers around the time the first cuckoos are heard.",
+            "usages": "Crucial for wetland or damp meadow restoration.",
+            "plantingTime": "Plant 'in the green' in spring or sow fresh seed in late summer."
+        },
+        {
+            "name": "Herb Robert",
+            "scientificName": "Geranium robertianum",
+            "category": "Perennial",
+            "height": "20 - 40 cm",
+            "pollinators": [
+                "Small Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Adaptable scrambling foliage that often turns deep crimson. Tiny bright pink flowers.",
+            "plantingTip": "Self-seeds prolifically in shady, dry, or awkward spots.",
+            "colorClass": "bg-wildflower",
+            "description": "A common but valuable native woodland geranium with fern-like leaves on reddish stems. It produces starry vivid pink flowers.",
+            "usages": "Excellent for dry shade, underplanting hedges, or filling gaps in stony ground.",
+            "plantingTime": "Sow seeds from spring to late summer."
+        },
+        {
             "name": "Viper's Bugloss",
             "scientificName": "Echium vulgare",
             "category": "Wildflower",
@@ -814,6 +1040,232 @@ const PLANTS_DATASET = {
     ],
     "north_scot_full_sun": [
         {
+            "name": "Field Forget-me-not",
+            "scientificName": "Myosotis arvensis",
+            "category": "Wildflower",
+            "height": "10 - 40 cm",
+            "pollinators": ["Bees", "Hoverflies", "Butterflies"],
+            "benefits": "Produces tiny, beautiful sky-blue flowers.",
+            "plantingTip": "Easily self-seeds. Can be used in meadows or borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A delicate, hairy annual or short-lived perennial with tiny, typically azure-blue flowers featuring yellow centres. It forms low, expanding mounds of foliage.",
+            "usages": "Ideal for softening edges, underplanting, and creating naturalised drifts.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Corn Marigold",
+            "scientificName": "Glebionis segetum",
+            "category": "Wildflower",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Vibrant golden-yellow daisy-like flowers that bloom for a long period.",
+            "plantingTip": "Needs disturbed soil to germinate. Often sown as part of a cornfield annual mix.",
+            "colorClass": "bg-wildflower",
+            "description": "A striking native annual sporting brilliant golden-yellow flower heads and distinctive blue-green, slightly fleshy, deeply lobed leaves.",
+            "usages": "Excellent for annual meadow mixes and vibrant summer colour.",
+            "plantingTime": "Sow directly into bare soil in spring or autumn."
+        },
+        {
+            "name": "Wild Carrot",
+            "scientificName": "Daucus carota",
+            "category": "Wildflower",
+            "height": "30 - 90 cm",
+            "pollinators": ["Hoverflies", "Bees", "Beetles"],
+            "benefits": "Intricate, flat-topped clusters of tiny white flowers, sometimes with a single red flower in the centre.",
+            "plantingTip": "Thrives in well-drained, nutrient-poor soils.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright biennial bearing feathery foliage and stunning umbels of delicate white flowers. The flower heads curl inward as they go to seed, forming a characteristic 'bird's nest' shape.",
+            "usages": "Valuable in wildflower meadows and for attracting predatory insects.",
+            "plantingTime": "Sow seeds in late summer or autumn."
+        },
+        {
+            "name": "Red Clover",
+            "scientificName": "Trifolium pratense",
+            "category": "Wildflower",
+            "height": "15 - 40 cm",
+            "pollinators": ["Bumblebees", "Butterflies", "Moths"],
+            "benefits": "A highly valuable nectar source and excellent nitrogen fixer for the soil.",
+            "plantingTip": "Tolerates most soils. Great for meadow lawns.",
+            "colorClass": "bg-wildflower",
+            "description": "A familiar meadow perennial with distinctive trefoil leaves (often bearing a white crescent marking) and pinkish-red, globe-shaped flower heads.",
+            "usages": "Important component of wildlife lawns, meadows, and agricultural leys.",
+            "plantingTime": "Sow in spring or autumn."
+        },
+        {
+            "name": "White Campion",
+            "scientificName": "Silene latifolia",
+            "category": "Wildflower",
+            "height": "30 - 100 cm",
+            "pollinators": ["Moths"],
+            "benefits": "Flowers emit a sweet clove-like scent in the evening to attract night-flying moths.",
+            "plantingTip": "Well-drained soil in full sun or part shade.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright, slightly hairy perennial with opposite leaves and pure white, deeply notched petals on flowers that open fully in the late afternoon.",
+            "usages": "Perfect for night gardens and supporting nocturnal pollinator populations.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Betony",
+            "scientificName": "Betonica officinalis",
+            "category": "Perennial",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Butterflies", "Hoverflies"],
+            "benefits": "Striking magenta-purple flower spikes above neat rosettes of scalloped leaves.",
+            "plantingTip": "Grows well in heavy clay or moderately fertile soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A very attractive native perennial of grasslands and open woods, producing dense, short spikes of vivid purplish-red hooded flowers on square stems.",
+            "usages": "Ideal for herbaceous borders, meadow planting, and traditional herb gardens.",
+            "plantingTime": "Plant out from spring to autumn."
+        },
+        {
+            "name": "Common Mallow",
+            "scientificName": "Malva sylvestris",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Showy deep pink-purple flowers with dark veins, blooming profusely through summer.",
+            "plantingTip": "Very easily grown in most soils. Can self-seed vigorously.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, bushy perennial with deeply lobed leaves and highly attractive, large, pink-purple flowers streaked with darker veins.",
+            "usages": "Excellent for sunny banks, borders, and cottage garden styles.",
+            "plantingTime": "Sow seeds or plant out in spring."
+        },
+        {
+            "name": "Yellow Horned Poppy",
+            "scientificName": "Glaucium flavum",
+            "category": "Perennial",
+            "height": "30 - 90 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Striking silvery-blue foliage and large, bright yellow flowers.",
+            "plantingTip": "Needs extremely well-drained, sandy or shingly soil. Found naturally on coasts.",
+            "colorClass": "bg-wildflower",
+            "description": "A spectacular coastal perennial known for its beautiful glaucous wavy leaves, large brilliant yellow poppy flowers, and extremely long curved seed pods.",
+            "usages": "Perfect for gravel gardens, coastal exposures, and dry sandy beds.",
+            "plantingTime": "Sow seeds in autumn or spring."
+        },
+        {
+            "name": "Wild Strawberry",
+            "scientificName": "Fragaria vesca",
+            "category": "Perennial",
+            "height": "10 - 30 cm",
+            "pollinators": ["Small Bees", "Hoverflies"],
+            "benefits": "Provides ground cover and small, intensely sweet, edible fruits.",
+            "plantingTip": "Great for dappled woodland shade or edging borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A creeping perennial that spreads by stolons, featuring small white flowers followed by distinctive, tiny, highly aromatic red strawberries.",
+            "usages": "Excellent edible ground cover for woodland gardens or underplanting.",
+            "plantingTime": "Plant runners or sow seeds in spring or autumn."
+        },
+        {
+            "name": "Greater Knapweed",
+            "scientificName": "Centaurea scabiosa",
+            "category": "Perennial",
+            "height": "50 - 90 cm",
+            "pollinators": ["Butterflies", "Bumblebees", "Finches"],
+            "benefits": "Large, showy, thistle-like magenta flower heads without the spines.",
+            "plantingTip": "Thrives on chalky or limestone soils in full sun.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, deep-rooted perennial with deeply pinnate leaves and large, prominent magenta-purple flower heads surrounded by a dark fringed involucre.",
+            "usages": "Fantastic for chalk downland meadows and a magnet for butterflies.",
+            "plantingTime": "Plant bare-root or potted specimens in spring or autumn."
+        },
+        {
+            "name": "Guelder Rose",
+            "scientificName": "Viburnum opulus",
+            "category": "Shrub",
+            "height": "2 - 4 m",
+            "pollinators": [
+                "Hoverflies",
+                "Moths",
+                "Bees"
+            ],
+            "benefits": "Spectacular lacecap white flowers in spring, followed by translucent red berries.",
+            "plantingTip": "Prefers damp, reasonably fertile soils. Beautiful when mixed into native hedgerows.",
+            "colorClass": "bg-tree",
+            "description": "A glorious native deciduous shrub that features maple-like lobed leaves. In late spring it produces flat heads of creamy-white flowers, turning to ruby-red berries in autumn.",
+            "usages": "Essential for wildlife-friendly hedging or damp woodland edges.",
+            "plantingTime": "Plant bare-root between November and March."
+        },
+        {
+            "name": "Meadowsweet",
+            "scientificName": "Filipendula ulmaria",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": [
+                "Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Produces large, fluffy, sweetly scented clouds of cream flowers.",
+            "plantingTip": "Requires moist soil; thrives alongside ponds or wet ditches.",
+            "colorClass": "bg-wildflower",
+            "description": "A tall, majestic damp-meadow perennial with distinctively veined, dark green leaflets and dense, frothy clusters of almond-scented creamy-white flowers.",
+            "usages": "Unbeatable for bog gardens and damp meadow plantings.",
+            "plantingTime": "Plant out in spring or autumn into reliably moist soil."
+        },
+        {
+            "name": "Common Comfrey",
+            "scientificName": "Symphytum officinale",
+            "category": "Perennial",
+            "height": "80 - 120 cm",
+            "pollinators": [
+                "Bumblebees",
+                "Mason Bees"
+            ],
+            "benefits": "One of the most powerful nectar producers. Tubular bell flowers recharge nectar rapidly.",
+            "plantingTip": "Has a deep taproot. Do not plant where you might want to remove it later.",
+            "colorClass": "bg-wildflower",
+            "description": "A vigorous, bristly perennial that forms large clumps. Through summer it unfurls characteristic drooping clusters of tubular flowers.",
+            "usages": "Incredible for bumblebees. Leaves can be harvested to make exceptionally rich liquid organic fertilizer.",
+            "plantingTime": "Sow seeds or plant root cuttings in spring."
+        },
+        {
+            "name": "Yellow Flag Iris",
+            "scientificName": "Iris pseudacorus",
+            "category": "Perennial",
+            "height": "1 - 1.5 m",
+            "pollinators": [
+                "Hoverflies",
+                "Long-tongued Bees"
+            ],
+            "benefits": "Striking architectural foliage and massive bright yellow summer blooms.",
+            "plantingTip": "Can be incredibly vigorous in shallow water. Submerge in aquatic baskets to restrict spread.",
+            "colorClass": "bg-wildflower",
+            "description": "A bold, robust aquatic and marginal perennial featuring tall, sword-like leaves and vivid yellow flowers.",
+            "usages": "Perfect for large wildlife ponds. Provides vital emergence supports for aquatic dragonfly nymphs.",
+            "plantingTime": "Plant rhizomes just below the soil surface in spring."
+        },
+        {
+            "name": "Cuckooflower",
+            "scientificName": "Cardamine pratensis",
+            "category": "Perennial",
+            "height": "30 - 50 cm",
+            "pollinators": [
+                "Orange-tip Butterfly (Host)"
+            ],
+            "benefits": "The primary larval food plant for the iconic Orange-tip butterfly.",
+            "plantingTip": "Prefers consistently damp grass or meadow conditions. Do not mow until mid-summer.",
+            "colorClass": "bg-wildflower",
+            "description": "Also known as Lady's Smock, this delicate, moisture-loving perennial puts up slender stems holding pale lilac flowers around the time the first cuckoos are heard.",
+            "usages": "Crucial for wetland or damp meadow restoration.",
+            "plantingTime": "Plant 'in the green' in spring or sow fresh seed in late summer."
+        },
+        {
+            "name": "Herb Robert",
+            "scientificName": "Geranium robertianum",
+            "category": "Perennial",
+            "height": "20 - 40 cm",
+            "pollinators": [
+                "Small Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Adaptable scrambling foliage that often turns deep crimson. Tiny bright pink flowers.",
+            "plantingTip": "Self-seeds prolifically in shady, dry, or awkward spots.",
+            "colorClass": "bg-wildflower",
+            "description": "A common but valuable native woodland geranium with fern-like leaves on reddish stems. It produces starry vivid pink flowers.",
+            "usages": "Excellent for dry shade, underplanting hedges, or filling gaps in stony ground.",
+            "plantingTime": "Sow seeds from spring to late summer."
+        },
+        {
             "name": "Viper's Bugloss",
             "scientificName": "Echium vulgare",
             "category": "Wildflower",
@@ -1620,6 +2072,232 @@ const PLANTS_DATASET = {
         }
     ],
     "midlands_wales_full_sun": [
+        {
+            "name": "Field Forget-me-not",
+            "scientificName": "Myosotis arvensis",
+            "category": "Wildflower",
+            "height": "10 - 40 cm",
+            "pollinators": ["Bees", "Hoverflies", "Butterflies"],
+            "benefits": "Produces tiny, beautiful sky-blue flowers.",
+            "plantingTip": "Easily self-seeds. Can be used in meadows or borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A delicate, hairy annual or short-lived perennial with tiny, typically azure-blue flowers featuring yellow centres. It forms low, expanding mounds of foliage.",
+            "usages": "Ideal for softening edges, underplanting, and creating naturalised drifts.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Corn Marigold",
+            "scientificName": "Glebionis segetum",
+            "category": "Wildflower",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Vibrant golden-yellow daisy-like flowers that bloom for a long period.",
+            "plantingTip": "Needs disturbed soil to germinate. Often sown as part of a cornfield annual mix.",
+            "colorClass": "bg-wildflower",
+            "description": "A striking native annual sporting brilliant golden-yellow flower heads and distinctive blue-green, slightly fleshy, deeply lobed leaves.",
+            "usages": "Excellent for annual meadow mixes and vibrant summer colour.",
+            "plantingTime": "Sow directly into bare soil in spring or autumn."
+        },
+        {
+            "name": "Wild Carrot",
+            "scientificName": "Daucus carota",
+            "category": "Wildflower",
+            "height": "30 - 90 cm",
+            "pollinators": ["Hoverflies", "Bees", "Beetles"],
+            "benefits": "Intricate, flat-topped clusters of tiny white flowers, sometimes with a single red flower in the centre.",
+            "plantingTip": "Thrives in well-drained, nutrient-poor soils.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright biennial bearing feathery foliage and stunning umbels of delicate white flowers. The flower heads curl inward as they go to seed, forming a characteristic 'bird's nest' shape.",
+            "usages": "Valuable in wildflower meadows and for attracting predatory insects.",
+            "plantingTime": "Sow seeds in late summer or autumn."
+        },
+        {
+            "name": "Red Clover",
+            "scientificName": "Trifolium pratense",
+            "category": "Wildflower",
+            "height": "15 - 40 cm",
+            "pollinators": ["Bumblebees", "Butterflies", "Moths"],
+            "benefits": "A highly valuable nectar source and excellent nitrogen fixer for the soil.",
+            "plantingTip": "Tolerates most soils. Great for meadow lawns.",
+            "colorClass": "bg-wildflower",
+            "description": "A familiar meadow perennial with distinctive trefoil leaves (often bearing a white crescent marking) and pinkish-red, globe-shaped flower heads.",
+            "usages": "Important component of wildlife lawns, meadows, and agricultural leys.",
+            "plantingTime": "Sow in spring or autumn."
+        },
+        {
+            "name": "White Campion",
+            "scientificName": "Silene latifolia",
+            "category": "Wildflower",
+            "height": "30 - 100 cm",
+            "pollinators": ["Moths"],
+            "benefits": "Flowers emit a sweet clove-like scent in the evening to attract night-flying moths.",
+            "plantingTip": "Well-drained soil in full sun or part shade.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright, slightly hairy perennial with opposite leaves and pure white, deeply notched petals on flowers that open fully in the late afternoon.",
+            "usages": "Perfect for night gardens and supporting nocturnal pollinator populations.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Betony",
+            "scientificName": "Betonica officinalis",
+            "category": "Perennial",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Butterflies", "Hoverflies"],
+            "benefits": "Striking magenta-purple flower spikes above neat rosettes of scalloped leaves.",
+            "plantingTip": "Grows well in heavy clay or moderately fertile soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A very attractive native perennial of grasslands and open woods, producing dense, short spikes of vivid purplish-red hooded flowers on square stems.",
+            "usages": "Ideal for herbaceous borders, meadow planting, and traditional herb gardens.",
+            "plantingTime": "Plant out from spring to autumn."
+        },
+        {
+            "name": "Common Mallow",
+            "scientificName": "Malva sylvestris",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Showy deep pink-purple flowers with dark veins, blooming profusely through summer.",
+            "plantingTip": "Very easily grown in most soils. Can self-seed vigorously.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, bushy perennial with deeply lobed leaves and highly attractive, large, pink-purple flowers streaked with darker veins.",
+            "usages": "Excellent for sunny banks, borders, and cottage garden styles.",
+            "plantingTime": "Sow seeds or plant out in spring."
+        },
+        {
+            "name": "Yellow Horned Poppy",
+            "scientificName": "Glaucium flavum",
+            "category": "Perennial",
+            "height": "30 - 90 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Striking silvery-blue foliage and large, bright yellow flowers.",
+            "plantingTip": "Needs extremely well-drained, sandy or shingly soil. Found naturally on coasts.",
+            "colorClass": "bg-wildflower",
+            "description": "A spectacular coastal perennial known for its beautiful glaucous wavy leaves, large brilliant yellow poppy flowers, and extremely long curved seed pods.",
+            "usages": "Perfect for gravel gardens, coastal exposures, and dry sandy beds.",
+            "plantingTime": "Sow seeds in autumn or spring."
+        },
+        {
+            "name": "Wild Strawberry",
+            "scientificName": "Fragaria vesca",
+            "category": "Perennial",
+            "height": "10 - 30 cm",
+            "pollinators": ["Small Bees", "Hoverflies"],
+            "benefits": "Provides ground cover and small, intensely sweet, edible fruits.",
+            "plantingTip": "Great for dappled woodland shade or edging borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A creeping perennial that spreads by stolons, featuring small white flowers followed by distinctive, tiny, highly aromatic red strawberries.",
+            "usages": "Excellent edible ground cover for woodland gardens or underplanting.",
+            "plantingTime": "Plant runners or sow seeds in spring or autumn."
+        },
+        {
+            "name": "Greater Knapweed",
+            "scientificName": "Centaurea scabiosa",
+            "category": "Perennial",
+            "height": "50 - 90 cm",
+            "pollinators": ["Butterflies", "Bumblebees", "Finches"],
+            "benefits": "Large, showy, thistle-like magenta flower heads without the spines.",
+            "plantingTip": "Thrives on chalky or limestone soils in full sun.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, deep-rooted perennial with deeply pinnate leaves and large, prominent magenta-purple flower heads surrounded by a dark fringed involucre.",
+            "usages": "Fantastic for chalk downland meadows and a magnet for butterflies.",
+            "plantingTime": "Plant bare-root or potted specimens in spring or autumn."
+        },
+        {
+            "name": "Guelder Rose",
+            "scientificName": "Viburnum opulus",
+            "category": "Shrub",
+            "height": "2 - 4 m",
+            "pollinators": [
+                "Hoverflies",
+                "Moths",
+                "Bees"
+            ],
+            "benefits": "Spectacular lacecap white flowers in spring, followed by translucent red berries.",
+            "plantingTip": "Prefers damp, reasonably fertile soils. Beautiful when mixed into native hedgerows.",
+            "colorClass": "bg-tree",
+            "description": "A glorious native deciduous shrub that features maple-like lobed leaves. In late spring it produces flat heads of creamy-white flowers, turning to ruby-red berries in autumn.",
+            "usages": "Essential for wildlife-friendly hedging or damp woodland edges.",
+            "plantingTime": "Plant bare-root between November and March."
+        },
+        {
+            "name": "Meadowsweet",
+            "scientificName": "Filipendula ulmaria",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": [
+                "Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Produces large, fluffy, sweetly scented clouds of cream flowers.",
+            "plantingTip": "Requires moist soil; thrives alongside ponds or wet ditches.",
+            "colorClass": "bg-wildflower",
+            "description": "A tall, majestic damp-meadow perennial with distinctively veined, dark green leaflets and dense, frothy clusters of almond-scented creamy-white flowers.",
+            "usages": "Unbeatable for bog gardens and damp meadow plantings.",
+            "plantingTime": "Plant out in spring or autumn into reliably moist soil."
+        },
+        {
+            "name": "Common Comfrey",
+            "scientificName": "Symphytum officinale",
+            "category": "Perennial",
+            "height": "80 - 120 cm",
+            "pollinators": [
+                "Bumblebees",
+                "Mason Bees"
+            ],
+            "benefits": "One of the most powerful nectar producers. Tubular bell flowers recharge nectar rapidly.",
+            "plantingTip": "Has a deep taproot. Do not plant where you might want to remove it later.",
+            "colorClass": "bg-wildflower",
+            "description": "A vigorous, bristly perennial that forms large clumps. Through summer it unfurls characteristic drooping clusters of tubular flowers.",
+            "usages": "Incredible for bumblebees. Leaves can be harvested to make exceptionally rich liquid organic fertilizer.",
+            "plantingTime": "Sow seeds or plant root cuttings in spring."
+        },
+        {
+            "name": "Yellow Flag Iris",
+            "scientificName": "Iris pseudacorus",
+            "category": "Perennial",
+            "height": "1 - 1.5 m",
+            "pollinators": [
+                "Hoverflies",
+                "Long-tongued Bees"
+            ],
+            "benefits": "Striking architectural foliage and massive bright yellow summer blooms.",
+            "plantingTip": "Can be incredibly vigorous in shallow water. Submerge in aquatic baskets to restrict spread.",
+            "colorClass": "bg-wildflower",
+            "description": "A bold, robust aquatic and marginal perennial featuring tall, sword-like leaves and vivid yellow flowers.",
+            "usages": "Perfect for large wildlife ponds. Provides vital emergence supports for aquatic dragonfly nymphs.",
+            "plantingTime": "Plant rhizomes just below the soil surface in spring."
+        },
+        {
+            "name": "Cuckooflower",
+            "scientificName": "Cardamine pratensis",
+            "category": "Perennial",
+            "height": "30 - 50 cm",
+            "pollinators": [
+                "Orange-tip Butterfly (Host)"
+            ],
+            "benefits": "The primary larval food plant for the iconic Orange-tip butterfly.",
+            "plantingTip": "Prefers consistently damp grass or meadow conditions. Do not mow until mid-summer.",
+            "colorClass": "bg-wildflower",
+            "description": "Also known as Lady's Smock, this delicate, moisture-loving perennial puts up slender stems holding pale lilac flowers around the time the first cuckoos are heard.",
+            "usages": "Crucial for wetland or damp meadow restoration.",
+            "plantingTime": "Plant 'in the green' in spring or sow fresh seed in late summer."
+        },
+        {
+            "name": "Herb Robert",
+            "scientificName": "Geranium robertianum",
+            "category": "Perennial",
+            "height": "20 - 40 cm",
+            "pollinators": [
+                "Small Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Adaptable scrambling foliage that often turns deep crimson. Tiny bright pink flowers.",
+            "plantingTip": "Self-seeds prolifically in shady, dry, or awkward spots.",
+            "colorClass": "bg-wildflower",
+            "description": "A common but valuable native woodland geranium with fern-like leaves on reddish stems. It produces starry vivid pink flowers.",
+            "usages": "Excellent for dry shade, underplanting hedges, or filling gaps in stony ground.",
+            "plantingTime": "Sow seeds from spring to late summer."
+        },
         {
             "name": "Viper's Bugloss",
             "scientificName": "Echium vulgare",
@@ -2434,6 +3112,232 @@ const PLANTS_DATASET = {
         }
     ],
     "coastal_full_sun": [
+        {
+            "name": "Field Forget-me-not",
+            "scientificName": "Myosotis arvensis",
+            "category": "Wildflower",
+            "height": "10 - 40 cm",
+            "pollinators": ["Bees", "Hoverflies", "Butterflies"],
+            "benefits": "Produces tiny, beautiful sky-blue flowers.",
+            "plantingTip": "Easily self-seeds. Can be used in meadows or borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A delicate, hairy annual or short-lived perennial with tiny, typically azure-blue flowers featuring yellow centres. It forms low, expanding mounds of foliage.",
+            "usages": "Ideal for softening edges, underplanting, and creating naturalised drifts.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Corn Marigold",
+            "scientificName": "Glebionis segetum",
+            "category": "Wildflower",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Vibrant golden-yellow daisy-like flowers that bloom for a long period.",
+            "plantingTip": "Needs disturbed soil to germinate. Often sown as part of a cornfield annual mix.",
+            "colorClass": "bg-wildflower",
+            "description": "A striking native annual sporting brilliant golden-yellow flower heads and distinctive blue-green, slightly fleshy, deeply lobed leaves.",
+            "usages": "Excellent for annual meadow mixes and vibrant summer colour.",
+            "plantingTime": "Sow directly into bare soil in spring or autumn."
+        },
+        {
+            "name": "Wild Carrot",
+            "scientificName": "Daucus carota",
+            "category": "Wildflower",
+            "height": "30 - 90 cm",
+            "pollinators": ["Hoverflies", "Bees", "Beetles"],
+            "benefits": "Intricate, flat-topped clusters of tiny white flowers, sometimes with a single red flower in the centre.",
+            "plantingTip": "Thrives in well-drained, nutrient-poor soils.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright biennial bearing feathery foliage and stunning umbels of delicate white flowers. The flower heads curl inward as they go to seed, forming a characteristic 'bird's nest' shape.",
+            "usages": "Valuable in wildflower meadows and for attracting predatory insects.",
+            "plantingTime": "Sow seeds in late summer or autumn."
+        },
+        {
+            "name": "Red Clover",
+            "scientificName": "Trifolium pratense",
+            "category": "Wildflower",
+            "height": "15 - 40 cm",
+            "pollinators": ["Bumblebees", "Butterflies", "Moths"],
+            "benefits": "A highly valuable nectar source and excellent nitrogen fixer for the soil.",
+            "plantingTip": "Tolerates most soils. Great for meadow lawns.",
+            "colorClass": "bg-wildflower",
+            "description": "A familiar meadow perennial with distinctive trefoil leaves (often bearing a white crescent marking) and pinkish-red, globe-shaped flower heads.",
+            "usages": "Important component of wildlife lawns, meadows, and agricultural leys.",
+            "plantingTime": "Sow in spring or autumn."
+        },
+        {
+            "name": "White Campion",
+            "scientificName": "Silene latifolia",
+            "category": "Wildflower",
+            "height": "30 - 100 cm",
+            "pollinators": ["Moths"],
+            "benefits": "Flowers emit a sweet clove-like scent in the evening to attract night-flying moths.",
+            "plantingTip": "Well-drained soil in full sun or part shade.",
+            "colorClass": "bg-wildflower",
+            "description": "An upright, slightly hairy perennial with opposite leaves and pure white, deeply notched petals on flowers that open fully in the late afternoon.",
+            "usages": "Perfect for night gardens and supporting nocturnal pollinator populations.",
+            "plantingTime": "Sow seeds in spring or autumn."
+        },
+        {
+            "name": "Betony",
+            "scientificName": "Betonica officinalis",
+            "category": "Perennial",
+            "height": "30 - 60 cm",
+            "pollinators": ["Bees", "Butterflies", "Hoverflies"],
+            "benefits": "Striking magenta-purple flower spikes above neat rosettes of scalloped leaves.",
+            "plantingTip": "Grows well in heavy clay or moderately fertile soils.",
+            "colorClass": "bg-wildflower",
+            "description": "A very attractive native perennial of grasslands and open woods, producing dense, short spikes of vivid purplish-red hooded flowers on square stems.",
+            "usages": "Ideal for herbaceous borders, meadow planting, and traditional herb gardens.",
+            "plantingTime": "Plant out from spring to autumn."
+        },
+        {
+            "name": "Common Mallow",
+            "scientificName": "Malva sylvestris",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Showy deep pink-purple flowers with dark veins, blooming profusely through summer.",
+            "plantingTip": "Very easily grown in most soils. Can self-seed vigorously.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, bushy perennial with deeply lobed leaves and highly attractive, large, pink-purple flowers streaked with darker veins.",
+            "usages": "Excellent for sunny banks, borders, and cottage garden styles.",
+            "plantingTime": "Sow seeds or plant out in spring."
+        },
+        {
+            "name": "Yellow Horned Poppy",
+            "scientificName": "Glaucium flavum",
+            "category": "Perennial",
+            "height": "30 - 90 cm",
+            "pollinators": ["Bees", "Hoverflies"],
+            "benefits": "Striking silvery-blue foliage and large, bright yellow flowers.",
+            "plantingTip": "Needs extremely well-drained, sandy or shingly soil. Found naturally on coasts.",
+            "colorClass": "bg-wildflower",
+            "description": "A spectacular coastal perennial known for its beautiful glaucous wavy leaves, large brilliant yellow poppy flowers, and extremely long curved seed pods.",
+            "usages": "Perfect for gravel gardens, coastal exposures, and dry sandy beds.",
+            "plantingTime": "Sow seeds in autumn or spring."
+        },
+        {
+            "name": "Wild Strawberry",
+            "scientificName": "Fragaria vesca",
+            "category": "Perennial",
+            "height": "10 - 30 cm",
+            "pollinators": ["Small Bees", "Hoverflies"],
+            "benefits": "Provides ground cover and small, intensely sweet, edible fruits.",
+            "plantingTip": "Great for dappled woodland shade or edging borders.",
+            "colorClass": "bg-wildflower",
+            "description": "A creeping perennial that spreads by stolons, featuring small white flowers followed by distinctive, tiny, highly aromatic red strawberries.",
+            "usages": "Excellent edible ground cover for woodland gardens or underplanting.",
+            "plantingTime": "Plant runners or sow seeds in spring or autumn."
+        },
+        {
+            "name": "Greater Knapweed",
+            "scientificName": "Centaurea scabiosa",
+            "category": "Perennial",
+            "height": "50 - 90 cm",
+            "pollinators": ["Butterflies", "Bumblebees", "Finches"],
+            "benefits": "Large, showy, thistle-like magenta flower heads without the spines.",
+            "plantingTip": "Thrives on chalky or limestone soils in full sun.",
+            "colorClass": "bg-wildflower",
+            "description": "A robust, deep-rooted perennial with deeply pinnate leaves and large, prominent magenta-purple flower heads surrounded by a dark fringed involucre.",
+            "usages": "Fantastic for chalk downland meadows and a magnet for butterflies.",
+            "plantingTime": "Plant bare-root or potted specimens in spring or autumn."
+        },
+        {
+            "name": "Guelder Rose",
+            "scientificName": "Viburnum opulus",
+            "category": "Shrub",
+            "height": "2 - 4 m",
+            "pollinators": [
+                "Hoverflies",
+                "Moths",
+                "Bees"
+            ],
+            "benefits": "Spectacular lacecap white flowers in spring, followed by translucent red berries.",
+            "plantingTip": "Prefers damp, reasonably fertile soils. Beautiful when mixed into native hedgerows.",
+            "colorClass": "bg-tree",
+            "description": "A glorious native deciduous shrub that features maple-like lobed leaves. In late spring it produces flat heads of creamy-white flowers, turning to ruby-red berries in autumn.",
+            "usages": "Essential for wildlife-friendly hedging or damp woodland edges.",
+            "plantingTime": "Plant bare-root between November and March."
+        },
+        {
+            "name": "Meadowsweet",
+            "scientificName": "Filipendula ulmaria",
+            "category": "Perennial",
+            "height": "60 - 120 cm",
+            "pollinators": [
+                "Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Produces large, fluffy, sweetly scented clouds of cream flowers.",
+            "plantingTip": "Requires moist soil; thrives alongside ponds or wet ditches.",
+            "colorClass": "bg-wildflower",
+            "description": "A tall, majestic damp-meadow perennial with distinctively veined, dark green leaflets and dense, frothy clusters of almond-scented creamy-white flowers.",
+            "usages": "Unbeatable for bog gardens and damp meadow plantings.",
+            "plantingTime": "Plant out in spring or autumn into reliably moist soil."
+        },
+        {
+            "name": "Common Comfrey",
+            "scientificName": "Symphytum officinale",
+            "category": "Perennial",
+            "height": "80 - 120 cm",
+            "pollinators": [
+                "Bumblebees",
+                "Mason Bees"
+            ],
+            "benefits": "One of the most powerful nectar producers. Tubular bell flowers recharge nectar rapidly.",
+            "plantingTip": "Has a deep taproot. Do not plant where you might want to remove it later.",
+            "colorClass": "bg-wildflower",
+            "description": "A vigorous, bristly perennial that forms large clumps. Through summer it unfurls characteristic drooping clusters of tubular flowers.",
+            "usages": "Incredible for bumblebees. Leaves can be harvested to make exceptionally rich liquid organic fertilizer.",
+            "plantingTime": "Sow seeds or plant root cuttings in spring."
+        },
+        {
+            "name": "Yellow Flag Iris",
+            "scientificName": "Iris pseudacorus",
+            "category": "Perennial",
+            "height": "1 - 1.5 m",
+            "pollinators": [
+                "Hoverflies",
+                "Long-tongued Bees"
+            ],
+            "benefits": "Striking architectural foliage and massive bright yellow summer blooms.",
+            "plantingTip": "Can be incredibly vigorous in shallow water. Submerge in aquatic baskets to restrict spread.",
+            "colorClass": "bg-wildflower",
+            "description": "A bold, robust aquatic and marginal perennial featuring tall, sword-like leaves and vivid yellow flowers.",
+            "usages": "Perfect for large wildlife ponds. Provides vital emergence supports for aquatic dragonfly nymphs.",
+            "plantingTime": "Plant rhizomes just below the soil surface in spring."
+        },
+        {
+            "name": "Cuckooflower",
+            "scientificName": "Cardamine pratensis",
+            "category": "Perennial",
+            "height": "30 - 50 cm",
+            "pollinators": [
+                "Orange-tip Butterfly (Host)"
+            ],
+            "benefits": "The primary larval food plant for the iconic Orange-tip butterfly.",
+            "plantingTip": "Prefers consistently damp grass or meadow conditions. Do not mow until mid-summer.",
+            "colorClass": "bg-wildflower",
+            "description": "Also known as Lady's Smock, this delicate, moisture-loving perennial puts up slender stems holding pale lilac flowers around the time the first cuckoos are heard.",
+            "usages": "Crucial for wetland or damp meadow restoration.",
+            "plantingTime": "Plant 'in the green' in spring or sow fresh seed in late summer."
+        },
+        {
+            "name": "Herb Robert",
+            "scientificName": "Geranium robertianum",
+            "category": "Perennial",
+            "height": "20 - 40 cm",
+            "pollinators": [
+                "Small Bees",
+                "Hoverflies"
+            ],
+            "benefits": "Adaptable scrambling foliage that often turns deep crimson. Tiny bright pink flowers.",
+            "plantingTip": "Self-seeds prolifically in shady, dry, or awkward spots.",
+            "colorClass": "bg-wildflower",
+            "description": "A common but valuable native woodland geranium with fern-like leaves on reddish stems. It produces starry vivid pink flowers.",
+            "usages": "Excellent for dry shade, underplanting hedges, or filling gaps in stony ground.",
+            "plantingTime": "Sow seeds from spring to late summer."
+        },
         {
             "name": "Viper's Bugloss",
             "scientificName": "Echium vulgare",
@@ -3257,13 +4161,15 @@ const STATE = {
     sunlight: 'full_sun',
     searchQuery: '',
     selectedPlant: null,
-    currentPlants: []
+    currentPlants: [],
+    nontoxicOnly: false
 };
 
 // DOM References
 const regionSelect = document.getElementById('region');
 const sunlightRadios = document.getElementsByName('sunlight');
 const searchQueryInput = document.getElementById('searchQuery');
+const nontoxicToggle = document.getElementById('nontoxicToggle');
 const plantsGrid = document.getElementById('plantsGrid');
 const emptyState = document.getElementById('emptyState');
 const plantCountBadge = document.getElementById('plantCount');
@@ -3299,6 +4205,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchQueryInput.addEventListener('input', (e) => {
         STATE.searchQuery = e.target.value.toLowerCase().trim();
+        renderSuggestions();
+    });
+
+    nontoxicToggle.addEventListener('change', (e) => {
+        STATE.nontoxicOnly = e.target.checked;
         renderSuggestions();
     });
 
@@ -3424,7 +4335,734 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const ALL_REGION_NATIVE_PLANTS = [
+    {
+        "name": "Bell Heather",
+        "scientificName": "Erica cinerea",
+        "category": "Shrub",
+        "height": "15 - 60 cm",
+        "pollinators": ["Bumblebees", "Honeybees", "Moths"],
+        "benefits": "Provides dense nectar in mid to late summer for bees.",
+        "plantingTip": "Needs very well-drained, acidic soil in full sun.",
+        "colorClass": "bg-tree",
+        "description": "A very attractive native shrub characteristic of dry heathlands. It offers deep purple, bell-shaped flowers in dense clusters along its wiry stems.",
+        "usages": "Great for dry heather gardens, acidic banks, and heathland regeneration.",
+        "plantingTime": "Plant in spring or autumn."
+    },
+    {
+        "name": "Cross-leaved Heath",
+        "scientificName": "Erica tetralix",
+        "category": "Shrub",
+        "height": "15 - 50 cm",
+        "pollinators": ["Bumblebees", "Moths"],
+        "benefits": "Provides valuable late-season nectar in wet, boggy environments.",
+        "plantingTip": "Requires permanently moist or wet, acidic peaty soil.",
+        "colorClass": "bg-tree",
+        "description": "Distinctive for its greyish-green leaves arranged in whorls of four (cross-like). The flowers are soft pale pink to rose, drooping in compact terminal umbels.",
+        "usages": "Ideal for bog gardens, pond margins on acid soils, and wet heathlands.",
+        "plantingTime": "Plant in spring or early autumn."
+    },
+    {
+        "name": "Common Rock-rose",
+        "scientificName": "Helianthemum nummularium",
+        "category": "Shrub",
+        "height": "10 - 30 cm",
+        "pollinators": ["Bees", "Hoverflies"],
+        "benefits": "Bright yellow flowers over a very long period; excellent ground cover.",
+        "plantingTip": "Thrives on thin, chalk or limestone soils in direct sunlight.",
+        "colorClass": "bg-tree",
+        "description": "A low-growing, spreading evergreen shrublet. It produces an abundance of saucer-shaped, bright yellow flowers with crumpled petals that follow the sun.",
+        "usages": "Perfect for rockeries, scree gardens, and chalk banks.",
+        "plantingTime": "Plant out in spring or autumn."
+    },
+    {
+        "name": "Wild Pansy",
+        "scientificName": "Viola tricolor",
+        "category": "Annual",
+        "height": "10 - 20 cm",
+        "pollinators": ["Bees", "Butterflies"],
+        "benefits": "Known as Heartsease, producing charming tricoloured blooms over a long season.",
+        "plantingTip": "Easily self-seeds in bare or disturbed ground.",
+        "colorClass": "bg-wildflower",
+        "description": "The delicate, charming ancestor of cultivated pansies. The blooms are a variable mix of purple, yellow, and white, with dark nectar guides.",
+        "usages": "Ideal for edges, gaps in paving, and cottage gardens.",
+        "plantingTime": "Sow directly in spring or late summer."
+    },
+    {
+        "name": "Meadow Saxifrage",
+        "scientificName": "Saxifraga granulata",
+        "category": "Perennial",
+        "height": "15 - 30 cm",
+        "pollinators": ["Flies", "Beetles", "Small Bees"],
+        "benefits": "Delicate white blooms for spring meadows; adaptable to damp soils.",
+        "plantingTip": "Grows from small bulbils; protect from aggressive spreading grasses.",
+        "colorClass": "bg-wildflower",
+        "description": "A beautiful early meadow plant. It develops small kidney-shaped basal leaves and sends up delicate, slightly hairy stems topped with relatively large, pure white, starry flowers.",
+        "usages": "Damp meadows, riverbanks, and lightly shaded rockeries.",
+        "plantingTime": "Plant bulbils in late summer or autumn."
+    },
+    {
+        "name": "Salad Burnet",
+        "scientificName": "Poterium sanguisorba",
+        "category": "Perennial",
+        "height": "20 - 40 cm",
+        "pollinators": ["Bees", "Butterflies"],
+        "benefits": "Edible cucumber-flavored leaves and unusual red spherical flower heads.",
+        "plantingTip": "Needs well-drained, alkaline (chalky) soil in full sun.",
+        "colorClass": "bg-wildflower",
+        "description": "A highly attractive, refined plant with pinnate rosettes of foliage that taste of cucumber. Its flowers form tight, rounded, reddish-green globes on tall wiry stems.",
+        "usages": "Herb gardens, chalk downland meadows, and dry borders.",
+        "plantingTime": "Sow seeds or plant out in spring."
+    },
+    {
+        "name": "Wild Mignonette",
+        "scientificName": "Reseda lutea",
+        "category": "Biennial",
+        "height": "30 - 70 cm",
+        "pollinators": ["Bees", "Butterflies", "Hoverflies"],
+        "benefits": "Produces densely packed spikes of tiny, fragrant pale yellow flowers.",
+        "plantingTip": "Thrives on disturbed, poor, and chalky soil.",
+        "colorClass": "bg-wildflower",
+        "description": "A bushy plant with deeply lobed leaves. It sends up long spikes loaded with pale yellowy-green flowers that provide excellent forage for a host of insects.",
+        "usages": "Dry borders, sunny banks, and stony or gravelly areas.",
+        "plantingTime": "Sow directly in spring or autumn."
+    },
+    {
+        "name": "Weld",
+        "scientificName": "Reseda luteola",
+        "category": "Biennial",
+        "height": "50 - 150 cm",
+        "pollinators": ["Bees", "Hoverflies"],
+        "benefits": "An ancient dye plant providing tall, striking architectural spires.",
+        "plantingTip": "Requires disturbed ground to establish; prefers alkaline soil.",
+        "colorClass": "bg-wildflower",
+        "description": "Also known as Dyer's Rocket. A tall, upright biennial that forms a sturdy rosette in its first year, followed by very tall, thin, curving spires of minute yellow flowers.",
+        "usages": "Fantastic structural element in dry beds and historical dye gardens.",
+        "plantingTime": "Sow in spring or late summer."
+    },
+    {
+        "name": "Wild Basil",
+        "scientificName": "Clinopodium vulgare",
+        "category": "Perennial",
+        "height": "30 - 60 cm",
+        "pollinators": ["Bees", "Butterflies"],
+        "benefits": "Aromatic foliage and dense whorls of pink flowers beloved by insects.",
+        "plantingTip": "Thrives on well-drained calcareous (chalky) soils in full sun or part shade.",
+        "colorClass": "bg-wildflower",
+        "description": "A hairy, aromatic herb of the mint family. It forms neat, spreading clumps and produces fuzzy, intensely pink-purple flowers arranged in dense whorls along the stems.",
+        "usages": "Excellent for herb gardens, sunny borders, and chalk meadows.",
+        "plantingTime": "Plant out in spring or autumn."
+    },
+    {
+        "name": "Hound's-tongue",
+        "scientificName": "Cynoglossum officinale",
+        "category": "Biennial",
+        "height": "30 - 80 cm",
+        "pollinators": ["Bees", "Butterflies"],
+        "benefits": "Unusual maroon-purple flowers, attractive to pollinators, smelling strangely of mice.",
+        "plantingTip": "Needs dry, well-drained soil; frequently found on sand dunes and chalk.",
+        "colorClass": "bg-wildflower",
+        "description": "A downy, soft-leaved biennial. Its dull reddish-purple flowers give way to distinctive barbed nutlets that stick heavily to animal fur to disperse.",
+        "usages": "Dry banks, coastal gardens, and wild corners.",
+        "plantingTime": "Sow in spring or autumn."
+    },
+    {
+        "name": "Wild Clary",
+        "scientificName": "Salvia verbenaca",
+        "category": "Perennial",
+        "height": "30 - 80 cm",
+        "pollinators": ["Bees", "Butterflies"],
+        "benefits": "Aromatic sage-like leaves and tall spikes of violet-blue flowers.",
+        "plantingTip": "Needs very well-drained, dry soil in full sun.",
+        "colorClass": "bg-wildflower",
+        "description": "A native sage with wrinkled, aromatic leaves forming a basal rosette. In summer, it sends up spikes of small but vivid violet-blue, hooded flowers.",
+        "usages": "Excellent for gravel gardens, dry borders, and coastal planting.",
+        "plantingTime": "Sow in autumn or spring."
+    },
+    {
+        "name": "Sea Thrift",
+        "scientificName": "Armeria maritima",
+        "category": "Perennial",
+        "height": "15 - 30 cm",
+        "pollinators": ["Small Bees", "Flies", "Butterflies"],
+        "benefits": "Extremely wind and salt tolerant. Dense pink pom-pom flowers.",
+        "plantingTip": "Perfect for coastal gardens, rockeries, or green roofs.",
+        "colorClass": "bg-wildflower",
+        "description": "Forms dense, evergreen cushions of grass-like foliage. In late spring and summer, stiff, wiry stems rise bearing spherical clusters of bright pink (or sometimes white) papery flowers.",
+        "usages": "Rockeries, coastal banks, and edging paths.",
+        "plantingTime": "Plant out in spring or early autumn."
+    },
+    {
+        "name": "Wood Avens",
+        "scientificName": "Geum urbanum",
+        "category": "Perennial",
+        "height": "30 - 60 cm",
+        "pollinators": ["Small Hoverflies"],
+        "benefits": "Tolerates deep shade and poor soils.",
+        "plantingTip": "Spreads very readily by burr-like seeds, so position where it has room to roam.",
+        "colorClass": "bg-wildflower",
+        "description": "Also known as Herb Bennet. It is a subtle woodland edge plant with lobed leaves and small, five-petalled yellow flowers followed by spiky, reddish seed heads that catch on animal fur.",
+        "usages": "Naturalising in rough, shady corners or under hedges.",
+        "plantingTime": "Plant in spring or autumn."
+    },
+    {
+        "name": "Eyebright",
+        "scientificName": "Euphrasia officinalis",
+        "category": "Annual",
+        "height": "5 - 20 cm",
+        "pollinators": ["Small Bees"],
+        "benefits": "Semi-parasitic on grasses, helping to keep meadow grass vigor in check.",
+        "plantingTip": "Must be sown into established short grass, as it relies on grass roots to thrive.",
+        "colorClass": "bg-wildflower",
+        "description": "A tiny, beautiful semi-parasitic meadow plant. It produces highly detailed, small white flowers streaked with purple lines and a central yellow spot, thought historically to resemble an eye.",
+        "usages": "Essential for creating species-rich fine grass lawns and meadows.",
+        "plantingTime": "Sow directly into grass in autumn."
+    },
+    {
+        "name": "Yellow Archangel",
+        "scientificName": "Lamium galeobdolon",
+        "category": "Perennial",
+        "height": "30 - 60 cm",
+        "pollinators": ["Bumblebees"],
+        "benefits": "Thrives in dry, deep shade where little else will grow.",
+        "plantingTip": "Very vigorous spreader. Ensure you plant the native, non-variegated form to avoid invasiveness.",
+        "colorClass": "bg-wildflower",
+        "description": "A woodland dead-nettle that spreads vigorously by runners. It has nettle-like leaves lacking a sting and produces whorls of pale yellow, hooded flowers in late spring.",
+        "usages": "Groundcover under dense deciduous canopies or mature hedgerows.",
+        "plantingTime": "Plant out from autumn to spring."
+    },
+    {
+        "name": "Herb Paris",
+        "scientificName": "Paris quadrifolia",
+        "category": "Perennial",
+        "height": "20 - 40 cm",
+        "pollinators": ["Flies", "Beetles"],
+        "benefits": "A striking, rare ancient woodland indicator species.",
+        "plantingTip": "Requires undisturbed, moist, chalky or limestone woodland soil.",
+        "colorClass": "bg-wildflower",
+        "description": "A bizarre and beautiful woodland perennial. It produces a single whorl of four large leaves, from the center of which rises a highly unusual green and yellow starry flower, later forming a single toxic black berry.",
+        "usages": "Shaded, established woodland gardens with alkaline soil.",
+        "plantingTime": "Plant rhizomes in autumn."
+    },
+    {
+        "name": "Lily of the Valley",
+        "scientificName": "Convallaria majalis",
+        "category": "Perennial",
+        "height": "15 - 30 cm",
+        "pollinators": ["Bees"],
+        "benefits": "Incredibly strong, sweet fragrance from elegant nodding white bells.",
+        "plantingTip": "Spreads vigorously via underground rhizomes in right conditions.",
+        "colorClass": "bg-wildflower",
+        "description": "A famous woodland native forming carpets of large, paired elliptical green leaves. In spring, arching stems carry a sequence of pure white, delightfully scented bell-shaped flowers.",
+        "usages": "Scented groundcover for deeply shaded, moist borders or woodland edge.",
+        "plantingTime": "Plant crowns in late autumn or early spring."
+    },
+    {
+        "name": "St John's Wort",
+        "scientificName": "Hypericum perforatum",
+        "category": "Perennial",
+        "height": "30 - 90 cm",
+        "pollinators": ["Bees", "Hoverflies"],
+        "benefits": "Abundant bright yellow flowers with prominent stamens in mid-summer.",
+        "plantingTip": "Very adaptable, but prefers dry, sunny spots.",
+        "colorClass": "bg-wildflower",
+        "description": "A well-known medicinal plant. The oval leaves, when held to the light, show translucent 'perforated' oil glands. It bursts into vivid yellow, star-like flowers that bleed a red oil when crushed.",
+        "usages": "Sunny banks, herbal borders, and rough grasslands.",
+        "plantingTime": "Sow seeds or plant out in spring."
+    },
+    {
+        "name": "Lords-and-Ladies",
+        "scientificName": "Arum maculatum",
+        "category": "Perennial / Bulb",
+        "height": "20 - 40 cm",
+        "pollinators": ["Small Flies", "Midges"],
+        "benefits": "Fascinating specialized pollination mechanism. Bright red autumn berries.",
+        "plantingTip": "Thrives in deep, damp woodland shade.",
+        "colorClass": "bg-wildflower",
+        "description": "An extraordinary native. Arrow-shaped, often black-spotted leaves appear in early spring. The flower is a pale green hood (spathe) enclosing a dark purplish column (spadix) which emits heat and scent to trap flies. Later, it leaves a striking spike of poisonous bright orange-red berries.",
+        "usages": "Wild shaded corners and ancient woodland recreations.",
+        "plantingTime": "Plant tubers in autumn."
+    },
+    {
+        "name": "Coltsfoot",
+        "scientificName": "Tussilago farfara",
+        "category": "Perennial",
+        "height": "10 - 20 cm",
+        "pollinators": ["Early Bees", "Flies"],
+        "benefits": "One of the very first sources of nectar in early spring.",
+        "plantingTip": "Extremely vigorous and invasive; do not plant in a small or neat garden.",
+        "colorClass": "bg-wildflower",
+        "description": "Unusual in that its bright yellow, dandelion-like flowers appear on scaly stems very early in spring long before the hoof-shaped, felted green leaves emerge.",
+        "usages": "Reclaiming very rough, disturbed wasteland or steep clay banks.",
+        "plantingTime": "Plant root fragments in winter or spring."
+    },
+    {
+        "name": "Borage",
+        "scientificName": "Borago officinalis",
+        "category": "Annual",
+        "height": "60 - 80 cm",
+        "pollinators": ["Honeybees", "Bumblebees"],
+        "benefits": "Incredibly high nectar replenishment rate. Starry blue flowers.",
+        "plantingTip": "Self-seeds readily. Prefers sunny positions in well-drained soil.",
+        "colorClass": "bg-wildflower",
+        "description": "A bristly annual with striking, star-shaped, clear blue flowers. It is one of the most prolific nectar providers, constantly replenishing its stores to attract continuous waves of bees.",
+        "usages": "Herb gardens, pollinator patches, and borders. Flowers are edible and often used to garnish summer drinks.",
+        "plantingTime": "Sow directly in spring."
+    },
+    {
+        "name": "Meadow Vetchling",
+        "scientificName": "Lathyrus pratensis",
+        "category": "Perennial",
+        "height": "30 - 100 cm",
+        "pollinators": ["Bumblebees", "Butterflies"],
+        "benefits": "Provides valuable nitrogen to the soil. Brilliant yellow pea-like flowers.",
+        "plantingTip": "Rambles through rough grasses. Needs other stronger plants for support.",
+        "colorClass": "bg-wildflower",
+        "description": "A scrambling, climbing perennial of the pea family. It uses tendrils to hoist itself up among meadow grasses, displaying clusters of bright yellow flowers.",
+        "usages": "Excellent for long-grass meadows, rough banks, and hedgerow bases.",
+        "plantingTime": "Sow directly or plant out in spring."
+    },
+    {
+        "name": "Tufted Vetch",
+        "scientificName": "Vicia cracca",
+        "category": "Perennial",
+        "height": "1 - 2 m",
+        "pollinators": ["Bumblebees"],
+        "benefits": "Another superb nitrogen fixer with striking, dense spikes of purple-blue flowers.",
+        "plantingTip": "Grows vigorously through hedgerows or tall meadow grass.",
+        "colorClass": "bg-wildflower",
+        "description": "A vigorous climbing perennial that scrambles through hedges and tall vegetation using tendrils. It produces dense, one-sided racemes of vivid violet-blue flowers.",
+        "usages": "Ideal for enriching boundary hedges and wilder structural habitats.",
+        "plantingTime": "Sow directly or plant out in spring or autumn."
+    },
+    {
+        "name": "White Clover",
+        "scientificName": "Trifolium repens",
+        "category": "Perennial",
+        "height": "10 - 20 cm",
+        "pollinators": ["Honeybees", "Bumblebees"],
+        "benefits": "Mainstay nectar source. Fixes nitrogen and remains green even in drought.",
+        "plantingTip": "Can outcompete finer grasses, but is essential for an eco-lawn.",
+        "colorClass": "bg-wildflower",
+        "description": "A low, creeping perennial bearing familiar trifoliate leaves and globes of white or faintly pinkish fragrant flowers. Vital for sustaining bee populations mid-summer.",
+        "usages": "The backbone of any wildlife-friendly lawn, orchards, and grazing pastures.",
+        "plantingTime": "Sow in spring or late summer."
+    },
+    {
+        "name": "Spindle",
+        "scientificName": "Euonymus europaeus",
+        "category": "Shrub",
+        "height": "Up to 4m",
+        "pollinators": ["Small Flies", "Birds (Berries)"],
+        "benefits": "Incredible autumn leaf colour and highly unusual, vibrant pink and orange fruit capsules.",
+        "plantingTip": "Tolerates most soils, including heavy clay and chalk.",
+        "colorClass": "bg-tree",
+        "description": "A deciduous shrub that goes relatively unnoticed until autumn, when its foliage turns brilliant crimson. It then reveals shocking-pink lobed fruits that split to expose bright orange seeds.",
+        "usages": "Native hedgerows, woodland edges, and architectural winter interest.",
+        "plantingTime": "Plant out from autumn to early spring."
+    },
+    {
+        "name": "Broom",
+        "scientificName": "Cytisus scoparius",
+        "category": "Shrub",
+        "height": "1 - 2 m",
+        "pollinators": ["Bumblebees", "Solitary Bees"],
+        "benefits": "Explosive pollen-release mechanism triggered by large bees.",
+        "plantingTip": "Needs full sun and well-drained, lime-free (acidic) sandy or rocky soil.",
+        "colorClass": "bg-tree",
+        "description": "A tough, wiry deciduous shrub with rigid green stems. It is entirely smothered in large, intensely bright yellow, vanilla-scented pea-like flowers in late spring.",
+        "usages": "Perfect for dry banks, heathland edges, and poor coastal soils.",
+        "plantingTime": "Plant in spring or autumn."
+    },
+    {
+        "name": "Dogwood",
+        "scientificName": "Cornus sanguinea",
+        "category": "Shrub",
+        "height": "Up to 3m",
+        "pollinators": ["Hoverflies", "Bees", "Birds (Berries)"],
+        "benefits": "Brilliant crimson winter stems. Dense clusters of white flowers followed by black berries.",
+        "plantingTip": "Can be coppiced (cut hard back) in late winter to encourage vivid young red stems.",
+        "colorClass": "bg-tree",
+        "description": "A vigorous upright native shrub. While its white summer flowers and dark autumn berries are attractive to wildlife, it is most prized for its naked, blood-red twigs gleaming in winter sun.",
+        "usages": "Crucial for winter garden structure, moist margins, and mixed hedges.",
+        "plantingTime": "Plant bare-root or potted in autumn to spring."
+    },
+    {
+        "name": "Wayfaring Tree",
+        "scientificName": "Viburnum lantana",
+        "category": "Shrub",
+        "height": "Up to 4m",
+        "pollinators": ["Hoverflies", "Birds (Berries)"],
+        "benefits": "Large domed heads of creamy flowers. Striking fruit that turns from red to black.",
+        "plantingTip": "Thrives exceptionally well on shallow chalky or limestone soils.",
+        "colorClass": "bg-tree",
+        "description": "A substantial deciduous shrub with thick, downy, heavily veined leaves. Its flat umbels of creamy-white flowers transition into berries that are a mix of vibrant red and glossy black simultaneously.",
+        "usages": "Excellent for chalk scrubland, exposed dry hillsides, and large hedgerows.",
+        "plantingTime": "Plant in autumn through early spring."
+    },
+    {
+        "name": "Elder",
+        "scientificName": "Sambucus nigra",
+        "category": "Shrub / Tree",
+        "height": "Up to 6m",
+        "pollinators": ["Hoverflies", "Beetles", "Birds (Berries)"],
+        "benefits": "Provides highly scented flowers and deeply pigmented berries, both used for forage.",
+        "plantingTip": "Very fast growing and tolerant of almost any condition. Can be cut back hard.",
+        "colorClass": "bg-tree",
+        "description": "A ubiquitous and fast-growing woody plant. It produces massive, flat plates of tiny, intensely fragrant creamy-white flowers in early summer, followed by drooping bunches of dark purple-black berries.",
+        "usages": "Pioneer species for woodland edges, hedgerows, and foraging gardens (cordials and wines).",
+        "plantingTime": "Plant almost anytime."
+    },
+    {
+        "name": "Hazel",
+        "scientificName": "Corylus avellana",
+        "category": "Tree",
+        "height": "Up to 6m",
+        "pollinators": ["Wind Pollinated", "Bees (Early Pollen Collection)"],
+        "benefits": "Produces early male catkins ('lambs' tails') providing crucial early pollen. Produces edible nuts.",
+        "plantingTip": "Responds wonderfully to traditional coppicing to prolong lifespan and manage size.",
+        "colorClass": "bg-tree",
+        "description": "A highly valued understory tree with rounded, softly hairy leaves. Famous for its dangling yellow catkins in mid-winter before and native hazelnuts in autumn, supporting dormice and squirrels.",
+        "usages": "Traditional woodland coppice, dense structural hedging, and nut orchards.",
+        "plantingTime": "Plant out bare-root in winter."
+    },
+    {
+        "name": "Field Poppy",
+        "scientificName": "Papaver rhoeas",
+        "category": "Annual",
+        "height": "30 - 60 cm",
+        "pollinators": ["Bees", "Hoverflies"],
+        "benefits": "Provides abundant pollen for bees in mid-summer.",
+        "plantingTip": "Needs disturbed, bare soil to germinate. Often sown as part of an annual cornfield mix.",
+        "colorClass": "bg-wildflower",
+        "description": "An iconic agricultural weed with brilliant, papery scarlet petals often marked with a dark basal spot. It has historically symbolized remembrance.",
+        "usages": "Excellent for annual meadow schemes and restoring agricultural land edges.",
+        "plantingTime": "Sow directly in autumn or spring."
+    },
+    {
+        "name": "Corncockle",
+        "scientificName": "Agrostemma githago",
+        "category": "Annual",
+        "height": "60 - 90 cm",
+        "pollinators": ["Butterflies", "Bees"],
+        "benefits": "Striking magenta flowers. Highly attractive to a range of pollinators.",
+        "plantingTip": "Sow in open ground. Very easy to grow from seed but requires open bare soil.",
+        "colorClass": "bg-wildflower",
+        "description": "A tall, elegant annual with pale green, hairy leaves and large, deeply veined magenta to pink flowers. Once a common arable weed, now rarer in the wild.",
+        "usages": "Essential for cornfield annual mixes and adding quick colour to new beds.",
+        "plantingTime": "Sow directly in autumn or spring."
+    },
+    {
+        "name": "Common Heather",
+        "scientificName": "Calluna vulgaris",
+        "category": "Shrub",
+        "height": "20 - 50 cm",
+        "pollinators": ["Bumblebees", "Moths", "Honeybees"],
+        "benefits": "Provides late-summer nectar on mass.",
+        "plantingTip": "Demands acidic, well-draining soil. Will not survive in chalky conditions.",
+        "colorClass": "bg-tree",
+        "description": "A low-growing evergreen shrub that carpets moorlands and heaths. It produces tiny, bell-shaped purplish-pink flowers along its stems in late summer.",
+        "usages": "Perfect for acid beds, rockeries, or creating a mini-heathland habitat.",
+        "plantingTime": "Plant out in autumn or spring."
+    },
+    {
+        "name": "Honeysuckle",
+        "scientificName": "Lonicera periclymenum",
+        "category": "Climber",
+        "height": "Up to 6m",
+        "pollinators": ["Moths", "Long-tongued Bees", "Birds (Berries)"],
+        "benefits": "Intensely fragrant flowers, especially at night, attracting night-flying moths.",
+        "plantingTip": "Prefers its roots in the shade (damp soil) and its canopy in the sun.",
+        "colorClass": "bg-tree",
+        "description": "A vigorous woody climber with highly perfumed, tubular, creamy-white flowers that turn deeper yellow and pink as they age. Followed by clusters of red berries.",
+        "usages": "Essential for scrambling through native hedgerows or over pergolas and fences.",
+        "plantingTime": "Plant in autumn or spring."
+    },
+    {
+        "name": "Wood Forget-me-not",
+        "scientificName": "Myosotis sylvatica",
+        "category": "Biennial",
+        "height": "15 - 30 cm",
+        "pollinators": ["Small Bees", "Hoverflies"],
+        "benefits": "Early spring pollen source forming dense carpets of blue.",
+        "plantingTip": "Self-seeds very freely in dappled shade or woodland edges.",
+        "colorClass": "bg-wildflower",
+        "description": "A hairy, carpeting plant that produces sprays of tiny, brilliant azure blue flowers with yellow and white centres, providing a wonderful soft hue in early spring.",
+        "usages": "Ideal for woodland gardens, underplanting spring bulbs, or shady borders.",
+        "plantingTime": "Sow outdoors in early summer for flowers the following spring."
+    },
+    {
+        "name": "Pasqueflower",
+        "scientificName": "Pulsatilla vulgaris",
+        "category": "Perennial",
+        "height": "15 - 30 cm",
+        "pollinators": ["Bees"],
+        "benefits": "Stunning early purple flowers set against intensely silky, furry foliage.",
+        "plantingTip": "Requires very sharp drainage and alkaline (chalky) soil in full sun.",
+        "colorClass": "bg-wildflower",
+        "description": "A rare native beauty. It features finely dissected, silky-haired leaves and spectacular, large, bell-shaped purple flowers with a boss of bright golden stamens, followed by fluffy seed-heads.",
+        "usages": "Perfect for gravel gardens, scree beds, or chalk downland recreation.",
+        "plantingTime": "Plant out in spring."
+    },
+    {
+        "name": "Globeflower",
+        "scientificName": "Trollius europaeus",
+        "category": "Perennial",
+        "height": "40 - 60 cm",
+        "pollinators": ["Flies", "Beetles", "Bees"],
+        "benefits": "Vivid spherical yellow blooms in late spring and early summer.",
+        "plantingTip": "Needs reliably moist, heavy soil. Native to damp meadows.",
+        "colorClass": "bg-wildflower",
+        "description": "A clump-forming perennial which delights with beautiful, incurved, pale lemon-yellow petals forming a closed globe that protects the pollen from rain.",
+        "usages": "Superb for bog gardens, pond margins, and damp meadow plantings.",
+        "plantingTime": "Plant in spring or autumn."
+    },
+    {
+        "name": "Lady's Mantle",
+        "scientificName": "Alchemilla vulgaris",
+        "category": "Perennial",
+        "height": "30 - 50 cm",
+        "pollinators": ["Hoverflies", "Small Bees"],
+        "benefits": "Excellent structural edging plant; leaves capture water droplets beautifully.",
+        "plantingTip": "Very adaptable but prefers moist, well-drained soil. Self-seeds enthusiastically.",
+        "colorClass": "bg-wildflower",
+        "description": "A charming, robust perennial featuring heavily pleated, fan-shaped leaves that excel at catching morning dew. In summer, it produces airy sprays of tiny, frothy chartreuse-green/yellow flowers.",
+        "usages": "Ideal for softening border edges, path framing, and cottage garden styles.",
+        "plantingTime": "Plant from spring to autumn."
+    },
+    {
+        "name": "Goat's-beard",
+        "scientificName": "Tragopogon pratensis",
+        "category": "Biennial",
+        "height": "30 - 70 cm",
+        "pollinators": ["Bees", "Hoverflies"],
+        "benefits": "Bright yellow daisy-like flowers that predictably close at midday.",
+        "plantingTip": "Thrives in sunny meadows and disturbed ground. Has a deep taproot.",
+        "colorClass": "bg-wildflower",
+        "description": "Often called 'Jack-go-to-bed-at-noon', this grassy-leaved meadow plant has yellow star-like flower heads that only open in morning sun, succeeded by large, delicate, dandelion-like seed clocks.",
+        "usages": "Valuable addition to sunny, informal wildflower meadows.",
+        "plantingTime": "Sow directly in spring or autumn."
+    },
+    {
+        "name": "Sanicle",
+        "scientificName": "Sanicula europaea",
+        "category": "Perennial",
+        "height": "20 - 50 cm",
+        "pollinators": ["Flies", "Small Beetles"],
+        "benefits": "Beautiful, glossy, deeply lobed leaves ideal for deep shade.",
+        "plantingTip": "Requires moisture-retentive, shady conditions like a woodland floor.",
+        "colorClass": "bg-wildflower",
+        "description": "A woodland umbellifer that spreads by rhizomes. It produces highly glossy, deeply palmate leaves and delicate, pale pinkish-white, button-like flower clusters on wiry stems.",
+        "usages": "Excellent shade-tolerant groundcover under dense deciduous tree canopies.",
+        "plantingTime": "Plant out in autumn or spring."
+    },
+    {
+        "name": "Water Mint",
+        "scientificName": "Mentha aquatica",
+        "category": "Perennial",
+        "height": "20 - 90 cm",
+        "pollinators": ["Bees", "Butterflies", "Hoverflies"],
+        "benefits": "Highly aromatic foliage, magnificent late-summer nectar producer.",
+        "plantingTip": "Vigorous marginal plant. Best contained in a basket if grown in a small pond.",
+        "colorClass": "bg-wildflower",
+        "description": "A classic wetland perennial with creeping runners and strongly mint-scented rounded leaves. In late summer, rings of lilac-pink flowers appear in dense clusters at the stem tips.",
+        "usages": "Excellent for wildlife ponds, bog gardens, and stream edges.",
+        "plantingTime": "Plant from spring to early autumn."
+    },
+    {
+        "name": "Snake's-head Fritillary",
+        "scientificName": "Fritillaria meleagris",
+        "category": "Bulb",
+        "height": "20 - 40 cm",
+        "pollinators": ["Bumblebees"],
+        "benefits": "Stunningly unique checkerboard patterned bell flowers.",
+        "plantingTip": "Thrives in reliably moist soils and traditional damp meadows.",
+        "colorClass": "bg-wildflower",
+        "description": "An unmistakable and iconic spring-flowering bulb featuring nodding, bell-shaped flowers delicately patterned with a maroon and pink checkerboard (or occasionally pure white).",
+        "usages": "Unbeatable for naturalising in damp grass, wet meadows, or beside ponds.",
+        "plantingTime": "Plant bulbs in autumn."
+    },
+    {
+        "name": "Sweet Woodruff",
+        "scientificName": "Galium odoratum",
+        "category": "Perennial",
+        "height": "15 - 30 cm",
+        "pollinators": ["Small Hoverflies"],
+        "benefits": "Brilliant groundcover for dry shade with sweet, hay-like scent when dried.",
+        "plantingTip": "Can form a dense carpet under trees where little else will grow.",
+        "colorClass": "bg-wildflower",
+        "description": "A creeping woodland perennial with whorls of bright green, lance-shaped leaves and terminal clusters of tiny, star-shaped, pure white flowers in late spring.",
+        "usages": "Ideal for dry shade groundcover, underplanting deciduous shrubs and trees.",
+        "plantingTime": "Plant out from spring to early autumn."
+    },
+    {
+        "name": "Wild Columbine",
+        "scientificName": "Aquilegia vulgaris",
+        "category": "Perennial",
+        "height": "60 - 90 cm",
+        "pollinators": ["Bumblebees"],
+        "benefits": "Unique, nodding, spurred blue/purple flowers. Will self-seed in shaded spots.",
+        "plantingTip": "Cross-pollinates easily, so colours may vary in self-seeded generations.",
+        "colorClass": "bg-wildflower",
+        "description": "A charming, upright perennial bearing beautiful bluish-green, deeply divided leaves and distinctive, nodding, spurred, violet-blue flowers that resemble a flock of doves.",
+        "usages": "Cottage gardens, woodland edges, and dappled shade borders.",
+        "plantingTime": "Sow seeds or plant out in spring or autumn."
+    },
+    {
+        "name": "Tansy",
+        "scientificName": "Tanacetum vulgare",
+        "category": "Perennial",
+        "height": "60 - 120 cm",
+        "pollinators": ["Hoverflies", "Butterflies", "Beetles"],
+        "benefits": "Aromatic, fern-like foliage and striking, flat-topped clusters of button-like yellow flowers.",
+        "plantingTip": "Vigorous, can be invasive in small spaces, so plant where space allows or contain it.",
+        "colorClass": "bg-wildflower",
+        "description": "A robust, upright perennial. Its deeply divided, fern-like dark green leaves possess a strong, camphorous scent. It produces dense corymbs of bright yellow 'button' flower heads.",
+        "usages": "Excellent for hot, dry borders and naturalistic meadow schemes.",
+        "plantingTime": "Plant from spring to autumn."
+    },
+    {
+        "name": "Agrimony",
+        "scientificName": "Agrimonia eupatoria",
+        "category": "Perennial",
+        "height": "40 - 60 cm",
+        "pollinators": ["Hoverflies", "Bees"],
+        "benefits": "Slender spikes of golden-yellow star-like flowers above pinnate leaves.",
+        "plantingTip": "Prefers well-drained, alkaline or neutral soils.",
+        "colorClass": "bg-wildflower",
+        "description": "A delightful native herb with a mildly spicy fragrance. It puts up slender, unbranched spires dotted with bright yellow, star-shaped flowers that bloom from the bottom up.",
+        "usages": "Great for dry grassy areas, hedge borders, and woodland margins.",
+        "plantingTime": "Sow seed or plant out in spring."
+    },
+    {
+        "name": "Musk Mallow",
+        "scientificName": "Malva moschata",
+        "category": "Perennial",
+        "height": "40 - 80 cm",
+        "pollinators": ["Bees", "Butterflies"],
+        "benefits": "Beautiful, delicate, deeply-cut leaves and abundant pale pink blooms.",
+        "plantingTip": "Thrives in dry, poor soils where it faces less competition.",
+        "colorClass": "bg-wildflower",
+        "description": "A bushy perennial offering a subtle musky fragrance. It has deeply lobed, feathery foliage and bears large, exceptionally pretty, saucer-shaped pastel pink or white flowers.",
+        "usages": "Perfect for gravel gardens, sunny borders, and meadow-scaping.",
+        "plantingTime": "Sow seeds or plant in spring."
+    },
+    {
+        "name": "Marsh Woundwort",
+        "scientificName": "Stachys palustris",
+        "category": "Perennial",
+        "height": "50 - 100 cm",
+        "pollinators": ["Bumblebees"],
+        "benefits": "Prolific flower spikes of rosy-purple, providing superb nectar for bees.",
+        "plantingTip": "Vigorous and spreads by tubers; excellent for stabilizing wet banks.",
+        "colorClass": "bg-wildflower",
+        "description": "A moderately tall wetland perennial sporting downy, lance-shaped leaves. Sturdy square stems bear whorls of hooded, rosy-purple flowers intricately patterned with white markings.",
+        "usages": "Essential for large wildlife ponds, boggy soils, and marshland restoration.",
+        "plantingTime": "Plant tubers in late autumn or spring."
+    },
+    {
+        "name": "Great Mullein",
+        "scientificName": "Verbascum thapsus",
+        "category": "Biennial",
+        "height": "1 - 2 m",
+        "pollinators": ["Bees", "Hoverflies"],
+        "benefits": "Architectural felt-like leaves and tall yellow flower spikes.",
+        "plantingTip": "Needs very well-drained soil and sun. Self-seeds in gravel.",
+        "colorClass": "bg-wildflower",
+        "description": "A magnificent architectural biennial. The first year produces a low rosette of large, incredibly soft silvery-grey felted leaves. The second year brings a soaring spike of yellow flowers.",
+        "usages": "Stunning in gravel gardens or border backs. Seeds feed birds in winter.",
+        "plantingTime": "Sow directly in late spring to summer."
+    },
+    {
+        "name": "Enchanter's Nightshade",
+        "scientificName": "Circaea lutetiana",
+        "category": "Perennial",
+        "height": "20 - 60 cm",
+        "pollinators": ["Hoverflies", "Small Moths"],
+        "benefits": "Flourishes in deep, dry shade.",
+        "plantingTip": "Can spread readily via creeping rhizomes, use in wilder shady spots.",
+        "colorClass": "bg-wildflower",
+        "description": "A delicate, unassuming woodland native featuring heart-shaped leaves and slender spikes of tiny, deeply lobed white or pale pink flowers in mid-summer.",
+        "usages": "Groundcover for deeply shaded, established woodland areas or under mature shrubs.",
+        "plantingTime": "Plant out in spring or autumn."
+    },
+    {
+        "name": "Yellow Loosestrife",
+        "scientificName": "Lysimachia vulgaris",
+        "category": "Perennial",
+        "height": "80 - 120 cm",
+        "pollinators": ["Specialised Bees"],
+        "benefits": "Provides floral oils essential for specialized bees.",
+        "plantingTip": "Thrives in moist or wet soils beside water features.",
+        "colorClass": "bg-wildflower",
+        "description": "A tall, spreading native perennial bearing whorls of soft leaves and bright, starry, golden-yellow flowers in panicles throughout late summer.",
+        "usages": "Excellent for pond edges, bog gardens, and moisture-retentive borders.",
+        "plantingTime": "Plant from spring to autumn."
+    }
+];
+
 const SUNLIGHT_PREFS = {
+    "Bell Heather": ['full_sun'],
+    "Cross-leaved Heath": ['full_sun', 'part_sun'],
+    "Common Rock-rose": ['full_sun'],
+    "Wild Pansy": ['full_sun', 'part_sun'],
+    "Meadow Saxifrage": ['full_sun', 'part_sun', 'part_shade'],
+    "Salad Burnet": ['full_sun', 'part_sun'],
+    "Wild Mignonette": ['full_sun'],
+    "Weld": ['full_sun', 'part_sun'],
+    "Wild Basil": ['full_sun', 'part_sun'],
+    "Hound's-tongue": ['full_sun', 'part_sun'],
+    "Wild Clary": ['full_sun'],
+    "Sea Thrift": ['full_sun'],
+    "Wood Avens": ['part_shade', 'full_shade', 'dappled'],
+    "Eyebright": ['full_sun', 'part_sun'],
+    "Yellow Archangel": ['full_shade', 'dappled'],
+    "Herb Paris": ['full_shade', 'dappled'],
+    "Lily of the Valley": ['part_shade', 'full_shade', 'dappled'],
+    "St John's Wort": ['full_sun', 'part_sun'],
+    "Lords-and-Ladies": ['part_shade', 'full_shade', 'dappled'],
+    "Coltsfoot": ['full_sun', 'part_sun'],
+    "Borage": ['full_sun', 'part_sun'],
+    "Meadow Vetchling": ['full_sun', 'part_sun'],
+    "Tufted Vetch": ['full_sun', 'part_sun'],
+    "White Clover": ['full_sun', 'part_sun'],
+    "Spindle": ['full_sun', 'part_sun', 'part_shade'],
+    "Broom": ['full_sun'],
+    "Dogwood": ['full_sun', 'part_sun', 'part_shade'],
+    "Wayfaring Tree": ['full_sun', 'part_sun'],
+    "Elder": ['full_sun', 'part_sun', 'part_shade', 'dappled'],
+    "Hazel": ['part_sun', 'part_shade', 'dappled', 'full_shade'],
+    "Field Poppy": ['full_sun'],
+    "Corncockle": ['full_sun'],
+    "Common Heather": ['full_sun', 'part_sun'],
+    "Honeysuckle": ['part_sun', 'part_shade', 'dappled'],
+    "Wood Forget-me-not": ['part_shade', 'full_shade', 'dappled'],
+    "Pasqueflower": ['full_sun'],
+    "Globeflower": ['full_sun', 'part_sun', 'part_shade'],
+    "Lady's Mantle": ['full_sun', 'part_sun', 'part_shade'],
+    "Goat's-beard": ['full_sun'],
+    "Sanicle": ['full_shade', 'dappled'],
+    "Water Mint": ['full_sun', 'part_sun', 'part_shade'],
+    "Snake's-head Fritillary": ['full_sun', 'part_sun'],
+    "Sweet Woodruff": ['part_shade', 'full_shade', 'dappled'],
+    "Wild Columbine": ['part_sun', 'part_shade', 'dappled'],
+    "Tansy": ['full_sun', 'part_sun'],
+    "Agrimony": ['full_sun', 'part_sun'],
+    "Musk Mallow": ['full_sun', 'part_sun'],
+    "Marsh Woundwort": ['full_sun', 'part_sun', 'part_shade'],
+    "Great Mullein": ['full_sun', 'part_sun'],
+    "Enchanter's Nightshade": ['full_shade', 'dappled'],
+    "Yellow Loosestrife": ['full_sun', 'part_sun', 'part_shade'],
+    "Field Forget-me-not": ['full_sun', 'part_sun', 'part_shade'],
+    "Corn Marigold": ['full_sun'],
+    "Wild Carrot": ['full_sun', 'part_sun'],
+    "Red Clover": ['full_sun', 'part_sun'],
+    "White Campion": ['full_sun', 'part_sun', 'part_shade'],
+    "Betony": ['full_sun', 'part_sun', 'part_shade'],
+    "Common Mallow": ['full_sun', 'part_sun'],
+    "Yellow Horned Poppy": ['full_sun'],
+    "Wild Strawberry": ['part_sun', 'part_shade', 'dappled', 'full_shade'],
+    "Greater Knapweed": ['full_sun', 'part_sun'],
     "Viper's Bugloss": ['full_sun', 'part_sun'],
     "Hemp Agrimony": ['part_sun', 'part_shade', 'dappled'],
     "Blackthorn": ['full_sun', 'part_sun', 'part_shade'],
@@ -3472,7 +5110,13 @@ const SUNLIGHT_PREFS = {
     "Ragged Robin": ['full_sun', 'part_sun', 'part_shade'],
     "Meadow Buttercup": ['full_sun', 'part_sun'],
     "Ivy": ['part_sun', 'part_shade', 'full_shade', 'dappled'],
-    "Scottish Harebell": ['full_sun', 'part_sun']
+    "Scottish Harebell": ['full_sun', 'part_sun'],
+    "Guelder Rose": ['part_sun', 'part_shade', 'full_shade', 'dappled'],
+    "Meadowsweet": ['full_sun', 'part_sun', 'part_shade', 'dappled'],
+    "Common Comfrey": ['full_sun', 'part_sun', 'part_shade', 'dappled'],
+    "Yellow Flag Iris": ['full_sun', 'part_sun'],
+    "Cuckooflower": ['part_sun', 'part_shade', 'dappled'],
+    "Herb Robert": ['part_shade', 'full_shade', 'dappled']
 };
 
 // Primary Rendering Function
@@ -3491,11 +5135,33 @@ function renderSuggestions() {
     
     let plants = Array.from(regionPlantsMap.values());
     
+    // Inject global native plants
+    for (let p of ALL_REGION_NATIVE_PLANTS) {
+        if (!plants.find(x => x.name === p.name)) {
+            plants.push(p);
+        }
+    }
+    
     // Filter realistically by sunlight requirements
     plants = plants.filter(plant => {
         let prefs = SUNLIGHT_PREFS[plant.name] || ['full_sun', 'part_sun', 'part_shade', 'full_shade', 'dappled'];
         return prefs.includes(STATE.sunlight);
     });
+
+    // Filter by toxicity
+    if (STATE.nontoxicOnly) {
+        plants = plants.filter(plant => {
+            const normalizedName = (plant.name || "").toLowerCase()
+                .replace(/\([^)]*\)/g, '')
+                .replace(/['’]/g, '')
+                .replace(/-/g, ' ')
+                .replace(/[^a-z0-9 ]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+            const toxInfo = CLINICAL_PLANT_TOXICOLOGY[normalizedName] || CLINICAL_PLANT_TOXICOLOGY[plant.name.toLowerCase()] || { type: 'safe' };
+            return toxInfo.type === 'safe';
+        });
+    }
 
     // Filter by text search query
     if (STATE.searchQuery !== '') {
@@ -3572,6 +5238,311 @@ function renderSuggestions() {
 
 // Clinical-grade Toxicology and Safety database for UK Native Plants
 const CLINICAL_PLANT_TOXICOLOGY = {
+    "bell heather": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Entirely non-toxic and structurally robust. Safe around pets."
+    },
+    "cross leaved heath": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Entirely non-toxic. Safe around pets and children."
+    },
+    "common rock rose": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Non-toxic and totally safe for humans and pets."
+    },
+    "wild pansy": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Safe and widely used as an edible flower garnish."
+    },
+    "meadow saxifrage": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Considered non-toxic. Historically used as a herbal remedy."
+    },
+    "salad burnet": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Fully non-toxic and edible. The young leaves taste like cucumber."
+    },
+    "wild mignonette": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Non-toxic to humans and animals."
+    },
+    "weld": {
+        status: "Non-Toxic / Dye Plant",
+        type: "safe",
+        text: "Safe and historically used as a primary source for strong yellow vegetable dye."
+    },
+    "wild basil": {
+        status: "Non-Toxic / Herbal",
+        type: "safe",
+        text: "A completely safe, mildly aromatic member of the mint family used as a wild herb."
+    },
+    "hounds tongue": {
+        status: "Toxic (Liver)",
+        type: "danger",
+        text: "Contains pyrrolizidine alkaloids which can cause severe liver damage if ingested. Toxic to grazing livestock, particularly horses and cows."
+    },
+    "wild clary": {
+        status: "Non-Toxic / Herbal",
+        type: "safe",
+        text: "Considered non-toxic and historically utilized as an eye-clearing tonic."
+    },
+    "sea thrift": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Non-toxic and perfectly safe for coastal or garden planting around children and pets."
+    },
+    "wood avens": {
+        status: "Non-Toxic / Herbal",
+        type: "safe",
+        text: "The roots contain eugenol (like cloves) and were used historically to flavor ale. Non-toxic."
+    },
+    "eyebright": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Generally considered non-toxic and historically used as an herbal remedy for eye ailments."
+    },
+    "yellow archangel": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "A non-stinging member of the dead-nettle family, it is completely safe and harmless."
+    },
+    "herb paris": {
+        status: "Highly Toxic",
+        type: "danger",
+        text: "All parts of the plant, especially the singular large black berry, are poisonous and contain toxic saponins. Keep well away from children."
+    },
+    "lily of the valley": {
+        status: "Highly Toxic",
+        type: "danger",
+        text: "Contains over 30 cardiac glycosides. All parts, including the water it sits in if cut, are extremely poisonous and can cause severe heart irregularities."
+    },
+    "st johns wort": {
+        status: "Moderately Toxic / Photosensitizer",
+        type: "warning",
+        text: "Contains hypericin, which can cause severe photosensitization (sunburn and skin damage) in livestock if grazed, and vomiting in pets."
+    },
+    "lords and ladies": {
+        status: "Highly Toxic / Irritant",
+        type: "danger",
+        text: "All parts, especially the bright red berries, contain microscopic needle-like calcium oxalate crystals and toxins that cause intense swelling, burning, and breathing difficulties if chewed."
+    },
+    "coltsfoot": {
+        status: "Mildly Toxic (Liver)",
+        type: "warning",
+        text: "Contains pyrrolizidine alkaloids which can cause liver damage if consumed in large or prolonged quantities. Unlikely to be eaten by pets."
+    },
+    "borage": {
+        status: "Mildly Toxic (Liver)",
+        type: "warning",
+        text: "Contains small amounts of pyrrolizidine alkaloids. Harmless as an occasional garnish, but shouldn't be consumed in large, concentrated quantities regularly."
+    },
+    "meadow vetchling": {
+        status: "Moderately Toxic (Seeds)",
+        type: "warning",
+        text: "Like many Lathyrus species, the seeds contain neurotoxins and can cause lathyrism if consumed in large quantities. Do not safely ingest."
+    },
+    "tufted vetch": {
+        status: "Non-Toxic / Herbivore Safe",
+        type: "safe",
+        text: "Generally considered safe and is widely consumed by grazing livestock and wild herbivores without ill effect."
+    },
+    "white clover": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Safe and widely utilized as a pasture crop. Flowers and young leaves are edible to humans and pets."
+    },
+    "spindle": {
+        status: "Highly Toxic",
+        type: "danger",
+        text: "All parts, especially the bright orange seeds and pink capsules, contain cardiac glycosides and alkaloids. Ingestion causes severe purgative distress and cardiac issues."
+    },
+    "broom": {
+        status: "Moderately Toxic",
+        type: "warning",
+        text: "Contains toxic alkaloids like sparteine. Ingestion of seeds or significant foilage can cause gastrointestinal and cardiovascular symptoms. Toxic to pets and livestock."
+    },
+    "dogwood": {
+        status: "Mildly Toxic / Irritant",
+        type: "warning",
+        text: "The berries are considered mildly toxic, causing severe nausea and vomiting if eaten by humans. Sap can cause skin irritation."
+    },
+    "wayfaring tree": {
+        status: "Mildly Toxic",
+        type: "warning",
+        text: "The berries are mildly poisonous if eaten raw in large amounts, causing digestive upset. Safe once properly cooked, though rarely foraged."
+    },
+    "elder": {
+        status: "Toxic Raw / Safe Cooked",
+        type: "warning",
+        text: "Raw berries, leaves, bark, and roots contain cyanogenic glycosides resulting in severe nausea. Fully safe once the berries or flowers are thoroughly cooked or extracted."
+    },
+    "hazel": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Completely safe. Produces high-quality edible hazelnuts (cobnuts) consumed by humans and wildlife alike."
+    },
+    "field poppy": {
+        status: "Mildly Toxic",
+        type: "warning",
+        text: "Contains mild alkaloids. Can cause stomach ache if ingested in large quantities by pets or livestock."
+    },
+    "corncockle": {
+        status: "Highly Toxic",
+        type: "danger",
+        text: "The seeds contain saponins and are highly toxic if ingested. Keep away from pets and do not ingest."
+    },
+    "common heather": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Entirely non-toxic and structurally robust. Safe around pets."
+    },
+    "honeysuckle": {
+        status: "Mildly Toxic (Berries)",
+        type: "warning",
+        text: "The vines and flowers are non-toxic, but the bright red berries are mildly poisonous and can cause gastrointestinal upset if eaten by humans or pets."
+    },
+    "wood forget-me-not": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Fully safe and non-toxic to humans, dogs, cats, and livestock."
+    },
+    "pasqueflower": {
+        status: "Moderately Toxic",
+        type: "warning",
+        text: "Contains protoanemonin. Handling crushed leaves may cause skin irritation. Ingestion causes severe gastrointestinal distress."
+    },
+    "globeflower": {
+        status: "Mildly Toxic",
+        type: "warning",
+        text: "Like many plants in the buttercup family, it contains protoanemonin which can cause mild skin irritation or digestive upset if ingested fresh."
+    },
+    "ladys mantle": {
+        status: "Non-Toxic / Herbal",
+        type: "safe",
+        text: "Considered non-toxic and utilized in traditional herbal medicine as a mild astringent."
+    },
+    "goats beard": {
+        status: "Non-Toxic / Safe",
+        type: "safe",
+        text: "Non-toxic and totally safe. The young shoots and roots are sometimes considered edible."
+    },
+    "sanicle": {
+        status: "Non-Toxic / Safe",
+        type: "safe",
+        text: "Generally considered non-toxic. It was historically used as an herbal wound-healing remedy."
+    },
+    "water mint": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Safe and edible in moderation. As with all mints, it contains essential oils that are generally safe but may cause mild gastrointestinal upset if consumed in extremely large quantities by pets."
+    },
+    "snakes head fritillary": {
+        status: "Mildly Toxic",
+        type: "warning",
+        text: "Contains alkaloids that can cause vomiting and low blood pressure if ingested in large amounts. The bulbs are the most toxic part."
+    },
+    "sweet woodruff": {
+        status: "Mildly Toxic / Coumarins",
+        type: "warning",
+        text: "Safe as a garden plant, but contains coumarin, which can have an anti-coagulant effect if ingested in exceptionally large amounts. Mild consumption safe for humans."
+    },
+    "wild columbine": {
+        status: "Mildly Toxic",
+        type: "warning",
+        text: "The seeds and roots contain cardiogenic toxins which can cause severe gastroenteritis and heart palpitations if eaten in large quantities."
+    },
+    "tansy": {
+        status: "Moderately Toxic / Abortifacient",
+        type: "warning",
+        text: "Contains thujone, which is toxic in large doses and can act as an abortifacient. Avoid ingestion, especially if pregnant. Keep livestock away from heavy grazing."
+    },
+    "agrimony": {
+        status: "Non-Toxic / Herbal",
+        type: "safe",
+        text: "Generally considered safe and historically used as a mild astringent herb for teas and gargles."
+    },
+    "musk mallow": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Entirely non-toxic. Leaves and flowers are edible and safe for pets and livestock."
+    },
+    "marsh woundwort": {
+        status: "Non-Toxic / Edible Tubers",
+        type: "safe",
+        text: "Non-toxic and safe. Cultivated historically for its crisp, edible tubers."
+    },
+    "great mullein": {
+        status: "Non-Toxic / Minor Irritant",
+        type: "safe",
+        text: "Generally safe. The fuzzy hairs on the leaves can occasionally cause contact dermatitis or minor skin irritation in sensitive individuals, and shouldn't be ingested raw."
+    },
+    "enchanters nightshade": {
+        status: "Non-Toxic",
+        type: "safe",
+        text: "Despite the ominous name, this plant is not a true nightshade (Solanaceae) and is non-toxic to humans and animals."
+    },
+    "yellow loosestrife": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Fully non-toxic and safe for all households. Generally unpalatable to most livestock but completely harmless."
+    },
+    "field forget-me-not": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Fully non-toxic to humans, dogs, cats, and livestock."
+    },
+    "corn marigold": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Non-toxic and safe for environments with pets and children."
+    },
+    "wild carrot": {
+        status: "Mildly Toxic (Skin Irritant)",
+        type: "safe",
+        text: "The foliage can cause mild phytophotodermatitis in sensitive individuals if handled in strong sunlight. Otherwise safe, and the root of the first-year plant is edible."
+    },
+    "red clover": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Safe, non-toxic, and traditionally used in herbal teas. Contains isoflavones (phytoestrogens) so excessive consumption by livestock may affect breeding, but entirely safe for typical garden setups."
+    },
+    "white campion": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Completely safe. No known toxicity for humans or pets."
+    },
+    "betony": {
+        status: "Non-Toxic / Herbal",
+        type: "safe",
+        text: "Safe and historically used as an astringent herb. Not poisonous to humans, dogs, or cats."
+    },
+    "common mallow": {
+        status: "Non-Toxic / Edible Leaves",
+        type: "safe",
+        text: "Safe and edible. Leaves and flowers can be added to salads. Non-toxic to dogs and cats."
+    },
+    "yellow horned poppy": {
+        status: "Moderately Toxic",
+        type: "warning",
+        text: "Contains toxic isoquinoline alkaloids (such as glaucine). Ingestion can cause respiratory distress, vomiting, and neurological symptoms. Keep away from pets and do not ingest."
+    },
+    "wild strawberry": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Perfectly safe and produces delicious edible miniature fruit. Non-toxic to pets."
+    },
+    "greater knapweed": {
+        status: "Non-Toxic / Fully Safe",
+        type: "safe",
+        text: "Fully safe and non-toxic to humans, pets, and grazing livestock."
+    },
     "vipers bugloss": {
         status: "Moderately Toxic",
         type: "warning",
@@ -3826,6 +5797,36 @@ const CLINICAL_PLANT_TOXICOLOGY = {
         status: "Non-Toxic / Fully Safe",
         type: "safe",
         text: "Fully non-toxic, safe, and delicate. Zero poisonous properties for humans, dogs, cats, or pasture animals."
+    },
+    "guelder rose": {
+        status: "Mildly Toxic Raw / Safe Cooked",
+        type: "warning",
+        text: "Berries are mildly toxic in their raw state due to viburnin. Ingestion can cause stomach upset, vomiting, and diarrhoea in humans and pets. Completely safe and edible when cooked into jellies."
+    },
+    "meadowsweet": {
+        status: "Safe / Medicinal Cautions",
+        type: "safe",
+        text: "Generally non-toxic and historically used as an herbal remedy. Contains naturally occurring salicylic acid (a precursor to aspirin), so ingestion should be avoided by humans or pets with known aspirin sensitivities."
+    },
+    "common comfrey": {
+        status: "Moderately Toxic (Hepatotoxic)",
+        type: "warning",
+        text: "Contains pyrrolizidine alkaloids (PAs) which are cumulatively hepatotoxic. Chronic or bulk ingestion over time causes irreversible liver damage in humans, horses, and livestock. External contact is entirely safe."
+    },
+    "yellow flag iris": {
+        status: "Moderately Toxic / Severe Contact Irritant",
+        type: "warning",
+        text: "All parts, particularly rhizomes, contain irritating resinous compounds (irisin). Ingestion causes severe burning mouth pain and gastric distress. Copious handling of wet cut root systems can cause blistering contact dermatitis."
+    },
+    "cuckooflower": {
+        status: "Non-Toxic / Edible",
+        type: "safe",
+        text: "Completely non-toxic to humans, dogs, cats, and livestock. The leaves are edible and have a slightly pungent, peppery flavour reminiscent of watercress."
+    },
+    "herb robert": {
+        status: "Non-Toxic / Safe",
+        type: "safe",
+        text: "Fully non-toxic and safe for all households. Although the crushed leaves emit a distinctive pungent smell sometimes used to deter mosquitoes, the plant is chemically inert."
     }
 };
 
@@ -3857,6 +5858,43 @@ function openPlantDetail(index) {
     document.getElementById('drawerDesc').innerText = seedPlant.description || 'No detailed botanical description available.';
     document.getElementById('drawerUses').innerText = seedPlant.usages || 'No specific usage information established.';
     document.getElementById('drawerPlantTime').innerText = seedPlant.plantingTime || 'Plant in spring or early autumn.';
+
+    // Generate dynamic care guide with British English
+    const isTreeShrub = seedPlant.category.toLowerCase().includes('tree') || seedPlant.category.toLowerCase().includes('shrub');
+    const isBulb = seedPlant.category.toLowerCase().includes('bulb');
+    const isAnnual = seedPlant.category.toLowerCase().includes('annual');
+    
+    let wateringAdvice = "Water regularly during the first growing season to establish a deep, extensive root system. Once established, requires little to no supplemental watering unless experiencing prolonged drought.";
+    let pruningAdvice = "Deadhead spent flowers to encourage continuous blooming. Cut back foliage in late autumn or early spring before new growth appears.";
+    let feedingAdvice = "Fertiliser is rarely necessary for native wildflowers; in fact, they often thrive better in poor soil.";
+
+    if (isTreeShrub) {
+        wateringAdvice = "Water deeply and regularly during the first two years of establishment. Mulch well in spring to retain moisture.";
+        pruningAdvice = "Prune in late winter or early spring during dormancy to maintain shape and remove any dead, diseased, or crossing branches.";
+        feedingAdvice = "Apply a general-purpose, slow-release fertiliser or a mulch of well-rotted organic matter around the base in early spring.";
+    } else if (isBulb) {
+        wateringAdvice = "Water moderately during active growth in spring. Allow the soil to dry out during summer dormancy.";
+        pruningAdvice = "Do not remove foliage after flowering until it has turned completely yellow and died back naturally, as this feeds the bulb for next year.";
+        feedingAdvice = "Apply a light top-dressing of bone meal or a low-nitrogen fertiliser in autumn or early spring as shoots emerge.";
+    } else if (isAnnual) {
+        wateringAdvice = "Water regularly during dry spells to ensure continuous flowering, but do not let the soil become waterlogged.";
+        pruningAdvice = "Deadhead regularly to prolong the flowering display. Allow to set seed at the end of the season if self-seeding is desired.";
+        feedingAdvice = "No feeding is generally required, though a light liquid feed in mid-summer can boost flowering on poorer soils.";
+    } else if (currentSunlight === 'full_shade' || currentSunlight === 'dappled') {
+         wateringAdvice = "Ensure the soil remains consistently moist, mimicking a woodland floor environment, particularly during dry spells.";
+         feedingAdvice = "Top-dress with leaf mould or compost in autumn to simulate natural woodland leaf drop. Avoid strong chemical fertilisers.";
+    }
+
+    if (seedPlant.plantingTip && seedPlant.plantingTip.toLowerCase().includes('dry')) {
+        wateringAdvice = "Highly drought-tolerant once established. Ensure excellent drainage and water extremely sparingly to avoid waterlogging.";
+    }
+    
+    const cw = document.getElementById('drawerCareWatering');
+    const cp = document.getElementById('drawerCarePruning');
+    const cf = document.getElementById('drawerCareFeeding');
+    if (cw) cw.innerText = wateringAdvice;
+    if (cp) cp.innerText = pruningAdvice;
+    if (cf) cf.innerText = feedingAdvice;
 
     drawerBenefits.innerText = seedPlant.benefits;
     drawerTip.innerText = seedPlant.plantingTip;
