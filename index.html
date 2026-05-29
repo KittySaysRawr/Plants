@@ -241,6 +241,20 @@
                         </div>
                     </div>
 
+                    <!-- Safety Options -->
+                    <div class="form-group mb-4">
+                        <label class="toggle-control" style="background-color: var(--color-surface); padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); width: 100%;">
+                            <div class="toggle-label-wrap">
+                                <span class="toggle-title" style="display: flex; align-items: center; gap: 6px;"><i data-feather="shield" class="field-icon" aria-hidden="true"></i> Non-Toxic Only</span>
+                                <span class="toggle-desc">Show only fully safe plants</span>
+                            </div>
+                            <div class="toggle-switch-container">
+                                <input type="checkbox" id="nontoxicToggle" class="toggle-checkbox" aria-label="Show Non-Toxic Plants Only">
+                                <span class="toggle-slider"></span>
+                            </div>
+                        </label>
+                    </div>
+
                     <!-- Quick Search Input -->
                     <div class="form-group bg-accent-light">
                         <label for="searchQuery"><i data-feather="search" class="field-icon" aria-hidden="true"></i> Filter Species</label>
@@ -306,6 +320,29 @@
                     </div>
 
                     <div class="drawer-accordion mt-4">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-care">
+                                <span>Care Guide</span>
+                                <i data-feather="chevron-down" class="acc-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="accordion-content" id="acc-care">
+                                <div class="drawer-text">
+                                    <div class="mb-3">
+                                        <strong class="block text-forest mb-1">Watering</strong>
+                                        <span id="drawerCareWatering" class="block text-sm text-gray-700 leading-relaxed"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <strong class="block text-forest mb-1">Pruning</strong>
+                                        <span id="drawerCarePruning" class="block text-sm text-gray-700 leading-relaxed"></span>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-forest mb-1">Feeding</strong>
+                                        <span id="drawerCareFeeding" class="block text-sm text-gray-700 leading-relaxed"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="accordion-item">
                             <button class="accordion-header" onclick="toggleAccordion(this)" aria-expanded="false" aria-controls="acc-1">
                                 <span>Botanical Description</span>
