@@ -5119,6 +5119,15 @@ const SUNLIGHT_PREFS = {
     "Herb Robert": ['part_shade', 'full_shade', 'dappled']
 };
 
+function getPlantLifeCycle(plant) {
+    const textToSearch = ((plant.description || '') + ' ' + (plant.category || '') + ' ' + (plant.plantingTip || '')).toLowerCase();
+    if (textToSearch.includes('evergreen')) return 'Evergreen';
+    if (textToSearch.includes('annual')) return 'Annual';
+    if (textToSearch.includes('biennial')) return 'Biennial';
+    if (textToSearch.includes('perennial') || textToSearch.includes('bulb') || (plant.category || '').toLowerCase().includes('tree') || (plant.category || '').toLowerCase().includes('shrub')) return 'Perennial';
+    return 'Perennial'; 
+}
+
 // Primary Rendering Function
 function renderSuggestions() {
     // Generate pool of plants for the region
@@ -5202,12 +5211,14 @@ function renderSuggestions() {
         }).join('');
 
         const categoryClass = plant.category.toLowerCase().includes('shrub') ? 'bg-shrub' : 'bg-wildflower';
+        const lifeCycle = getPlantLifeCycle(plant);
 
         return `
             <article class="plant-card animate-fade-in" style="animation-delay: ${idx * 0.05}s;" onclick="openPlantDetail(${idx})" role="button" tabindex="0" aria-label="View details for ${plant.name}" onkeydown="if(event.key==='Enter'||event.key===' ') { event.preventDefault(); openPlantDetail(${idx}); }">
                 <div class="card-top">
                     <div class="card-badge-row">
                         <span class="badge ${categoryClass}">${plant.category}</span>
+                        <span class="badge badge-outline" style="font-size: 0.65rem; padding: 2px 6px;">${lifeCycle}</span>
                         <i data-feather="arrow-right" class="card-action-icon" style="width:14px; height:14px; opacity: 0.6;" aria-hidden="true"></i>
                     </div>
                     <h4>${plant.name}</h4>
@@ -5841,6 +5852,12 @@ function openPlantDetail(index) {
     // Fill Modal elements
     drawerCategory.innerText = seedPlant.category.toUpperCase();
     drawerCategory.className = `plant-category ${seedPlant.category.toLowerCase().includes('shrub') ? 'color-green' : ''}`;
+    
+    const lifeCycleEl = document.getElementById('drawerLifeCycle');
+    if (lifeCycleEl) {
+        lifeCycleEl.innerText = getPlantLifeCycle(seedPlant).toUpperCase();
+    }
+    
     drawerName.innerText = seedPlant.name;
     drawerScientificName.innerText = seedPlant.scientificName;
     drawerHeight.innerText = seedPlant.height;
